@@ -2,7 +2,7 @@ window.ENEM_DADOS = {
  "meta": {
   "ano": 2025,
   "uf": "PI",
-  "gerado_em": "2026-10-01T14:14:06",
+  "gerado_em": "2026-10-01T14:53:06",
   "filtro": "Local de prova (SG_UF_PROVA)",
   "fonte": "Microdados do ENEM — INEP",
   "areas": {
@@ -70840,32 +70840,22 @@ window.ENEM_DADOS = {
  },
  "escolas": {
   "minimo_presentes": 10,
-  "fonte_nomes": "Censo Escolar 2024 — INEP",
+  "fonte_nomes": "Censo Escolar 2025 — INEP",
   "criterio": "Participantes que informaram escola no estado, agrupados pelo código INEP da escola. Médias só para escolas com pelo menos 10 participantes com as cinco notas.",
   "contagem": {
    "total": 636,
    "com_indicadores": 557,
    "poucos_participantes": 79,
-   "nome_censo": 589,
+   "nome_censo": 592,
    "nome_seduc": 0,
-   "sem_nome": 47,
-   "com_alerta": 64,
+   "sem_nome": 44,
+   "com_alerta": 48,
    "alertas": {
-    "Município na lista da SEDUC (Barro Duro) diferente do ENEM (Beneditinos)": 3,
-    "Município na lista da SEDUC (Lagoa Do Alegre) diferente do ENEM (Lagoa Alegre)": 1,
-    "Município na lista da SEDUC (Beneditinos) diferente do ENEM (Barro Duro)": 1,
-    "Município na lista da SEDUC (Santa Cruz Das Milagres) diferente do ENEM (Santa Cruz dos Milagres)": 1,
-    "Município na lista da SEDUC (São Miguel Fidalgo) diferente do ENEM (São Miguel do Fidalgo)": 1,
-    "Município na lista da SEDUC (São Rdo. Nonato) diferente do ENEM (São Raimundo Nonato)": 3,
-    "Município na lista da SEDUC (Conceição Do Canidé) diferente do ENEM (Conceição do Canindé)": 1,
-    "Município na lista da SEDUC (Lagoa Do São Fco.) diferente do ENEM (Lagoa de São Francisco)": 1,
-    "Município na lista da SEDUC (Morro Cabeça Tempo) diferente do ENEM (Morro Cabeça no Tempo)": 1,
-    "Município na lista da SEDUC (Campo A. Do Fidalgo) diferente do ENEM (Campo Alegre do Fidalgo)": 1,
-    "Município na lista da SEDUC (Cap. Gervásio Costa) diferente do ENEM (Capitão Gervásio Oliveira)": 1,
-    "Município na lista da SEDUC (Aroeira Do Itaim) diferente do ENEM (Aroeiras do Itaim)": 1,
-    "Código não encontrado no Censo Escolar": 47,
-    "Município diferente": 1
-   }
+    "Município na lista da SEDUC (Barro Duro) diferente do ENEM e do Censo (Beneditinos)": 3,
+    "Município na lista da SEDUC (Beneditinos) diferente do ENEM e do Censo (Barro Duro)": 1,
+    "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas": 44
+   },
+   "codigo_fora_padrao": 44
   },
   "estado": {
    "inscritos": 37054,
@@ -71047,15 +71037,15 @@ window.ENEM_DADOS = {
     "rede": "Privada",
     "localizacao": "Urbana",
     "gre": null,
-    "nome": "INSTITUTO EDUCACIONAL SAO JOSE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 473,
+    "nome": "SAO JOSE LESTE",
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 22,
     "presentes": 22,
     "suficiente": true,
@@ -71305,14 +71295,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "INSTITUTO DOM BARRETO CENTRO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 682,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 193,
     "presentes": 188,
     "suficiente": true,
@@ -71562,14 +71552,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "ESCOLA POPULAR MADRE MARIA VILLAC",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 90,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 33,
     "presentes": 33,
     "suficiente": true,
@@ -71819,14 +71809,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "CEV COLEGIO UNIDADE JOCKEY",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 105,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 35,
     "presentes": 34,
     "suficiente": true,
@@ -72076,14 +72066,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "COLEGIO MACHADO DE ASSIS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 87,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 18,
     "presentes": 18,
     "suficiente": true,
@@ -72335,14 +72325,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLEGIO PROCAMPUS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 107,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 13,
     "presentes": 13,
     "suficiente": true,
@@ -72591,15 +72581,15 @@ window.ENEM_DADOS = {
     "rede": "Privada",
     "localizacao": "Urbana",
     "gre": null,
-    "nome": "COLEGIO OBJETIVO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 362,
+    "nome": "COLEGIO PROPOSITO",
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 15,
     "presentes": 15,
     "suficiente": true,
@@ -72849,14 +72839,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "ANBEAS - COLEGIO SAGRADO CORACAO DE JESUS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 362,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 84,
     "presentes": 82,
     "suficiente": true,
@@ -73106,14 +73096,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLEGIO LEROTE LTDA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 196,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 42,
     "presentes": 41,
     "suficiente": true,
@@ -73362,14 +73352,15 @@ window.ENEM_DADOS = {
     "rede": "Privada",
     "localizacao": "Urbana",
     "gre": null,
-    "nome": null,
-    "fonte_nome": null,
+    "nome": "BRIGHT SCHOOL",
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
+     "municipio": true,
+     "rede": true,
      "interna": true
     },
-    "alertas": [
-     "Código não encontrado no Censo Escolar"
-    ],
+    "alertas": [],
+    "observacoes": [],
     "inscritos": 13,
     "presentes": 10,
     "suficiente": true,
@@ -73619,14 +73610,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLEGIO GREAT",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 52,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 15,
     "presentes": 15,
     "suficiente": true,
@@ -73875,15 +73866,15 @@ window.ENEM_DADOS = {
     "rede": "Privada",
     "localizacao": "Urbana",
     "gre": null,
-    "nome": "COLEGIO OBJETIVO S-S",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 90,
+    "nome": "COLEGIO PROPOSITO",
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 26,
     "presentes": 26,
     "suficiente": true,
@@ -74133,14 +74124,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 8,
     "nome": "SOCIEDADE EDUCACIONAL PAULO FREIRE LTDA ME",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 53,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 15,
     "presentes": 15,
     "suficiente": true,
@@ -74392,14 +74383,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 5,
     "nome": "INSTITUTO DE ENSINO INTELLECTUS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 81,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 30,
     "presentes": 30,
     "suficiente": true,
@@ -74651,14 +74642,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "CEV COLEGIO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 258,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 83,
     "presentes": 81,
     "suficiente": true,
@@ -74908,14 +74899,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "COLEGIO NOSSA SENHORA DAS GRACAS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 206,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 52,
     "presentes": 50,
     "suficiente": true,
@@ -75167,14 +75158,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "CENTRO EDUCACIONAL CONTEXTO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 161,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 51,
     "presentes": 51,
     "suficiente": true,
@@ -75426,14 +75417,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "GRUPO EDUCACIONAL CEV - UNIDADE KENNEDY",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 281,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 69,
     "presentes": 62,
     "suficiente": true,
@@ -75683,14 +75674,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "COLEGIO INDUSTRIAL SAO FRANCISCO DE ASSIS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 81,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 10,
     "presentes": 10,
     "suficiente": true,
@@ -75942,14 +75933,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLEGIO SAO FRANCISCO DE SALES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 249,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 67,
     "presentes": 67,
     "suficiente": true,
@@ -76199,14 +76190,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLEGIO EQUACAO CERTA LESTE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 187,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 99,
     "presentes": 98,
     "suficiente": true,
@@ -76456,14 +76447,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "EDUCANDARIO SANTA MARIA GORETTI",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 92,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 23,
     "presentes": 21,
     "suficiente": true,
@@ -76713,14 +76704,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "INSTITUTO EDUCACIONAL SANTA RITA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 94,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 34,
     "presentes": 34,
     "suficiente": true,
@@ -76971,14 +76962,15 @@ window.ENEM_DADOS = {
     "rede": "Privada",
     "localizacao": "Urbana",
     "gre": null,
-    "nome": null,
-    "fonte_nome": null,
+    "nome": "INSTITUTO EDUCACIONAL SAO JOSE UNIDADE MOCAMBINHO",
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
+     "municipio": true,
+     "rede": true,
      "interna": true
     },
-    "alertas": [
-     "Código não encontrado no Censo Escolar"
-    ],
+    "alertas": [],
+    "observacoes": [],
     "inscritos": 62,
     "presentes": 62,
     "suficiente": true,
@@ -77228,14 +77220,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "ESCOLA CRESCER",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 99,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 31,
     "presentes": 30,
     "suficiente": true,
@@ -77487,14 +77479,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "ESCOLA DOM BOSCO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 62,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 21,
     "presentes": 18,
     "suficiente": true,
@@ -77744,14 +77736,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "CEV- COLEGIO UNIDADE 04",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 120,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 36,
     "presentes": 34,
     "suficiente": true,
@@ -78001,14 +77993,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "ORGANIZACAO EDUCACIONAL APOIO LTDA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 86,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 31,
     "presentes": 31,
     "suficiente": true,
@@ -78260,14 +78252,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "LICEU DE PIRIPIRI",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 42,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 15,
     "presentes": 15,
     "suficiente": true,
@@ -78519,14 +78511,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "INSTITUTO SANTO AGOSTINHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 127,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 29,
     "presentes": 29,
     "suficiente": true,
@@ -78776,14 +78768,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "ESCOLINHA GENIUS INFANTIL LTDA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 23,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 11,
     "presentes": 11,
     "suficiente": true,
@@ -79035,14 +79027,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 8,
     "nome": "INSTITUTO EDUCACIONAL MAHATMA GANDHI",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 103,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 30,
     "presentes": 29,
     "suficiente": true,
@@ -79294,14 +79286,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLEGIO PRO CAMPUS JUNIOR",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 35,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 28,
     "presentes": 28,
     "suficiente": true,
@@ -79551,14 +79543,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLEGIO EQUACAO CERTA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 196,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 28,
     "presentes": 28,
     "suficiente": true,
@@ -79808,8 +79800,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "CETI JOAO HENRIQUE DE ALMEIDA SOUZA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 343,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -79817,6 +79808,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 114,
     "presentes": 113,
     "suficiente": true,
@@ -80066,14 +80058,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "ORGANIZACAO EDUCACIONAL COLEGIO DEZ LTDA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 94,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 31,
     "presentes": 31,
     "suficiente": true,
@@ -80324,15 +80316,15 @@ window.ENEM_DADOS = {
     "rede": "Privada",
     "localizacao": "Urbana",
     "gre": null,
-    "nome": "COLEGIO OBJETIVO DIF",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 231,
+    "nome": "COLEGIO PROPOSITO",
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 118,
     "presentes": 115,
     "suficiente": true,
@@ -80582,14 +80574,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLEGIO MADRE SAVINA UNIDADE JOCKEY",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 212,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 62,
     "presentes": 61,
     "suficiente": true,
@@ -80839,14 +80831,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "ESCOLA DE EDUCACAO BASICA E PROFISSIONAL EMBAIXADOR ESPEDITO DE FREITAS RESENDE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 260,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 80,
     "presentes": 77,
     "suficiente": true,
@@ -81096,14 +81088,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "SOCIEDADE EDUCACIONAL POTENCIAL LTDA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 48,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 10,
     "presentes": 10,
     "suficiente": true,
@@ -81355,8 +81347,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "CETI AUGUSTINHO BRANDAO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 187,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -81366,6 +81357,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 63,
     "presentes": 60,
     "suficiente": true,
@@ -81617,14 +81609,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLEGIO CPI",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 517,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 168,
     "presentes": 164,
     "suficiente": true,
@@ -81874,14 +81866,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "COLEGIO FREI FRANCISCO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 84,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 37,
     "presentes": 37,
     "suficiente": true,
@@ -82133,14 +82125,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "IFPI - CAMPUS PICOS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 481,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 144,
     "presentes": 135,
     "suficiente": true,
@@ -82392,14 +82384,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLEGIO CASTRO ALVES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 42,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 11,
     "presentes": 11,
     "suficiente": true,
@@ -82649,14 +82641,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "CONEXAO COLEGIO LTDA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 54,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 17,
     "presentes": 17,
     "suficiente": true,
@@ -82906,14 +82898,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLEGIO INOVE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 86,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 29,
     "presentes": 29,
     "suficiente": true,
@@ -83163,14 +83155,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "ESCOLA CIDADAO CIDADA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 108,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 28,
     "presentes": 28,
     "suficiente": true,
@@ -83420,14 +83412,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "INST EDUC SAO JOSE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 639,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 206,
     "presentes": 204,
     "suficiente": true,
@@ -83677,14 +83669,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "CPI SISTEMA DE ENSINO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 217,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 64,
     "presentes": 63,
     "suficiente": true,
@@ -83934,14 +83926,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "COLEGIO RM",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 238,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 110,
     "presentes": 108,
     "suficiente": true,
@@ -84193,14 +84185,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLEGIO FRATER",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 58,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 10,
     "presentes": 10,
     "suficiente": true,
@@ -84450,14 +84442,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "UNIDADE ESCOLAR SAO LUIZ GONZAGA DIOCESANO MEDIO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 173,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 56,
     "presentes": 56,
     "suficiente": true,
@@ -84708,15 +84700,15 @@ window.ENEM_DADOS = {
     "rede": "Privada",
     "localizacao": "Urbana",
     "gre": null,
-    "nome": "ESCOLA MARISTA CHAMPAGNAT DE TERESINA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 482,
+    "nome": "ESCOLA MARISTA CHAMPAGNAT TERESINA",
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 141,
     "presentes": 141,
     "suficiente": true,
@@ -84966,14 +84958,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "COLEGIO SAO JUDAS TADEU",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 184,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 43,
     "presentes": 42,
     "suficiente": true,
@@ -85224,15 +85216,15 @@ window.ENEM_DADOS = {
     "rede": "Privada",
     "localizacao": "Urbana",
     "gre": 2,
-    "nome": "COOP EDUC DE BARRAS COLEGIO PRATICUS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 98,
+    "nome": "COTEB - COOPERATIVA DE TRABALHO EDUCACIONAL DE BARRAS",
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 25,
     "presentes": 25,
     "suficiente": true,
@@ -85484,14 +85476,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "COLEGIO MERITO D MARTONNE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 134,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 27,
     "presentes": 27,
     "suficiente": true,
@@ -85743,14 +85735,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "ESCOLA SAO JOSE DE RIBAMAR",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 162,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 56,
     "presentes": 55,
     "suficiente": true,
@@ -86000,8 +85992,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 20,
     "nome": "CETI GOVERNADOR DIRCEU MENDES ARCOVERDE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 582,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -86011,6 +86002,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 162,
     "presentes": 157,
     "suficiente": true,
@@ -86262,14 +86254,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "INSTITUTO MONSENHOR HIPOLITO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 198,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 65,
     "presentes": 63,
     "suficiente": true,
@@ -86521,14 +86513,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "IFPI - CAMPUS TERESINA CENTRAL",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 1515,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 471,
     "presentes": 456,
     "suficiente": true,
@@ -86777,15 +86769,15 @@ window.ENEM_DADOS = {
     "rede": "Privada",
     "localizacao": "Urbana",
     "gre": null,
-    "nome": "SOC EDUC MERITO D MARTONNE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 66,
+    "nome": "NUCLEO DE ENSINO MERITO DMARTONNE",
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 21,
     "presentes": 21,
     "suficiente": true,
@@ -87035,14 +87027,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLEGIO CIVICO MILITAR BATALHA DO RIACHUELO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 50,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 11,
     "presentes": 11,
     "suficiente": true,
@@ -87292,14 +87284,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "UNIDADE ESCOLAR ALCENOR CANDEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 55,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 12,
     "presentes": 12,
     "suficiente": true,
@@ -87551,14 +87543,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "ESCOLA CONSELHEIRO SARAIVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 139,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 33,
     "presentes": 31,
     "suficiente": true,
@@ -87808,8 +87800,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "CETI JOSE NARCISO DA ROCHA FILHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 338,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -87819,6 +87810,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 109,
     "presentes": 103,
     "suficiente": true,
@@ -88070,14 +88062,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLEGIO SAO JUDAS TADEU - DIRCEU",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 151,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 34,
     "presentes": 32,
     "suficiente": true,
@@ -88327,14 +88319,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "COLEGIO MADRE TERESA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 42,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 12,
     "presentes": 12,
     "suficiente": true,
@@ -88586,14 +88578,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 14,
     "nome": "UFPI - COLEGIO TECNICO DE BOM JESUS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 241,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 58,
     "presentes": 56,
     "suficiente": true,
@@ -88845,14 +88837,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 2,
     "nome": "UNIDADE ESCOLAR PEQUENO PRINCIPE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 42,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 12,
     "presentes": 12,
     "suficiente": true,
@@ -89104,14 +89096,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLISEU CENTRO EDUCACIONAL",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 54,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 14,
     "presentes": 14,
     "suficiente": true,
@@ -89361,8 +89353,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 8,
     "nome": "CETI SAO SEBASTIAO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 79,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -89372,6 +89363,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 26,
     "presentes": 25,
     "suficiente": true,
@@ -89623,14 +89615,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "IFPI - CAMPUS FLORIANO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 532,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 200,
     "presentes": 195,
     "suficiente": true,
@@ -89882,14 +89874,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLEGIO ALSISTE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 0,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 24,
     "presentes": 23,
     "suficiente": true,
@@ -90139,14 +90131,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COOP EDUC BASICA DO PIAUI",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 43,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 22,
     "presentes": 21,
     "suficiente": true,
@@ -90396,14 +90388,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "INST MAGISTER DE ENSINO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 117,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 32,
     "presentes": 31,
     "suficiente": true,
@@ -90653,14 +90645,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "COLEGIO APROVACAO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 122,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 53,
     "presentes": 53,
     "suficiente": true,
@@ -90912,14 +90904,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "INSTITUTO EDUCACIONAL MENINO JESUS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 39,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 16,
     "presentes": 16,
     "suficiente": true,
@@ -91171,14 +91163,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLEGIO SAO JUDAS TADEU",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 53,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 22,
     "presentes": 21,
     "suficiente": true,
@@ -91428,14 +91420,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "PATRONATO MARIA NARCISO E COLEGIO IRMA MARIA EUGENIA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 90,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 18,
     "presentes": 18,
     "suficiente": true,
@@ -91687,8 +91679,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "CETI INES DE MARIA SOUSA ROCHA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 319,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -91698,6 +91689,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 103,
     "presentes": 100,
     "suficiente": true,
@@ -91949,14 +91941,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLEGIO SAO JUDAS TADEU",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 126,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 38,
     "presentes": 37,
     "suficiente": true,
@@ -92206,14 +92198,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CENTRO INTEGRADO SENADOR NILO COELHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 65,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 24,
     "presentes": 21,
     "suficiente": true,
@@ -92465,14 +92457,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "ESCOLA SANTA ANGELICA LTDA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 77,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 21,
     "presentes": 20,
     "suficiente": true,
@@ -92722,14 +92714,14 @@ window.ENEM_DADOS = {
     "localizacao": "Rural",
     "gre": 3,
     "nome": "ECOESCOLA THOMAS A KEMPIS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 68,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 15,
     "presentes": 14,
     "suficiente": true,
@@ -92981,8 +92973,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 21,
     "nome": "CETI PROFESSOR RALDIR CAVALCANTE BASTOS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 299,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -92992,6 +92983,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 83,
     "presentes": 82,
     "suficiente": true,
@@ -93243,14 +93235,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLEGIO E CURSO SECULUS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 51,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 11,
     "presentes": 11,
     "suficiente": true,
@@ -93500,14 +93492,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "INSTITUTO XAVIER",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 79,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 36,
     "presentes": 35,
     "suficiente": true,
@@ -93758,15 +93750,15 @@ window.ENEM_DADOS = {
     "rede": "Privada",
     "localizacao": "Urbana",
     "gre": 3,
-    "nome": "COESP COOPERATIVA EDUC E SOCIAL DE PEDRO II",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 67,
+    "nome": "ESCOLA COESP - COOPERATIVA DE TRABALHO EDUCACIONAL E SOCIAL DE PEDRO III",
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 17,
     "presentes": 16,
     "suficiente": true,
@@ -94018,14 +94010,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "UNID ESC PARQUE PIAUI UNESPP",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 62,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 20,
     "presentes": 20,
     "suficiente": true,
@@ -94275,14 +94267,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 6,
     "nome": "EDUCANDARIO BONUS LTDA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 72,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 16,
     "presentes": 16,
     "suficiente": true,
@@ -94534,8 +94526,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 11,
     "nome": "CETI FLORISA SILVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 77,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -94545,6 +94536,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 24,
     "presentes": 20,
     "suficiente": true,
@@ -94796,14 +94788,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 8,
     "nome": "IFPI - CAMPUS OEIRAS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 372,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 129,
     "presentes": 124,
     "suficiente": true,
@@ -95055,8 +95047,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 7,
     "nome": "CETI RITINHA ROSA DE MOURA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 73,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -95066,6 +95057,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 20,
     "presentes": 15,
     "suficiente": true,
@@ -95317,14 +95309,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "COLEGIO VISAO DE PARNAIBA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 115,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 22,
     "presentes": 22,
     "suficiente": true,
@@ -95576,14 +95568,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 5,
     "nome": "COLEGIO ALFABETOC",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 54,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 18,
     "presentes": 18,
     "suficiente": true,
@@ -95835,14 +95827,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 17,
     "nome": "IFPI - CAMPUS PAULISTANA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 486,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 162,
     "presentes": 160,
     "suficiente": true,
@@ -96094,14 +96086,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "ESCOLA INTEGRADA DEPUTADO MORAES SOUZA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 168,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 70,
     "presentes": 61,
     "suficiente": true,
@@ -96353,14 +96345,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "UFPI - COLEGIO TECNICO DE TERESINA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 209,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 55,
     "presentes": 54,
     "suficiente": true,
@@ -96610,8 +96602,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 21,
     "nome": "CETI DIDACIO SILVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 451,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -96621,6 +96612,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 140,
     "presentes": 135,
     "suficiente": true,
@@ -96872,8 +96864,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 4,
     "nome": "CETI ZACARIAS DE GOIS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 558,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -96883,6 +96874,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 190,
     "presentes": 173,
     "suficiente": true,
@@ -97134,14 +97126,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "IFPI - CAMPUS PARNAIBA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 402,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 270,
     "presentes": 251,
     "suficiente": true,
@@ -97393,14 +97385,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "COLEGIO IMPACTO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 106,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 26,
     "presentes": 26,
     "suficiente": true,
@@ -97652,14 +97644,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "ORGANIZACAO EDUCACIONAL CRISTO LTDA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 43,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 13,
     "presentes": 13,
     "suficiente": true,
@@ -97910,9 +97902,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 7,
-    "nome": "CETI DONA M ANTONIETA TORRES DOS REIS VELOSO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 224,
+    "nome": "CETI DONA MARIA ANTONIETA TORRES DOS REIS VELOSO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -97922,6 +97913,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 68,
     "presentes": 66,
     "suficiente": true,
@@ -98172,9 +98164,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 5,
-    "nome": "U E PATRONATO N S DE LOURDES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 359,
+    "nome": "CETI PATRONATO NOSSA SENHORA DE LOURDES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -98184,6 +98175,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 114,
     "presentes": 109,
     "suficiente": true,
@@ -98435,19 +98427,17 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 13,
     "nome": "CETI MODERNA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 342,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
      "rede": true,
      "seduc_rede": true,
-     "seduc_municipio": false,
+     "seduc_municipio": true,
      "interna": true
     },
-    "alertas": [
-     "Município na lista da SEDUC (São Rdo. Nonato) diferente do ENEM (São Raimundo Nonato)"
-    ],
+    "alertas": [],
+    "observacoes": [],
     "inscritos": 134,
     "presentes": 132,
     "suficiente": true,
@@ -98699,8 +98689,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 19,
     "nome": "CETI MARIA DINA SOARES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 86,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -98710,6 +98699,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 26,
     "presentes": 22,
     "suficiente": true,
@@ -98961,8 +98951,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 16,
     "nome": "CETI LUIZ UBIRACI DE CARVALHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 87,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -98972,6 +98961,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 30,
     "presentes": 19,
     "suficiente": true,
@@ -99223,14 +99213,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "IFPI - TERESINA ZONA SUL",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 519,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 341,
     "presentes": 315,
     "suficiente": true,
@@ -99480,8 +99470,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 2,
     "nome": "CETI GAYOSO E ALMENDRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 180,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -99491,6 +99480,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 49,
     "presentes": 49,
     "suficiente": true,
@@ -99742,14 +99732,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLEGIO INTEGRADO SANTO ANDRE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 130,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 26,
     "presentes": 26,
     "suficiente": true,
@@ -99999,14 +99989,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "INSTITUTO SAPERE AUDE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 27,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 11,
     "presentes": 11,
     "suficiente": true,
@@ -100256,8 +100246,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 16,
     "nome": "CETI ALENCAR MOTA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 157,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -100267,6 +100256,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 49,
     "presentes": 44,
     "suficiente": true,
@@ -100518,14 +100508,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "ESCOLA SANTO AFONSO RODRIGUEZ",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 138,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 38,
     "presentes": 37,
     "suficiente": true,
@@ -100775,14 +100765,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "IFPI - CAMPUS PEDRO II",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 354,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 244,
     "presentes": 231,
     "suficiente": true,
@@ -101034,8 +101024,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI RAMA BOA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 480,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -101045,6 +101034,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 147,
     "presentes": 143,
     "suficiente": true,
@@ -101296,14 +101286,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 6,
     "nome": "IFPI - CAMPUS ANGICAL",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 440,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 287,
     "presentes": 257,
     "suficiente": true,
@@ -101555,14 +101545,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "EINSTEIN SISTEMA DE ENSINO - UNIDADE I",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 91,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 11,
     "presentes": 11,
     "suficiente": true,
@@ -101812,14 +101802,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 13,
     "nome": "IFPI - CAMPUS SAO RAIMUNDO NONATO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 398,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 314,
     "presentes": 301,
     "suficiente": true,
@@ -102071,8 +102061,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 4,
     "nome": "CETI GABRIEL FERREIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 96,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -102082,6 +102071,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 21,
     "presentes": 14,
     "suficiente": true,
@@ -102333,8 +102323,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 7,
     "nome": "CETI SATURNINO MOURA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 136,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -102344,6 +102333,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 33,
     "presentes": 32,
     "suficiente": true,
@@ -102594,9 +102584,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 21,
-    "nome": "U E LUCIDIO PORTELLA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 96,
+    "nome": "CETI LUCIDIO PORTELLA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -102606,6 +102595,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 30,
     "presentes": 25,
     "suficiente": true,
@@ -102857,8 +102847,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 5,
     "nome": "CETI CONEGO CARDOSO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 347,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -102868,6 +102857,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 100,
     "presentes": 94,
     "suficiente": true,
@@ -103119,14 +103109,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "UFPI - COLEGIO TECNICO DE FLORIANO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 247,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 57,
     "presentes": 57,
     "suficiente": true,
@@ -103378,8 +103368,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 21,
     "nome": "CETI MARIA MODESTINA BEZERRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 219,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -103389,6 +103378,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 57,
     "presentes": 48,
     "suficiente": true,
@@ -103640,14 +103630,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 5,
     "nome": "IFPI - CAMPUS CAMPO MAIOR",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 332,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 93,
     "presentes": 89,
     "suficiente": true,
@@ -103899,8 +103889,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 8,
     "nome": "CETI DESEMBARGADOR PEDRO SA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 348,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -103910,6 +103899,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 77,
     "presentes": 69,
     "suficiente": true,
@@ -104161,14 +104151,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 7,
     "nome": "IFPI - CAMPUS VALENCA DO PIAUI",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 467,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 351,
     "presentes": 330,
     "suficiente": true,
@@ -104420,14 +104410,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "IFPI - CAMPUS PIRIPIRI",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 412,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 275,
     "presentes": 252,
     "suficiente": true,
@@ -104679,8 +104669,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 12,
     "nome": "CETI BEIJA VALENTE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 140,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -104690,6 +104679,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 23,
     "presentes": 23,
     "suficiente": true,
@@ -104941,18 +104931,18 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 12,
     "nome": "CETI ALFREDO CARLOS ALENCAR",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 150,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
      "rede": true,
      "seduc_rede": true,
-     "seduc_municipio": false,
+     "seduc_municipio": true,
      "interna": true
     },
-    "alertas": [
-     "Município na lista da SEDUC (Cap. Gervásio Costa) diferente do ENEM (Capitão Gervásio Oliveira)"
+    "alertas": [],
+    "observacoes": [
+     "Município escrito de outra forma na lista da SEDUC (\"Cap. Gervásio Costa\"), mesma cidade"
     ],
     "inscritos": 39,
     "presentes": 22,
@@ -105205,14 +105195,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "IFPI - CAMPUS AVANCADO DIRCEU ARCOVERDE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 190,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 166,
     "presentes": 150,
     "suficiente": true,
@@ -105462,14 +105452,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "COLEGIO META",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 97,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 31,
     "presentes": 25,
     "suficiente": true,
@@ -105721,8 +105711,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI CANTIDIO SARAIVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 99,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -105732,6 +105721,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 50,
     "presentes": 49,
     "suficiente": true,
@@ -105983,8 +105973,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 2,
     "nome": "CETI CONSELHEIRO SARAIVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 206,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -105994,6 +105983,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 50,
     "presentes": 48,
     "suficiente": true,
@@ -106245,8 +106235,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 7,
     "nome": "CETI MARIA CANDIDA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 153,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -106256,6 +106245,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 37,
     "presentes": 36,
     "suficiente": true,
@@ -106507,8 +106497,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "CETI MANOEL RICARDO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 274,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -106518,6 +106507,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 69,
     "presentes": 62,
     "suficiente": true,
@@ -106769,8 +106759,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "CETI SENADOR CHAGAS RODRIGUES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 285,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -106780,6 +106769,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 37,
     "presentes": 33,
     "suficiente": true,
@@ -107030,9 +107020,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 4,
-    "nome": "U E DOM SEVERINO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 132,
+    "nome": "CETI DOM SEVERINO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -107042,6 +107031,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 37,
     "presentes": 29,
     "suficiente": true,
@@ -107293,8 +107283,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "CETI POLIVALENTE LIMA REBELO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 175,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -107304,6 +107293,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 33,
     "presentes": 31,
     "suficiente": true,
@@ -107554,9 +107544,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 9,
-    "nome": "U E OZILDO ALBANO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 138,
+    "nome": "CETI OZILDO ALBANO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -107566,6 +107555,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 52,
     "presentes": 50,
     "suficiente": true,
@@ -107817,8 +107807,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI JOMASIO DOS SANTOS BARROS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 111,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -107828,6 +107817,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 34,
     "presentes": 28,
     "suficiente": true,
@@ -108079,8 +108069,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 2,
     "nome": "CETI PEDRO COELHO DE RESENDE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 437,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -108090,6 +108079,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 147,
     "presentes": 124,
     "suficiente": true,
@@ -108340,9 +108330,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 21,
-    "nome": "CETI PROF JULIA NUNES ALVES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 194,
+    "nome": "CETI PROFESSORA JULIA NUNES ALVES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -108352,6 +108341,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 50,
     "presentes": 44,
     "suficiente": true,
@@ -108603,8 +108593,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "CETI FAUZER BUCAR",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 207,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -108614,6 +108603,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 54,
     "presentes": 53,
     "suficiente": true,
@@ -108865,8 +108855,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "CETI PEDRO MACHADO DE CERQUEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 214,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -108874,6 +108863,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 62,
     "presentes": 50,
     "suficiente": true,
@@ -109125,8 +109115,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "CETI LIMA REBELO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 217,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -109136,6 +109125,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 41,
     "presentes": 39,
     "suficiente": true,
@@ -109387,14 +109377,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "IFPI - CAMPUS AVANCADO JOSE DE FREITAS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 137,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 100,
     "presentes": 92,
     "suficiente": true,
@@ -109646,14 +109636,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 12,
     "nome": "IFPI - CAMPUS SAO JOAO DO PIAUI",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 450,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 142,
     "presentes": 134,
     "suficiente": true,
@@ -109905,18 +109895,18 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 8,
     "nome": "CETI MIGUEL MARINHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 77,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
      "rede": true,
      "seduc_rede": true,
-     "seduc_municipio": false,
+     "seduc_municipio": true,
      "interna": true
     },
-    "alertas": [
-     "Município na lista da SEDUC (São Miguel Fidalgo) diferente do ENEM (São Miguel do Fidalgo)"
+    "alertas": [],
+    "observacoes": [
+     "Município escrito de outra forma na lista da SEDUC (\"São Miguel Fidalgo\"), mesma cidade"
     ],
     "inscritos": 23,
     "presentes": 22,
@@ -110168,9 +110158,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 9,
-    "nome": "U E PEDRO EVANGELISTA CAMINHA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 231,
+    "nome": "CETI PEDRO EVANGELISTA CAMINHA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -110180,6 +110169,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 57,
     "presentes": 40,
     "suficiente": true,
@@ -110431,8 +110421,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 8,
     "nome": "CETI WILSON NUNES MARTINS FILHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 83,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -110440,6 +110429,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 32,
     "presentes": 29,
     "suficiente": true,
@@ -110691,8 +110681,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 2,
     "nome": "CETI JOSE NOGUEIRA DE AGUIAR",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 315,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -110702,6 +110691,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 79,
     "presentes": 72,
     "suficiente": true,
@@ -110953,18 +110943,18 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI ELON MACHADO MOITA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 459,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
      "rede": true,
      "seduc_rede": true,
-     "seduc_municipio": false,
+     "seduc_municipio": true,
      "interna": true
     },
-    "alertas": [
-     "Município na lista da SEDUC (Lagoa Do Alegre) diferente do ENEM (Lagoa Alegre)"
+    "alertas": [],
+    "observacoes": [
+     "Município escrito de outra forma na lista da SEDUC (\"Lagoa Do Alegre\"), mesma cidade"
     ],
     "inscritos": 99,
     "presentes": 80,
@@ -111216,9 +111206,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 5,
-    "nome": "CETI PROF UBIRACI CARVALHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 255,
+    "nome": "CETI PROFESSOR UBIRACI CARVALHO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -111228,6 +111217,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 54,
     "presentes": 43,
     "suficiente": true,
@@ -111479,8 +111469,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "CETI MARIO COELHO NETO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 152,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -111490,6 +111479,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 43,
     "presentes": 38,
     "suficiente": true,
@@ -111740,9 +111730,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": null,
-    "nome": "CEEP PROFESSOR JOSE PACIFICO DE MOURA NETO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 926,
+    "nome": "CETI PROFESSOR JOSE PACIFICO DE MOURA NETO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -111750,6 +111739,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 384,
     "presentes": 305,
     "suficiente": true,
@@ -111999,8 +111989,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 15,
     "nome": "CETI DR DIONISIO RODRIGUES NOGUEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 465,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -112010,6 +111999,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 132,
     "presentes": 124,
     "suficiente": true,
@@ -112261,8 +112251,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 7,
     "nome": "CETI FIRMO RODRIGUES SOBREIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 158,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -112270,6 +112259,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 46,
     "presentes": 41,
     "suficiente": true,
@@ -112520,9 +112510,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 17,
-    "nome": "U E SAO FRANCISCO DE ASSIS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 230,
+    "nome": "CETI SAO FRANCISCO DE ASSIS",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -112532,6 +112521,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 44,
     "presentes": 27,
     "suficiente": true,
@@ -112783,8 +112773,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 2,
     "nome": "CETI FRANCISCA TRINDADE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 339,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -112794,6 +112783,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 62,
     "presentes": 60,
     "suficiente": true,
@@ -113044,9 +113034,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 14,
-    "nome": "CETI AGRICOLA DO DNOCS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 175,
+    "nome": "CETI PETRONIO MARTINS FALCAO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -113056,6 +113045,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 46,
     "presentes": 27,
     "suficiente": true,
@@ -113307,14 +113297,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 15,
     "nome": "IFPI - CAMPUS CORRENTE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 570,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 359,
     "presentes": 330,
     "suficiente": true,
@@ -113566,8 +113556,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "CETI JOAO PINHEIRO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 20,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -113577,6 +113566,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 20,
     "presentes": 15,
     "suficiente": true,
@@ -113828,8 +113818,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI PROFESSOR MARIANO DA SILVA NETO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 242,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -113837,6 +113826,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 71,
     "presentes": 65,
     "suficiente": true,
@@ -114087,9 +114077,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 21,
-    "nome": "CETI PROF PINHEIRO MACHADO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 261,
+    "nome": "CETI PROFESSOR PINHEIRO MACHADO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -114099,6 +114088,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 54,
     "presentes": 46,
     "suficiente": true,
@@ -114349,9 +114339,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 14,
-    "nome": "U E INTEGRADO ADENAUER",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 42,
+    "nome": "CETI INTEGRADO ADENAUER",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -114361,6 +114350,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 26,
     "presentes": 23,
     "suficiente": true,
@@ -114612,8 +114602,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 4,
     "nome": "CETI PROFESSOR FELISMINO FREITAS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 349,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -114623,6 +114612,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 109,
     "presentes": 95,
     "suficiente": true,
@@ -114874,8 +114864,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 19,
     "nome": "CETI SOLANGE SINIMBU VIANA AREA LEAO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 199,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -114885,6 +114874,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 65,
     "presentes": 60,
     "suficiente": true,
@@ -115135,9 +115125,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 9,
-    "nome": "U E TERESINHA NUNES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 166,
+    "nome": "CETI TERESINHA NUNES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -115147,6 +115136,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 46,
     "presentes": 41,
     "suficiente": true,
@@ -115398,8 +115388,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 5,
     "nome": "CETI LIMA REBELO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 126,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -115409,6 +115398,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 19,
     "presentes": 11,
     "suficiente": true,
@@ -115660,8 +115650,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI JOSE ALVES BEZERRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 296,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -115671,6 +115660,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 115,
     "presentes": 95,
     "suficiente": true,
@@ -115922,14 +115912,14 @@ window.ENEM_DADOS = {
     "localizacao": "Rural",
     "gre": 1,
     "nome": "IFPI - CAMPUS COCAL",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 401,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 221,
     "presentes": 194,
     "suficiente": true,
@@ -116181,14 +116171,14 @@ window.ENEM_DADOS = {
     "localizacao": "Rural",
     "gre": 11,
     "nome": "IFPI - CAMPUS URUCUI",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 425,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 121,
     "presentes": 114,
     "suficiente": true,
@@ -116440,8 +116430,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 16,
     "nome": "CETI APRIGIO PEREIRA BEZERRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 183,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -116451,6 +116440,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 43,
     "presentes": 34,
     "suficiente": true,
@@ -116702,8 +116692,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI MARIO MARTINS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 106,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -116713,6 +116702,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 27,
     "presentes": 26,
     "suficiente": true,
@@ -116964,8 +116954,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI HELVIDIO NUNES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 221,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -116975,6 +116964,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 56,
     "presentes": 36,
     "suficiente": true,
@@ -117226,8 +117216,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 19,
     "nome": "CETI MOACI MADEIRA CAMPOS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 302,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -117237,6 +117226,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 101,
     "presentes": 90,
     "suficiente": true,
@@ -117488,8 +117478,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI NORMAL OFICIAL DE PICOS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 155,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -117499,6 +117488,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 30,
     "presentes": 16,
     "suficiente": true,
@@ -117750,8 +117740,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 2,
     "nome": "CETI LUIS TEIXEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 383,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -117761,6 +117750,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 87,
     "presentes": 80,
     "suficiente": true,
@@ -118012,8 +118002,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "CETI PROFESSOR PAULO MACHADO DE RESENDE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 143,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -118021,6 +118010,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 44,
     "presentes": 43,
     "suficiente": true,
@@ -118270,8 +118260,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI MARCOS PARENTE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 108,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -118281,6 +118270,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 28,
     "presentes": 25,
     "suficiente": true,
@@ -118531,9 +118521,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 8,
-    "nome": "U E JOAO DE SOUSA MOURA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 118,
+    "nome": "CETI JOAO DE SOUSA MOURA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -118543,6 +118532,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 26,
     "presentes": 24,
     "suficiente": true,
@@ -118793,9 +118783,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 2,
-    "nome": "U E GERVASIO COSTA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 514,
+    "nome": "CETI GERVASIO COSTA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -118805,6 +118794,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 138,
     "presentes": 103,
     "suficiente": true,
@@ -119055,9 +119045,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 4,
-    "nome": "U E BARAO DE GURGUEIA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 305,
+    "nome": "CETI BARAO DE GURGUEIA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -119067,6 +119056,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 83,
     "presentes": 54,
     "suficiente": true,
@@ -119317,9 +119307,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 19,
-    "nome": "U E PROFESSOR AGRIPINO OLIVEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 86,
+    "nome": "CETI PROFESSOR AGRIPINO OLIVEIRA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -119329,6 +119318,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 31,
     "presentes": 24,
     "suficiente": true,
@@ -119579,9 +119569,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 9,
-    "nome": "CEEP PETRONIO PORTELA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 634,
+    "nome": "CETI PETRONIO PORTELA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -119589,6 +119578,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 170,
     "presentes": 150,
     "suficiente": true,
@@ -119839,9 +119829,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 21,
-    "nome": "U E DEPUTADO TERTULIANO MILTON BRANDAO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 178,
+    "nome": "CETI DEPUTADO TERTULIANO MILTON BRANDAO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -119851,6 +119840,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 81,
     "presentes": 51,
     "suficiente": true,
@@ -120102,8 +120092,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 2,
     "nome": "CETI FRANCISCA MARLUCE NUNES QUEIROZ",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 240,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -120113,6 +120102,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 39,
     "presentes": 35,
     "suficiente": true,
@@ -120364,8 +120354,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 6,
     "nome": "CETI POLIVALENTE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 374,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -120375,6 +120364,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 108,
     "presentes": 101,
     "suficiente": true,
@@ -120625,15 +120615,15 @@ window.ENEM_DADOS = {
     "rede": "Federal",
     "localizacao": "Rural",
     "gre": 16,
-    "nome": "IFPI - CAMPUS AVANCADO PIO IX",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 171,
+    "nome": "IFPI - CAMPUS PIO IX",
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 128,
     "presentes": 109,
     "suficiente": true,
@@ -120884,9 +120874,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 12,
-    "nome": "U E HELVIDIO NUNES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 122,
+    "nome": "CETI HELVIDIO NUNES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -120896,6 +120885,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 38,
     "presentes": 36,
     "suficiente": true,
@@ -121147,8 +121137,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 13,
     "nome": "CETI LETICIA MACEDO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 372,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -121158,6 +121147,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 85,
     "presentes": 77,
     "suficiente": true,
@@ -121409,8 +121399,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "CETI JEANETE SOUSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 234,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -121420,6 +121409,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 60,
     "presentes": 56,
     "suficiente": true,
@@ -121671,8 +121661,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "CETI LICEU PARNAIBANO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 1025,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -121682,6 +121671,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 381,
     "presentes": 324,
     "suficiente": true,
@@ -121933,8 +121923,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 13,
     "nome": "CETI MALAQUIAS RIBEIRO DAMASCENO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 132,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -121944,6 +121933,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 48,
     "presentes": 44,
     "suficiente": true,
@@ -122194,9 +122184,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 2,
-    "nome": "U E PETRONIO PORTELA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 185,
+    "nome": "CETI PETRONIO PORTELA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -122206,6 +122195,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 41,
     "presentes": 19,
     "suficiente": true,
@@ -122456,9 +122446,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 18,
-    "nome": "U E MARCOS PARENTE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 654,
+    "nome": "CETI MARCOS PARENTE",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -122468,6 +122457,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 180,
     "presentes": 163,
     "suficiente": true,
@@ -122719,8 +122709,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 13,
     "nome": "CETI PAULO FREIRE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 219,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -122730,6 +122719,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 59,
     "presentes": 47,
     "suficiente": true,
@@ -122980,9 +122970,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 20,
-    "nome": "U E PROFESSORA MARIA DE LOURDES REBELO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 681,
+    "nome": "CETI PROFESSORA MARIA DE LOURDES REBELO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -122992,6 +122981,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 209,
     "presentes": 171,
     "suficiente": true,
@@ -123243,8 +123233,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI MIGUEL LIDIANO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 161,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -123254,6 +123243,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 50,
     "presentes": 45,
     "suficiente": true,
@@ -123504,9 +123494,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 19,
-    "nome": "CEEP EM SAUDE MONS JOSE LUIS BARBOSA CORTEZ",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 877,
+    "nome": "CETI EM SAUDE MONSENHOR JOSE LUIS BARBOSA CORTEZ",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -123516,6 +123505,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 261,
     "presentes": 188,
     "suficiente": true,
@@ -123767,8 +123757,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI ARAUJO LUZ",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 38,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -123778,6 +123767,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 16,
     "presentes": 11,
     "suficiente": true,
@@ -124028,9 +124018,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 9,
-    "nome": "U E HELVIDIO NUNES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 235,
+    "nome": "CETI HELVIDIO NUNES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -124040,6 +124029,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 58,
     "presentes": 33,
     "suficiente": true,
@@ -124291,8 +124281,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI ALVARO RODRIGUES DE ARAUJO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 308,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -124302,6 +124291,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 70,
     "presentes": 56,
     "suficiente": true,
@@ -124553,8 +124543,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 8,
     "nome": "CETI FARMACEUTICO JOAO CARVALHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 200,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -124564,6 +124553,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 52,
     "presentes": 43,
     "suficiente": true,
@@ -124815,8 +124805,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "CETI JUDITH ALVES SANTANA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 316,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -124824,6 +124813,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 84,
     "presentes": 73,
     "suficiente": true,
@@ -125075,8 +125065,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 15,
     "nome": "CETI DESEMBARGADOR AMARAL",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 228,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -125086,6 +125075,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 72,
     "presentes": 64,
     "suficiente": true,
@@ -125337,8 +125327,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI FRUTUOSO JUSSELINO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 227,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -125348,6 +125337,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 50,
     "presentes": 37,
     "suficiente": true,
@@ -125598,9 +125588,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 1,
-    "nome": "CETI PROF MARIA DO SOCORRO SAMPAIO MARTINS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 220,
+    "nome": "CETI PROFESSORA MARIA DO SOCORRO SAMPAIO MARTINS",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -125610,6 +125599,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 62,
     "presentes": 56,
     "suficiente": true,
@@ -125861,8 +125851,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 12,
     "nome": "CETI PROFESSORA ISABEL RIBEIRO DE JESUS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 179,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -125872,6 +125861,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 62,
     "presentes": 41,
     "suficiente": true,
@@ -126123,8 +126113,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 19,
     "nome": "CETI LOURIVAL PARENTE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 432,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -126134,6 +126123,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 133,
     "presentes": 113,
     "suficiente": true,
@@ -126385,8 +126375,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI FENELON CASTELO BRANCO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 111,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -126396,6 +126385,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 23,
     "presentes": 18,
     "suficiente": true,
@@ -126646,9 +126636,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 4,
-    "nome": "U E PREFEITO FREITAS NETO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 135,
+    "nome": "CETI PREFEITO FREITAS NETO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -126658,6 +126647,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 48,
     "presentes": 27,
     "suficiente": true,
@@ -126909,8 +126899,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 16,
     "nome": "CETI RAUL SERGIO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 445,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -126920,6 +126909,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 139,
     "presentes": 77,
     "suficiente": true,
@@ -127171,8 +127161,7 @@ window.ENEM_DADOS = {
     "localizacao": "Rural",
     "gre": 1,
     "nome": "CETI RAIMUNDO MIRANDA DE BRITO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 165,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -127182,6 +127171,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 33,
     "presentes": 33,
     "suficiente": true,
@@ -127432,9 +127422,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 16,
-    "nome": "CETI ANTONIA DE SOUSA ALENCAR",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 146,
+    "nome": "CETI ANTONIA DE SOUSA ALENCAR - UAB",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -127444,6 +127433,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 35,
     "presentes": 25,
     "suficiente": true,
@@ -127695,8 +127685,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI RAIMUNDO PESSOA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 136,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -127706,6 +127695,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 38,
     "presentes": 33,
     "suficiente": true,
@@ -127957,8 +127947,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 6,
     "nome": "CETI WALL FERRAZ",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 170,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -127968,6 +127957,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 33,
     "presentes": 15,
     "suficiente": true,
@@ -128218,9 +128208,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 19,
-    "nome": "U E ESTADO DE SAO PAULO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 853,
+    "nome": "CETI ESTADO DE SAO PAULO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -128230,6 +128219,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 267,
     "presentes": 224,
     "suficiente": true,
@@ -128480,9 +128470,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 1,
-    "nome": "U E ZEZITA SAMPAIO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 144,
+    "nome": "CETI ZEZITA SAMPAIO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -128492,6 +128481,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 75,
     "presentes": 68,
     "suficiente": true,
@@ -128743,8 +128733,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 12,
     "nome": "CETI CIPRIANO VIEIRA DE SA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 96,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -128754,6 +128743,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 31,
     "presentes": 25,
     "suficiente": true,
@@ -129005,8 +128995,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 17,
     "nome": "CETI TOMAZ FRANCISCO DE SOUSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 339,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -129016,6 +129005,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 110,
     "presentes": 56,
     "suficiente": true,
@@ -129266,9 +129256,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 10,
-    "nome": "CEEPRU PADRE JOSE DE ANCHIETA CORTEZ",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 288,
+    "nome": "CETI PADRE JOSE DE ANCHIETA CORTEZ",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -129276,6 +129265,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 88,
     "presentes": 80,
     "suficiente": true,
@@ -129527,8 +129517,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 19,
     "nome": "CETI MARTINS NAPOLEAO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 207,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -129538,6 +129527,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 62,
     "presentes": 42,
     "suficiente": true,
@@ -129788,9 +129778,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 9,
-    "nome": "U E LANDRI SALES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 114,
+    "nome": "CETI LANDRI SALES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -129800,6 +129789,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 25,
     "presentes": 16,
     "suficiente": true,
@@ -130051,8 +130041,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 2,
     "nome": "CETI DOROTEU SERTAO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 274,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -130062,6 +130051,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 64,
     "presentes": 57,
     "suficiente": true,
@@ -130313,8 +130303,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "CETI DR JOAO SILVA FILHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 289,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -130324,6 +130313,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 77,
     "presentes": 67,
     "suficiente": true,
@@ -130575,8 +130565,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 16,
     "nome": "CETI FRANCISCA PEREIRA DE SOUSA MORAIS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 237,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -130586,6 +130575,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 61,
     "presentes": 51,
     "suficiente": true,
@@ -130837,8 +130827,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "CETI JOSE EUCLIDES DE MIRANDA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 302,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -130848,6 +130837,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 53,
     "presentes": 45,
     "suficiente": true,
@@ -131099,8 +131089,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 6,
     "nome": "CETI JOAO PEREIRA DE SOUSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 174,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -131110,6 +131099,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 50,
     "presentes": 44,
     "suficiente": true,
@@ -131361,8 +131351,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 15,
     "nome": "CETI FAUSTO LUSTOSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 183,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -131372,6 +131361,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 30,
     "presentes": 29,
     "suficiente": true,
@@ -131623,8 +131613,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 17,
     "nome": "CETI REUNIDA DE PATOS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 79,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -131634,6 +131623,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 21,
     "presentes": 19,
     "suficiente": true,
@@ -131885,8 +131875,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 5,
     "nome": "CETI VALDIVINO TITO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 112,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -131896,6 +131885,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 40,
     "presentes": 35,
     "suficiente": true,
@@ -132147,8 +132137,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 6,
     "nome": "CETI ANTONIO FREITAS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 101,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -132158,6 +132147,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 27,
     "presentes": 15,
     "suficiente": true,
@@ -132408,9 +132398,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 1,
-    "nome": "U E PROF LUZIA SEIXAS DE OLIVEIRA AQUINO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 103,
+    "nome": "CETI PROFESSORA LUZIA SEIXAS DE OLIVEIRA AQUINO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -132420,6 +132409,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 36,
     "presentes": 32,
     "suficiente": true,
@@ -132671,8 +132661,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 16,
     "nome": "CETI SEBASTIAO DE SOUSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 144,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -132680,6 +132669,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 45,
     "presentes": 37,
     "suficiente": true,
@@ -132930,9 +132920,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 15,
-    "nome": "CETI PROF LOURENCO FILHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 211,
+    "nome": "CETI PROFESSOR LOURENCO FILHO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -132942,6 +132931,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 83,
     "presentes": 60,
     "suficiente": true,
@@ -133192,9 +133182,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 20,
-    "nome": "CETI PROF JOSE AMAVEL",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 366,
+    "nome": "CETI PROFESSOR JOSE AMAVEL",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -133204,6 +133193,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 103,
     "presentes": 87,
     "suficiente": true,
@@ -133454,9 +133444,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 1,
-    "nome": "CEEP MINISTRO PETRONIO PORTELLA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 909,
+    "nome": "CETI MINISTRO PETRONIO PORTELLA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -133466,6 +133455,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 245,
     "presentes": 188,
     "suficiente": true,
@@ -133717,8 +133707,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 4,
     "nome": "CETI DESEMBARGADOR HELI SOBRAL",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 214,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -133728,6 +133717,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 75,
     "presentes": 58,
     "suficiente": true,
@@ -133979,8 +133969,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 5,
     "nome": "CETI ANTONIO DEROMI SOARES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 245,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -133990,6 +133979,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 49,
     "presentes": 44,
     "suficiente": true,
@@ -134241,8 +134231,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI DR NORONHA FILHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 276,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -134252,6 +134241,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 54,
     "presentes": 41,
     "suficiente": true,
@@ -134503,8 +134493,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI FILINTO REGO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 141,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -134514,6 +134503,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 34,
     "presentes": 29,
     "suficiente": true,
@@ -134765,8 +134755,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 5,
     "nome": "CETI CANDIDO BORGES CASTELO BRANCO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 252,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -134776,6 +134765,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 65,
     "presentes": 60,
     "suficiente": true,
@@ -135027,8 +135017,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 19,
     "nome": "CETI DOMICIO MAGALHAES DE MELO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 236,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -135038,6 +135027,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 89,
     "presentes": 62,
     "suficiente": true,
@@ -135288,9 +135278,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 20,
-    "nome": "U E PROFESSOR RAIMUNDO PORTELA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 201,
+    "nome": "CETI PROFESSOR RAIMUNDO PORTELA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -135300,6 +135289,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 58,
     "presentes": 43,
     "suficiente": true,
@@ -135550,9 +135540,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 9,
-    "nome": "U E LILI SILVEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 174,
+    "nome": "CETI LILI SILVEIRA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -135562,6 +135551,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 44,
     "presentes": 42,
     "suficiente": true,
@@ -135813,8 +135803,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 6,
     "nome": "CETI JOAO FERRY",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 205,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -135824,6 +135813,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 59,
     "presentes": 50,
     "suficiente": true,
@@ -136075,8 +136065,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI PEDRO MENDES PESSOA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 230,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -136086,8 +136075,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Município na lista da SEDUC (Barro Duro) diferente do ENEM (Beneditinos)"
+     "Município na lista da SEDUC (Barro Duro) diferente do ENEM e do Censo (Beneditinos)"
     ],
+    "observacoes": [],
     "inscritos": 54,
     "presentes": 43,
     "suficiente": true,
@@ -136338,9 +136328,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 1,
-    "nome": "U E PEDRO II",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 238,
+    "nome": "CETI PEDRO II",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -136350,6 +136339,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 54,
     "presentes": 38,
     "suficiente": true,
@@ -136600,9 +136590,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 18,
-    "nome": "U E PROFA ELISA SOUSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 174,
+    "nome": "CETI PROFESSORA ELISA SOUSA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -136612,6 +136601,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 46,
     "presentes": 36,
     "suficiente": true,
@@ -136863,8 +136853,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 14,
     "nome": "CETI FRANKLIN DORIA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 340,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -136874,6 +136863,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 101,
     "presentes": 92,
     "suficiente": true,
@@ -137125,8 +137115,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 14,
     "nome": "CETI MARTIN PINHEIRO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 137,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -137136,6 +137125,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 42,
     "presentes": 28,
     "suficiente": true,
@@ -137387,8 +137377,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 5,
     "nome": "CETI DE JOAO ALVES DE MACEDO FILHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 231,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -137398,6 +137387,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 69,
     "presentes": 66,
     "suficiente": true,
@@ -137649,8 +137639,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI CECILIA LACERDA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 210,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -137660,6 +137649,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 38,
     "presentes": 37,
     "suficiente": true,
@@ -137910,9 +137900,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 9,
-    "nome": "CETI DOM JOAQUIM R DO REGO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 336,
+    "nome": "CETI DOM JOAQUIM RUFINO DO REGO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -137922,6 +137911,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 97,
     "presentes": 79,
     "suficiente": true,
@@ -138172,9 +138162,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 3,
-    "nome": "CETI EMB ESPEDITO RESENDE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 268,
+    "nome": "CETI EMBAIXADOR ESPEDITO RESENDE",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -138184,6 +138173,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 76,
     "presentes": 62,
     "suficiente": true,
@@ -138435,8 +138425,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI ANTONIO VITORIO DE SOUSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 136,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -138446,6 +138435,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 29,
     "presentes": 25,
     "suficiente": true,
@@ -138697,8 +138687,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI AMANDO MOURA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 150,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -138708,6 +138697,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 44,
     "presentes": 31,
     "suficiente": true,
@@ -138959,8 +138949,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 19,
     "nome": "CETI PROFESSOR ANTONIO MARIA MADEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 189,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -138970,6 +138959,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 49,
     "presentes": 45,
     "suficiente": true,
@@ -139220,9 +139210,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 3,
-    "nome": "U E PROFESSORA SINHA CARVALHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 142,
+    "nome": "CETI PROFESSORA SINHA CARVALHO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -139232,6 +139221,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 44,
     "presentes": 33,
     "suficiente": true,
@@ -139483,8 +139473,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "CETI BAURELIO MANGABEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 191,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -139494,6 +139483,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 37,
     "presentes": 24,
     "suficiente": true,
@@ -139744,9 +139734,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 3,
-    "nome": "CETI PROF NENEM CAVALCANTE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 105,
+    "nome": "CETI PROFESSORA NENEM CAVALCANTE",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -139756,6 +139745,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 26,
     "presentes": 23,
     "suficiente": true,
@@ -140007,8 +139997,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 4,
     "nome": "CETI GOVERNADOR JOAO CLIMACO DALMEIDA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 235,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -140018,6 +140007,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 66,
     "presentes": 60,
     "suficiente": true,
@@ -140269,8 +140259,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 4,
     "nome": "CETI HELVIDIO NUNES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 360,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -140280,6 +140269,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 85,
     "presentes": 78,
     "suficiente": true,
@@ -140531,8 +140521,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "CETI SAO JOAO BATISTA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 200,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -140542,6 +140531,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 49,
     "presentes": 40,
     "suficiente": true,
@@ -140793,8 +140783,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "CETI MIGUEL ARCOVERDE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 129,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -140804,6 +140793,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 33,
     "presentes": 32,
     "suficiente": true,
@@ -141054,9 +141044,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 12,
-    "nome": "CEEPRU ALCIDES VIEIRA DE MOURA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 71,
+    "nome": "CETI ALCIDES VIEIRA DE MOURA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -141064,6 +141053,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 25,
     "presentes": 17,
     "suficiente": true,
@@ -141315,8 +141305,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 19,
     "nome": "CETI DESEMBARGADOR HENRIQUE COUTO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 128,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -141326,6 +141315,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 40,
     "presentes": 32,
     "suficiente": true,
@@ -141576,9 +141566,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 3,
-    "nome": "CEEPRU PROFESSOR ANTONIO DE BRITO FORTES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 47,
+    "nome": "CETI PROFESSOR ANTONIO DE BRITO FORTES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -141588,6 +141577,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 22,
     "presentes": 22,
     "suficiente": true,
@@ -141839,8 +141829,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 5,
     "nome": "CETI JOB DE MACEDO BRITO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 214,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -141850,6 +141839,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 57,
     "presentes": 50,
     "suficiente": true,
@@ -142101,8 +142091,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI MARIA DE CARVALHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 175,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -142112,6 +142101,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 35,
     "presentes": 25,
     "suficiente": true,
@@ -142363,8 +142353,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 16,
     "nome": "CETI MARIA NEUSA DE SOUSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 116,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -142374,6 +142363,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 31,
     "presentes": 15,
     "suficiente": true,
@@ -142625,18 +142615,18 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 7,
     "nome": "CETI EUSTAQUIO PORTELA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 124,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
      "rede": true,
      "seduc_rede": true,
-     "seduc_municipio": false,
+     "seduc_municipio": true,
      "interna": true
     },
-    "alertas": [
-     "Município na lista da SEDUC (Santa Cruz Das Milagres) diferente do ENEM (Santa Cruz dos Milagres)"
+    "alertas": [],
+    "observacoes": [
+     "Município escrito de outra forma na lista da SEDUC (\"Santa Cruz Das Milagres\"), mesma cidade"
     ],
     "inscritos": 40,
     "presentes": 26,
@@ -142888,9 +142878,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 12,
-    "nome": "U E PROFA MARIA BERONISIA DE SOUSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 106,
+    "nome": "CETI PROFESSORA MARIA BERONISIA DE SOUSA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -142900,6 +142889,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 28,
     "presentes": 17,
     "suficiente": true,
@@ -143151,8 +143141,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "CETI ZULMIRA XAVIER",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 359,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -143162,6 +143151,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 93,
     "presentes": 75,
     "suficiente": true,
@@ -143413,8 +143403,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 7,
     "nome": "CETI LUIS DE CASTRO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 164,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -143424,6 +143413,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 32,
     "presentes": 27,
     "suficiente": true,
@@ -143674,9 +143664,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 2,
-    "nome": "CETI PROF CLEONICE DE CASTRO TELES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 317,
+    "nome": "CETI PROFESSORA CLEONICE DE CASTRO TELES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -143686,6 +143675,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 93,
     "presentes": 84,
     "suficiente": true,
@@ -143937,8 +143927,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 7,
     "nome": "CETI JEREMIAS PEREIRA DA SILVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 204,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -143948,6 +143937,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 51,
     "presentes": 44,
     "suficiente": true,
@@ -144199,8 +144189,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI CLEMENTINO MARTINS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 136,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -144210,6 +144199,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 34,
     "presentes": 32,
     "suficiente": true,
@@ -144461,8 +144451,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 5,
     "nome": "CETI DONA ROSAURA MUNIZ BARRETO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 445,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -144472,6 +144461,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 110,
     "presentes": 65,
     "suficiente": true,
@@ -144723,8 +144713,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 7,
     "nome": "CETI MOISES LIMA VERDE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 107,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -144734,6 +144723,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 27,
     "presentes": 25,
     "suficiente": true,
@@ -144985,8 +144975,7 @@ window.ENEM_DADOS = {
     "localizacao": "Rural",
     "gre": 5,
     "nome": "CETI DR JOSE RIBAMAR LOPES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 180,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -144996,6 +144985,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 54,
     "presentes": 42,
     "suficiente": true,
@@ -145246,9 +145236,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 2,
-    "nome": "ESCOLA FAMILIA AGRICOLA DOS COCAIS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 145,
+    "nome": "CETI FAMILIA AGRICOLA DOS COCAIS",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -145256,6 +145245,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 36,
     "presentes": 29,
     "suficiente": true,
@@ -145507,8 +145497,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 6,
     "nome": "CETI LANDRI SALES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 488,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -145518,6 +145507,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 112,
     "presentes": 88,
     "suficiente": true,
@@ -145769,8 +145759,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 5,
     "nome": "CETI PROFESSOR ANTONIO DOS REIS E SILVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 201,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -145780,6 +145769,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 66,
     "presentes": 52,
     "suficiente": true,
@@ -146030,9 +146020,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 8,
-    "nome": "CETI PROF BALDUINO BARBOSA DE DEUS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 64,
+    "nome": "CETI PROFESSOR BALDUINO BARBOSA DE DEUS",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -146042,6 +146031,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 17,
     "presentes": 11,
     "suficiente": true,
@@ -146292,9 +146282,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 20,
-    "nome": "CETI PROF ANTONIO TARCISO PEREIRA E SILVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 264,
+    "nome": "CETI PROFESSOR ANTONIO TARCISO PEREIRA E SILVA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -146304,6 +146293,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 67,
     "presentes": 58,
     "suficiente": true,
@@ -146555,8 +146545,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 6,
     "nome": "CETI DEMERVAL LOBAO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 191,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -146566,6 +146555,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 47,
     "presentes": 44,
     "suficiente": true,
@@ -146816,9 +146806,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 18,
-    "nome": "U E CAZUZA BARBOSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 493,
+    "nome": "CETI CAZUZA BARBOSA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -146828,6 +146817,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 80,
     "presentes": 48,
     "suficiente": true,
@@ -147078,9 +147068,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 9,
-    "nome": "U E DIRCEU M ARCOVERDE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 64,
+    "nome": "CETI DIRCEU MENDES ARCOVERDE",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -147090,6 +147079,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 16,
     "presentes": 11,
     "suficiente": true,
@@ -147340,9 +147330,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 19,
-    "nome": "U E NAIR GONCALVES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 122,
+    "nome": "CETI NAIR GONCALVES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -147352,6 +147341,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 29,
     "presentes": 17,
     "suficiente": true,
@@ -147602,9 +147592,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 3,
-    "nome": "ESCOLA FAMILIA AGRICOLA SANTA ANGELA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 255,
+    "nome": "CETI FAMILIA AGRICOLA SANTA ANGELA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -147612,6 +147601,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 69,
     "presentes": 54,
     "suficiente": true,
@@ -147862,9 +147852,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 11,
-    "nome": "CEEPRU PROF MARIA AMALIA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 188,
+    "nome": "CETI PROFESSORA MARIA AMALIA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -147872,6 +147861,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 47,
     "presentes": 38,
     "suficiente": true,
@@ -148122,9 +148112,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 1,
-    "nome": "U E EDSON DA PAZ CUNHA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 343,
+    "nome": "CETI EDSON DA PAZ CUNHA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -148134,6 +148123,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 112,
     "presentes": 52,
     "suficiente": true,
@@ -148384,9 +148374,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 5,
-    "nome": "U E BRIOLANJA GENUINO DE OLIVEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 72,
+    "nome": "CETI BRIOLANJA GENUINO DE OLIVEIRA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -148394,6 +148383,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 31,
     "presentes": 27,
     "suficiente": true,
@@ -148644,9 +148634,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 10,
-    "nome": "ESCOLA FAMILIA AGRICOLA DE ELIZEU MARTINS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 103,
+    "nome": "CETI FAMILIA AGRICOLA DE ELIZEU MARTINS",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -148654,6 +148643,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 26,
     "presentes": 21,
     "suficiente": true,
@@ -148905,8 +148895,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI ANISIO DE ABREU",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 149,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -148916,6 +148905,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 31,
     "presentes": 29,
     "suficiente": true,
@@ -149166,9 +149156,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 2,
-    "nome": "CEEP LEONARDO DAS DORES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 901,
+    "nome": "CETI LEONARDO DAS DORES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -149178,6 +149167,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 261,
     "presentes": 220,
     "suficiente": true,
@@ -149428,9 +149418,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 12,
-    "nome": "U E NOEME MADEIRA MOURA FE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 107,
+    "nome": "CETI NOEME MADEIRA MOURA FE",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -149440,6 +149429,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 33,
     "presentes": 21,
     "suficiente": true,
@@ -149690,9 +149680,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 5,
-    "nome": "U E FRANCISCO SALES MARTINS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 440,
+    "nome": "CETI FRANCISCO SALES MARTINS",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -149702,6 +149691,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 116,
     "presentes": 68,
     "suficiente": true,
@@ -149952,9 +149942,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 12,
-    "nome": "U E OLEGARIO AURELIANO DE SOUSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 173,
+    "nome": "CETI OLEGARIO AURELIANO DE SOUSA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -149964,6 +149953,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 38,
     "presentes": 24,
     "suficiente": true,
@@ -150215,8 +150205,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 6,
     "nome": "CETI MONSENHOR BOSON",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 347,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -150226,6 +150215,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 98,
     "presentes": 72,
     "suficiente": true,
@@ -150477,8 +150467,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 5,
     "nome": "CETI DR JERONIMO DOS SANTOS E SILVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 220,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -150488,6 +150477,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 66,
     "presentes": 53,
     "suficiente": true,
@@ -150738,9 +150728,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 9,
-    "nome": "U E JOAQUIM BORGES DE OLIVEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 135,
+    "nome": "CETI JOAQUIM BORGES DE OLIVEIRA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -150750,6 +150739,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 42,
     "presentes": 22,
     "suficiente": true,
@@ -151001,8 +150991,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "CETI CASSIANA ROCHA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 305,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -151012,6 +151001,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 74,
     "presentes": 46,
     "suficiente": true,
@@ -151263,8 +151253,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 17,
     "nome": "CETI PROFESSOR FRANCISCO JOSE TIBURCIO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 290,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -151274,6 +151263,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 69,
     "presentes": 42,
     "suficiente": true,
@@ -151525,8 +151515,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 6,
     "nome": "CETI FRANCISCO NUNES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 149,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -151536,6 +151525,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 34,
     "presentes": 26,
     "suficiente": true,
@@ -151787,8 +151777,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "CETI NOSSA SENHORA DA PAZ",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 325,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -151796,6 +151785,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 74,
     "presentes": 61,
     "suficiente": true,
@@ -152045,8 +152035,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 4,
     "nome": "CETI BENJAMIN BAPTISTA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 548,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -152056,6 +152045,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 120,
     "presentes": 100,
     "suficiente": true,
@@ -152307,8 +152297,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "CETI PROFESSORA ANGELINA MENDES BRAGA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 506,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -152318,6 +152307,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 213,
     "presentes": 186,
     "suficiente": true,
@@ -152569,8 +152559,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "CETI MARIA ISAIAS DE JESUS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 203,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -152580,6 +152569,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 49,
     "presentes": 38,
     "suficiente": true,
@@ -152831,18 +152821,18 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 12,
     "nome": "CETI VERONICA CELESTINA DIAS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 155,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
      "rede": true,
      "seduc_rede": true,
-     "seduc_municipio": false,
+     "seduc_municipio": true,
      "interna": true
     },
-    "alertas": [
-     "Município na lista da SEDUC (Campo A. Do Fidalgo) diferente do ENEM (Campo Alegre do Fidalgo)"
+    "alertas": [],
+    "observacoes": [
+     "Município escrito de outra forma na lista da SEDUC (\"Campo A. Do Fidalgo\"), mesma cidade"
     ],
     "inscritos": 58,
     "presentes": 34,
@@ -153094,9 +153084,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 4,
-    "nome": "CEEP PREFEITO JOAO MENDES OLIMPIO DE MELO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 1116,
+    "nome": "CETI PREFEITO JOAO MENDES OLIMPIO DE MELO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -153106,6 +153095,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 419,
     "presentes": 367,
     "suficiente": true,
@@ -153357,8 +153347,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 2,
     "nome": "CETI LEDA NAPOLEAO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 275,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -153368,6 +153357,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 66,
     "presentes": 39,
     "suficiente": true,
@@ -153618,9 +153608,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 2,
-    "nome": "U E MATIAS OLIMPIO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 120,
+    "nome": "CETI MATIAS OLIMPIO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -153630,6 +153619,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 34,
     "presentes": 15,
     "suficiente": true,
@@ -153880,9 +153870,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 4,
-    "nome": "U E PROFESSOR JAMES AZEVEDO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 150,
+    "nome": "CETI PROFESSOR JAMES AZEVEDO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -153892,6 +153881,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 39,
     "presentes": 33,
     "suficiente": true,
@@ -154143,8 +154133,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "CETI MONSENHOR UCHOA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 320,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -154154,6 +154143,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 102,
     "presentes": 80,
     "suficiente": true,
@@ -154405,8 +154395,7 @@ window.ENEM_DADOS = {
     "localizacao": "Rural",
     "gre": 3,
     "nome": "CETI GOVERNADOR HUGO NAPOLEAO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 117,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -154414,6 +154403,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 56,
     "presentes": 41,
     "suficiente": true,
@@ -154665,8 +154655,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 7,
     "nome": "CETI MARIANO RABELO DE SEPULVIDA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 161,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -154676,6 +154665,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 46,
     "presentes": 25,
     "suficiente": true,
@@ -154927,18 +154917,18 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "CETI ARTUR GONCALVES DE SOUSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 211,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
      "rede": true,
      "seduc_rede": true,
-     "seduc_municipio": false,
+     "seduc_municipio": true,
      "interna": true
     },
-    "alertas": [
-     "Município na lista da SEDUC (Lagoa Do São Fco.) diferente do ENEM (Lagoa de São Francisco)"
+    "alertas": [],
+    "observacoes": [
+     "Município escrito de outra forma na lista da SEDUC (\"Lagoa Do São Fco.\"), mesma cidade"
     ],
     "inscritos": 73,
     "presentes": 61,
@@ -155191,8 +155181,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 20,
     "nome": "CETI MONSENHOR RAIMUNDO NONATO MELO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 312,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -155202,6 +155191,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 77,
     "presentes": 69,
     "suficiente": true,
@@ -155452,9 +155442,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 10,
-    "nome": "U E LUIZ SOARES DA SILVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 118,
+    "nome": "CETI LUIZ SOARES DA SILVA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -155464,6 +155453,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 44,
     "presentes": 31,
     "suficiente": true,
@@ -155715,8 +155705,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI ANTONIO PEREIRA DE ARAUJO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 97,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -155726,6 +155715,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 27,
     "presentes": 25,
     "suficiente": true,
@@ -155976,9 +155966,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 18,
-    "nome": "U E FRANCISCO LUIS DE MORAES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 125,
+    "nome": "CETI FRANCISCO LUIS DE MORAES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -155988,6 +155977,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 29,
     "presentes": 25,
     "suficiente": true,
@@ -156239,8 +156229,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 4,
     "nome": "CETI PROFESSOR EDGAR TITO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 261,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -156250,6 +156239,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 67,
     "presentes": 55,
     "suficiente": true,
@@ -156500,9 +156490,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 10,
-    "nome": "CEEP CALISTO LOBO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 1073,
+    "nome": "CETI CALISTO LOBO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -156512,6 +156501,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 312,
     "presentes": 278,
     "suficiente": true,
@@ -156763,8 +156753,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 13,
     "nome": "CETI MARGARIDA DA SILVA COSTA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 148,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -156774,6 +156763,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 42,
     "presentes": 39,
     "suficiente": true,
@@ -157025,8 +157015,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI AFONSO MAFRENSE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 121,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -157036,6 +157025,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 28,
     "presentes": 21,
     "suficiente": true,
@@ -157287,8 +157277,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 19,
     "nome": "CETI PADRE ANTONIO JOSE DO REGO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 233,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -157298,6 +157287,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 93,
     "presentes": 60,
     "suficiente": true,
@@ -157549,8 +157539,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 19,
     "nome": "CETI SIGEFREDO PACHECO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 145,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -157560,6 +157549,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 38,
     "presentes": 31,
     "suficiente": true,
@@ -157811,8 +157801,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 13,
     "nome": "CETI JOSE MARQUES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 167,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -157822,6 +157811,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 50,
     "presentes": 41,
     "suficiente": true,
@@ -158073,8 +158063,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "CETI CORINA MACHADO VIEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 197,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -158082,6 +158071,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 39,
     "presentes": 27,
     "suficiente": true,
@@ -158330,9 +158320,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 1,
-    "nome": "CEEPRU DEPUTADO RIBEIRO MAGALHAES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 58,
+    "nome": "CETI DEPUTADO RIBEIRO MAGALHAES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -158342,6 +158331,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 19,
     "presentes": 14,
     "suficiente": true,
@@ -158593,8 +158583,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 2,
     "nome": "CETI NOSSA SENHORA DA CONCEICAO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 245,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -158604,6 +158593,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 55,
     "presentes": 51,
     "suficiente": true,
@@ -158855,8 +158845,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI ANTONIO FREITAS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 490,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -158866,6 +158855,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 118,
     "presentes": 102,
     "suficiente": true,
@@ -159117,8 +159107,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "CETI OSVALDO DA COSTA E SILVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 229,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -159128,6 +159117,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 62,
     "presentes": 30,
     "suficiente": true,
@@ -159379,8 +159369,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 2,
     "nome": "CETI JOSE AMAVEL",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 372,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -159390,6 +159379,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 89,
     "presentes": 78,
     "suficiente": true,
@@ -159641,8 +159631,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 16,
     "nome": "CETI DR FRANCISCO LUIZ DE MACEDO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 225,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -159652,6 +159641,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 41,
     "presentes": 27,
     "suficiente": true,
@@ -159902,9 +159892,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 9,
-    "nome": "U E DR JOAO CARVALHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 253,
+    "nome": "CETI DR JOAO CARVALHO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -159914,6 +159903,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 65,
     "presentes": 60,
     "suficiente": true,
@@ -160165,8 +160155,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 17,
     "nome": "CETI LUCINETE SANTANA DA SILVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 263,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -160176,6 +160165,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 84,
     "presentes": 65,
     "suficiente": true,
@@ -160427,8 +160417,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "CETI HESICHIA DE SOUSA BRITO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 597,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -160438,6 +160427,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 213,
     "presentes": 131,
     "suficiente": true,
@@ -160688,9 +160678,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 6,
-    "nome": "U E SILVESTRE ROCHA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 141,
+    "nome": "CETI SILVESTRE ROCHA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -160700,6 +160689,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 39,
     "presentes": 36,
     "suficiente": true,
@@ -160951,8 +160941,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 13,
     "nome": "CETI FRANCISCO ANTONIO DA SILVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 109,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -160962,6 +160951,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 38,
     "presentes": 15,
     "suficiente": true,
@@ -161213,8 +161203,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 12,
     "nome": "CETI JOSE ATANASIO DE SANTANA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 274,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -161224,6 +161213,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 94,
     "presentes": 81,
     "suficiente": true,
@@ -161475,8 +161465,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 7,
     "nome": "CETI MANOEL FERREIRA BARBOSA DE MACEDO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 132,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -161486,6 +161475,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 26,
     "presentes": 22,
     "suficiente": true,
@@ -161737,8 +161727,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 15,
     "nome": "CETI RAIMUNDO LUSTOSA NOGUEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 196,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -161748,6 +161737,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 37,
     "presentes": 34,
     "suficiente": true,
@@ -161999,8 +161989,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 2,
     "nome": "CETI VENANCIA LAGES VELOSO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 431,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -162010,6 +161999,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 98,
     "presentes": 78,
     "suficiente": true,
@@ -162261,8 +162251,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 15,
     "nome": "CETI HERMINIO BARREIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 93,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -162272,6 +162261,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 21,
     "presentes": 19,
     "suficiente": true,
@@ -162522,9 +162512,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 15,
-    "nome": "U E DES JOAO PACHECO CAVALCANTE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 57,
+    "nome": "CETI DESEMBARGADOR JOAO PACHECO CAVALCANTE",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -162534,6 +162523,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 21,
     "presentes": 14,
     "suficiente": true,
@@ -162785,8 +162775,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 8,
     "nome": "CETI ROCHA NETO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 238,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -162796,6 +162785,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 60,
     "presentes": 49,
     "suficiente": true,
@@ -163047,8 +163037,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 14,
     "nome": "CETI JOAQUIM PARENTE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 319,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -163058,6 +163047,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 71,
     "presentes": 56,
     "suficiente": true,
@@ -163309,8 +163299,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "CETI SEBASTIAO ROCHA LEAL",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 86,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -163320,6 +163309,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 26,
     "presentes": 17,
     "suficiente": true,
@@ -163571,8 +163561,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 8,
     "nome": "CETI DR JOSE GUSMAO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 199,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -163582,6 +163571,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 50,
     "presentes": 44,
     "suficiente": true,
@@ -163833,8 +163823,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI DESEMBARGADOR VIDAL DE FREITAS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 148,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -163844,6 +163833,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 27,
     "presentes": 25,
     "suficiente": true,
@@ -164094,9 +164084,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 18,
-    "nome": "U E CELSA LEMOS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 149,
+    "nome": "CETI CELSA LEMOS",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -164106,6 +164095,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 32,
     "presentes": 27,
     "suficiente": true,
@@ -164357,8 +164347,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "CETI PINHEIRO MACHADO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 385,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -164368,6 +164357,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 95,
     "presentes": 65,
     "suficiente": true,
@@ -164618,9 +164608,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 9,
-    "nome": "U E JOAO ANTONIO DA VERA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 116,
+    "nome": "CETI JOAO ANTONIO DA VERA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -164630,6 +164619,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 33,
     "presentes": 31,
     "suficiente": true,
@@ -164880,9 +164870,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 3,
-    "nome": "CETI PROF MARIA DE LOURDES LEAL NUNES DE ANDRADE BRANDAO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 167,
+    "nome": "CETI PROFESSORA MARIA DE LOURDES LEAL NUNES DE ANDRADE BRANDAO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -164890,6 +164879,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 37,
     "presentes": 33,
     "suficiente": true,
@@ -165141,8 +165131,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI RAFAEL MANOEL DA COSTA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 211,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -165152,6 +165141,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 45,
     "presentes": 39,
     "suficiente": true,
@@ -165403,8 +165393,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI JOAO JOSE BATISTA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 180,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -165414,6 +165403,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 44,
     "presentes": 33,
     "suficiente": true,
@@ -165665,18 +165655,18 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 17,
     "nome": "CETI CELESTINO FILHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 131,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
      "rede": true,
      "seduc_rede": true,
-     "seduc_municipio": false,
+     "seduc_municipio": true,
      "interna": true
     },
-    "alertas": [
-     "Município na lista da SEDUC (Conceição Do Canidé) diferente do ENEM (Conceição do Canindé)"
+    "alertas": [],
+    "observacoes": [
+     "Município escrito de outra forma na lista da SEDUC (\"Conceição Do Canidé\"), mesma cidade"
     ],
     "inscritos": 36,
     "presentes": 28,
@@ -165929,8 +165919,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 17,
     "nome": "CETI MARIA JUSCELINA DE ALBUQUERQE E SILVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 162,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -165940,6 +165929,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 44,
     "presentes": 30,
     "suficiente": true,
@@ -166191,8 +166181,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 19,
     "nome": "CETI MONSENHOR CICERO PORTELA NUNES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 199,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -166202,6 +166191,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 45,
     "presentes": 32,
     "suficiente": true,
@@ -166452,9 +166442,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 12,
-    "nome": "U E PROFESSOR ABELARDO PEREIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 155,
+    "nome": "CETI PROFESSOR ABELARDO PEREIRA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -166464,6 +166453,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 25,
     "presentes": 21,
     "suficiente": true,
@@ -166714,9 +166704,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 21,
-    "nome": "U E SANTA INES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 357,
+    "nome": "CETI SANTA INES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -166726,6 +166715,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 104,
     "presentes": 54,
     "suficiente": true,
@@ -166977,8 +166967,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 8,
     "nome": "CETI DR JOSE DE MOURA FE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 134,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -166988,6 +166977,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 29,
     "presentes": 18,
     "suficiente": true,
@@ -167239,8 +167229,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "CETI JOAO MARTINS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 195,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -167250,6 +167239,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 37,
     "presentes": 31,
     "suficiente": true,
@@ -167500,9 +167490,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 14,
-    "nome": "CETI PROF IRACI BARROS PINTO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 188,
+    "nome": "CETI PROFESSORA IRACI BARROS PINTO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -167512,6 +167501,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 48,
     "presentes": 41,
     "suficiente": true,
@@ -167763,8 +167753,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "CETI BUCAR NETO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 130,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -167774,6 +167763,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 28,
     "presentes": 24,
     "suficiente": true,
@@ -168025,8 +168015,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "CETI TERTULIANO SOLON BRANDAO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 186,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -168036,6 +168025,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 40,
     "presentes": 26,
     "suficiente": true,
@@ -168287,8 +168277,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "CETI ANISIO BRITO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 111,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -168298,6 +168287,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 39,
     "presentes": 24,
     "suficiente": true,
@@ -168549,8 +168539,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "CETI DEPUTADA FRANCISCA TRINDADE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 348,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -168560,6 +168549,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 97,
     "presentes": 88,
     "suficiente": true,
@@ -168810,9 +168800,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 13,
-    "nome": "U E ENSINO MEDIO DE JUREMA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 132,
+    "nome": "CETI IRACI GOMES DE SA SOARES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -168822,6 +168811,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 43,
     "presentes": 30,
     "suficiente": true,
@@ -169073,8 +169063,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "CETI DR JOSE PINHEIRO MACHADO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 177,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -169084,6 +169073,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 68,
     "presentes": 48,
     "suficiente": true,
@@ -169335,8 +169325,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI SEVERO MARIA EULALIO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 185,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -169346,6 +169335,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 47,
     "presentes": 44,
     "suficiente": true,
@@ -169596,9 +169586,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 1,
-    "nome": "CETI PROF RAQUEL MAGALHAES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 103,
+    "nome": "CETI PROFESSORA RAQUEL MAGALHAES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -169608,6 +169597,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 20,
     "presentes": 18,
     "suficiente": true,
@@ -169859,8 +169849,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 20,
     "nome": "CETI PROFESSOR JOCA VIEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 249,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -169870,6 +169859,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 59,
     "presentes": 53,
     "suficiente": true,
@@ -170121,8 +170111,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI PIO XII",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 575,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -170132,6 +170121,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 177,
     "presentes": 104,
     "suficiente": true,
@@ -170383,8 +170373,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI ACRISIO VERAS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 284,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -170394,6 +170383,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 42,
     "presentes": 38,
     "suficiente": true,
@@ -170644,9 +170634,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 3,
-    "nome": "U E ARIMATHEIA TITO FILHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 59,
+    "nome": "CETI ARIMATHEIA TITO FILHO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -170656,6 +170645,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 18,
     "presentes": 11,
     "suficiente": true,
@@ -170906,9 +170896,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 19,
-    "nome": "U E PROFESSORA AURISTELA SOARES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 641,
+    "nome": "CETI PROFESSORA AURISTELA SOARES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -170918,6 +170907,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 218,
     "presentes": 127,
     "suficiente": true,
@@ -171168,9 +171158,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 14,
-    "nome": "U E JOSE LUSTOSA ELVAS FILHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 284,
+    "nome": "CETI JOSE LUSTOSA ELVAS FILHO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -171180,6 +171169,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 63,
     "presentes": 47,
     "suficiente": true,
@@ -171430,9 +171420,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 20,
-    "nome": "UNIDADE ESCOLAR MARCOS RODRIGUES COELHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 156,
+    "nome": "CETI MARCOS RODRIGUES COELHO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -171442,6 +171431,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 74,
     "presentes": 32,
     "suficiente": true,
@@ -171692,9 +171682,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 6,
-    "nome": "U E ATILA LIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 44,
+    "nome": "CETI ATILA LIRA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -171704,6 +171693,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 16,
     "presentes": 13,
     "suficiente": true,
@@ -171955,8 +171945,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 7,
     "nome": "CETI JOAO DE DEUS CARVALHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 294,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -171966,6 +171955,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 94,
     "presentes": 72,
     "suficiente": true,
@@ -172216,9 +172206,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 18,
-    "nome": "U E PIO XII",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 504,
+    "nome": "CETI PIO XII",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -172228,6 +172217,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 120,
     "presentes": 95,
     "suficiente": true,
@@ -172478,9 +172468,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 8,
-    "nome": "U E COSTA ALVARENGA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 126,
+    "nome": "CETI COSTA ALVARENGA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -172490,6 +172479,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 23,
     "presentes": 14,
     "suficiente": true,
@@ -172740,9 +172730,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 2,
-    "nome": "U E FRANCISCO TOMAZ",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 360,
+    "nome": "CETI FRANCISCO TOMAZ",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -172752,6 +172741,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 70,
     "presentes": 50,
     "suficiente": true,
@@ -173003,8 +172993,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 11,
     "nome": "CETI JOSE PATRICIO FRANCO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 246,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -173014,6 +173003,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 32,
     "presentes": 20,
     "suficiente": true,
@@ -173265,8 +173255,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 5,
     "nome": "CETI LEOPOLDO PACHECO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 79,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -173276,6 +173265,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 26,
     "presentes": 17,
     "suficiente": true,
@@ -173527,8 +173517,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 8,
     "nome": "CETI LUIZ UBIRACI DE CARVALHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 298,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -173538,6 +173527,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 79,
     "presentes": 51,
     "suficiente": true,
@@ -173789,8 +173779,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 6,
     "nome": "CETI ADALBERTO CORREIA LIMA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 121,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -173800,6 +173789,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 36,
     "presentes": 27,
     "suficiente": true,
@@ -174050,9 +174040,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 3,
-    "nome": "CETI GOV ALBERTO TAVARES SILVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 147,
+    "nome": "CETI GOVERNADOR ALBERTO TAVARES SILVA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -174062,6 +174051,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 42,
     "presentes": 35,
     "suficiente": true,
@@ -174313,8 +174303,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 5,
     "nome": "CETI PROFESSOR FRANCISCO LUIS DE OLIVEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 214,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -174324,6 +174313,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 98,
     "presentes": 80,
     "suficiente": true,
@@ -174574,9 +174564,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 13,
-    "nome": "U E AREOLINO F BRAGA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 157,
+    "nome": "CETI AREOLINO F BRAGA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -174586,6 +174575,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 39,
     "presentes": 34,
     "suficiente": true,
@@ -174837,8 +174827,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "CETI PROFESSOR RUY LEITE BERGER FILHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 244,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -174846,6 +174835,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 74,
     "presentes": 48,
     "suficiente": true,
@@ -175095,8 +175085,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "CETI ANTONIO BORGES LEAL",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 170,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -175106,6 +175095,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 33,
     "presentes": 28,
     "suficiente": true,
@@ -175356,9 +175346,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 19,
-    "nome": "U E PROFESSORA AUREA FREIRE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 61,
+    "nome": "CETI PROFESSORA AUREA FREIRE",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -175368,6 +175357,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 26,
     "presentes": 22,
     "suficiente": true,
@@ -175619,8 +175609,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 20,
     "nome": "CETI PROFESSOR BALDUINO BARBOSA DE DEUS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 437,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -175630,6 +175619,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 98,
     "presentes": 87,
     "suficiente": true,
@@ -175881,8 +175871,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 4,
     "nome": "CETI JOEL RIBEIRO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 114,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -175892,6 +175881,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 26,
     "presentes": 20,
     "suficiente": true,
@@ -176143,8 +176133,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "CETI PORTAL DA ESPERANCA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 145,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -176152,6 +176141,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 67,
     "presentes": 51,
     "suficiente": true,
@@ -176400,9 +176390,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 21,
-    "nome": "CETI PROF MILTON AGUIAR",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 115,
+    "nome": "CETI PROFESSOR MILTON AGUIAR",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -176412,6 +176401,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 30,
     "presentes": 23,
     "suficiente": true,
@@ -176663,8 +176653,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 5,
     "nome": "CETI RAIMUNDINHO ANDRADE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 260,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -176674,6 +176663,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 96,
     "presentes": 89,
     "suficiente": true,
@@ -176925,8 +176915,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 7,
     "nome": "CETI SANTO ANTONIO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 423,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -176936,6 +176925,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 115,
     "presentes": 89,
     "suficiente": true,
@@ -177187,8 +177177,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 15,
     "nome": "CETI CRISTAN BARREIRA PARENTE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 99,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -177198,6 +177187,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 23,
     "presentes": 18,
     "suficiente": true,
@@ -177448,9 +177438,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 6,
-    "nome": "U E ESTADO DO ACRE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 55,
+    "nome": "CETI ESTADO DO ACRE",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -177460,6 +177449,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 16,
     "presentes": 14,
     "suficiente": true,
@@ -177711,8 +177701,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 17,
     "nome": "CETI SEVERO ROCHA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 158,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -177722,6 +177711,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 43,
     "presentes": 39,
     "suficiente": true,
@@ -177973,8 +177963,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "CETI CANDIDO OLIVEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 146,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -177984,6 +177973,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 61,
     "presentes": 35,
     "suficiente": true,
@@ -178234,9 +178224,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 20,
-    "nome": "CETI DEP JOAQUIM GOMES CALADO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 186,
+    "nome": "CETI DEPUTADO JOAQUIM GOMES CALADO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -178246,6 +178235,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 60,
     "presentes": 31,
     "suficiente": true,
@@ -178497,8 +178487,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI GERALDINO CLEVIS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 83,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -178508,6 +178497,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 34,
     "presentes": 28,
     "suficiente": true,
@@ -178758,9 +178748,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 1,
-    "nome": "U E OTAVIO ESCORCIO GOMES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 310,
+    "nome": "CETI OTAVIO ESCORCIO GOMES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -178770,6 +178759,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 86,
     "presentes": 68,
     "suficiente": true,
@@ -179021,8 +179011,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 2,
     "nome": "CETI JOSE MENDES VASCONCELOS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 209,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -179032,6 +179021,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 27,
     "presentes": 26,
     "suficiente": true,
@@ -179282,9 +179272,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 13,
-    "nome": "CETI CENTRO EDUCACIONAL GASPARINO FERREIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 153,
+    "nome": "CETI GASPARINO FERREIRA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -179294,6 +179283,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 39,
     "presentes": 33,
     "suficiente": true,
@@ -179545,8 +179535,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 17,
     "nome": "CETI PAULISTANA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 128,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -179556,6 +179545,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 34,
     "presentes": 28,
     "suficiente": true,
@@ -179807,8 +179797,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 4,
     "nome": "CETI CRISTINO CASTELO BRANCO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 191,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -179818,6 +179807,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 47,
     "presentes": 45,
     "suficiente": true,
@@ -180069,8 +180059,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "CETI PAULO FERRAZ",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 319,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -180080,6 +180069,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 57,
     "presentes": 43,
     "suficiente": true,
@@ -180330,9 +180320,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": null,
-    "nome": "ESCOLA FAMILIA AGRICOLA DO SOINHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 81,
+    "nome": "CETI FAMILIA AGRICOLA DO SOINHO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -180340,6 +180329,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 16,
     "presentes": 15,
     "suficiente": true,
@@ -180588,9 +180578,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 1,
-    "nome": "U E JOSE BASSON",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 250,
+    "nome": "CETI JOSE BASSON",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -180600,6 +180589,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 71,
     "presentes": 53,
     "suficiente": true,
@@ -180851,8 +180841,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "CETI JOSE SALUSTIANO DA SILVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 93,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -180862,6 +180851,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 14,
     "presentes": 12,
     "suficiente": true,
@@ -181113,8 +181103,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 16,
     "nome": "CETI COSMA RAMOS DE SOUSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 315,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -181124,6 +181113,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 78,
     "presentes": 56,
     "suficiente": true,
@@ -181375,8 +181365,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 21,
     "nome": "CETI ANTONIO DE ALMENDRA FREITAS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 128,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -181386,6 +181375,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 49,
     "presentes": 31,
     "suficiente": true,
@@ -181637,8 +181627,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "CETI JOSE PEREIRA DA SILVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 342,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -181646,6 +181635,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 76,
     "presentes": 56,
     "suficiente": true,
@@ -181895,8 +181885,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "CETI DARCY RIBEIRO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 222,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -181906,6 +181895,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 46,
     "presentes": 34,
     "suficiente": true,
@@ -182157,8 +182147,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI MENINO JOAO PEDRO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 211,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -182168,6 +182157,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 62,
     "presentes": 14,
     "suficiente": true,
@@ -182418,9 +182408,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 12,
-    "nome": "CEEP MARIA CHAVES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 251,
+    "nome": "CETI MARIA CHAVES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -182430,6 +182419,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 96,
     "presentes": 65,
     "suficiente": true,
@@ -182680,9 +182670,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 10,
-    "nome": "CEEPRU FREI JOSE APICELLA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 373,
+    "nome": "CETI FREI JOSE APICELLA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -182690,6 +182679,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 81,
     "presentes": 60,
     "suficiente": true,
@@ -182940,9 +182930,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 2,
-    "nome": "U E MARIA MELO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 75,
+    "nome": "CETI MARIA MELO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -182952,6 +182941,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 21,
     "presentes": 13,
     "suficiente": true,
@@ -183203,8 +183193,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 19,
     "nome": "CETI PAULO FERRAZ",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 261,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -183214,6 +183203,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 98,
     "presentes": 61,
     "suficiente": true,
@@ -183465,8 +183455,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 14,
     "nome": "CETI JOSE SOARES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 320,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -183476,6 +183465,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 79,
     "presentes": 77,
     "suficiente": true,
@@ -183727,8 +183717,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 6,
     "nome": "CETI ALBERTO LEAL NUNES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 441,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -183738,6 +183727,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 103,
     "presentes": 80,
     "suficiente": true,
@@ -183989,8 +183979,7 @@ window.ENEM_DADOS = {
     "localizacao": "Rural",
     "gre": 21,
     "nome": "CETI PROFESSOR FLORESTAN FERNANDES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 22,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -184000,6 +183989,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 39,
     "presentes": 13,
     "suficiente": true,
@@ -184251,8 +184241,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 2,
     "nome": "CETI DEUSA ROCHA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 320,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -184262,6 +184251,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 86,
     "presentes": 62,
     "suficiente": true,
@@ -184512,9 +184502,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 14,
-    "nome": "U E ARACI LUSTOSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 297,
+    "nome": "CETI ARACI LUSTOSA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -184524,6 +184513,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 76,
     "presentes": 55,
     "suficiente": true,
@@ -184775,8 +184765,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 20,
     "nome": "CETI CALUZINHA FREIRE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 280,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -184786,6 +184775,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 117,
     "presentes": 80,
     "suficiente": true,
@@ -185037,8 +185027,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 16,
     "nome": "CETI NOSSA SENHORA DO PATROCINIO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 481,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -185048,6 +185037,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 116,
     "presentes": 66,
     "suficiente": true,
@@ -185298,9 +185288,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 2,
-    "nome": "CEEPRU PROF M DE JESUS CARVALHO ROCHA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 566,
+    "nome": "CETI PROFESSORA MARIA DE JESUS CARVALHO ROCHA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -185310,6 +185299,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 221,
     "presentes": 136,
     "suficiente": true,
@@ -185561,8 +185551,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI LUIZ ALVES DE ALMEIDA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 159,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -185572,8 +185561,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Município na lista da SEDUC (Barro Duro) diferente do ENEM (Beneditinos)"
+     "Município na lista da SEDUC (Barro Duro) diferente do ENEM e do Censo (Beneditinos)"
     ],
+    "observacoes": [],
     "inscritos": 46,
     "presentes": 35,
     "suficiente": true,
@@ -185825,8 +185815,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 6,
     "nome": "CETI AURORA BARBOSA DE OLIVEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 214,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -185836,6 +185825,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 61,
     "presentes": 47,
     "suficiente": true,
@@ -186087,8 +186077,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "CETI AMARO ALVES PORTELA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 164,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -186098,6 +186087,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 47,
     "presentes": 34,
     "suficiente": true,
@@ -186348,9 +186338,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 12,
-    "nome": "U E PAULO FREIRE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 48,
+    "nome": "CETI PAULO FREIRE",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -186360,6 +186349,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 13,
     "presentes": 12,
     "suficiente": true,
@@ -186611,8 +186601,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 21,
     "nome": "CETI DR FONTES IBIAPINA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 268,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -186622,6 +186611,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 54,
     "presentes": 46,
     "suficiente": true,
@@ -186872,9 +186862,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 5,
-    "nome": "U E PETRONIO PORTELA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 58,
+    "nome": "CETI PETRONIO PORTELA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -186884,6 +186873,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 20,
     "presentes": 11,
     "suficiente": true,
@@ -187135,8 +187125,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 8,
     "nome": "CETI SAO JOAO BATISTA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 138,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -187146,6 +187135,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 40,
     "presentes": 29,
     "suficiente": true,
@@ -187397,8 +187387,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "CETI MAROCAS LIMA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 396,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -187408,6 +187397,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 95,
     "presentes": 72,
     "suficiente": true,
@@ -187659,8 +187649,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 15,
     "nome": "CETI DEPUTADO FERNANDO MONTEIRO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 419,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -187670,6 +187659,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 122,
     "presentes": 95,
     "suficiente": true,
@@ -187921,8 +187911,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 7,
     "nome": "CETI ANTONIO GENTIL DANTAS SOBRINHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 353,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -187932,6 +187921,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 48,
     "presentes": 40,
     "suficiente": true,
@@ -188182,9 +188172,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 2,
-    "nome": "U E MARIA DO AMPARO OLIVEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 124,
+    "nome": "CETI MARIA DO AMPARO OLIVEIRA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -188192,6 +188181,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 68,
     "presentes": 40,
     "suficiente": true,
@@ -188442,9 +188432,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": null,
-    "nome": "CETI ESCOLA FAMILIA AGRICOLA BAIXAO DO CARLOS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 331,
+    "nome": "CETI FAMILIA AGRICOLA BAIXAO DO CARLOS",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -188452,6 +188441,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 69,
     "presentes": 45,
     "suficiente": true,
@@ -188701,8 +188691,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 20,
     "nome": "CETI PEDRA MOLE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 191,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -188712,6 +188701,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 48,
     "presentes": 35,
     "suficiente": true,
@@ -188963,8 +188953,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 12,
     "nome": "CETI SENADOR JOSE CANDIDO FERRAZ",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 85,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -188972,6 +188961,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 15,
     "presentes": 10,
     "suficiente": true,
@@ -189223,8 +189213,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI FERDINAND FREITAS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 480,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -189234,6 +189223,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 138,
     "presentes": 84,
     "suficiente": true,
@@ -189484,9 +189474,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 13,
-    "nome": "U E ANTONIO SOARES ROCHA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 280,
+    "nome": "CETI ANTONIO SOARES ROCHA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -189496,6 +189485,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 77,
     "presentes": 48,
     "suficiente": true,
@@ -189746,20 +189736,18 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 13,
-    "nome": "CEEP GERCILIO DE CASTRO MACEDO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 810,
+    "nome": "CETI GERCILIO DE CASTRO MACEDO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
      "rede": true,
      "seduc_rede": true,
-     "seduc_municipio": false,
+     "seduc_municipio": true,
      "interna": true
     },
-    "alertas": [
-     "Município na lista da SEDUC (São Rdo. Nonato) diferente do ENEM (São Raimundo Nonato)"
-    ],
+    "alertas": [],
+    "observacoes": [],
     "inscritos": 205,
     "presentes": 142,
     "suficiente": true,
@@ -190011,8 +189999,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI DOMINGOS ALVES DA COSTA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 169,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -190022,6 +190009,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 41,
     "presentes": 35,
     "suficiente": true,
@@ -190272,9 +190260,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 17,
-    "nome": "U E MARTINHO VIEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 105,
+    "nome": "CETI MARTINHO VIEIRA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -190284,6 +190271,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 46,
     "presentes": 42,
     "suficiente": true,
@@ -190535,8 +190523,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "CETI SANTO ANTONIO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 120,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -190546,6 +190533,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 31,
     "presentes": 29,
     "suficiente": true,
@@ -190797,8 +190785,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 8,
     "nome": "CETI DOM EDILBERTO DINKELBORG",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 203,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -190808,6 +190795,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 52,
     "presentes": 42,
     "suficiente": true,
@@ -191059,8 +191047,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 11,
     "nome": "CETI DOS CERRADOS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 309,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -191068,6 +191055,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 104,
     "presentes": 73,
     "suficiente": true,
@@ -191319,8 +191307,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "CETI DJALMA NUNES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 97,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -191330,6 +191317,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 20,
     "presentes": 18,
     "suficiente": true,
@@ -191581,8 +191569,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 21,
     "nome": "CETI PROFESSOR PIRES DE CASTRO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 182,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -191592,6 +191579,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 55,
     "presentes": 46,
     "suficiente": true,
@@ -191843,8 +191831,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 11,
     "nome": "CETI MARIA PIRES LIMA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 252,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -191854,6 +191841,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 74,
     "presentes": 45,
     "suficiente": true,
@@ -192105,8 +192093,7 @@ window.ENEM_DADOS = {
     "localizacao": "Rural",
     "gre": 1,
     "nome": "CETI PEDRO MARIANO DE FREITAS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 123,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -192114,6 +192101,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 29,
     "presentes": 22,
     "suficiente": true,
@@ -192365,8 +192353,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 17,
     "nome": "CETI ANTONIO RODRIGUES FILHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 208,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -192376,6 +192363,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 49,
     "presentes": 36,
     "suficiente": true,
@@ -192627,8 +192615,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 17,
     "nome": "CETI CIRILA MARIA DE JESUS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 186,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -192636,6 +192623,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 42,
     "presentes": 26,
     "suficiente": true,
@@ -192886,9 +192874,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 6,
-    "nome": "CETI DEP ALBERTO DE MOURA MONTEIRO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 88,
+    "nome": "CETI DEPUTADO ALBERTO DE MOURA MONTEIRO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -192898,6 +192885,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 27,
     "presentes": 20,
     "suficiente": true,
@@ -193149,8 +193137,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 8,
     "nome": "CETI FRANCIVAL RODRIGUES DO NASCIMENTO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 79,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -193160,6 +193147,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 34,
     "presentes": 14,
     "suficiente": true,
@@ -193410,9 +193398,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 5,
-    "nome": "U E 13 DE MARCO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 161,
+    "nome": "CETI 13 DE MARCO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -193422,6 +193409,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 61,
     "presentes": 50,
     "suficiente": true,
@@ -193673,8 +193661,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI BARAO DE GURGUEIA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 274,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -193684,6 +193671,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 76,
     "presentes": 53,
     "suficiente": true,
@@ -193935,8 +193923,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI SEBASTIAO SOARES RIBEIRO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 351,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -193946,6 +193933,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 107,
     "presentes": 83,
     "suficiente": true,
@@ -194197,19 +194185,17 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 13,
     "nome": "CETI EDITH NOBRE DE CASTRO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 222,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
      "rede": true,
      "seduc_rede": true,
-     "seduc_municipio": false,
+     "seduc_municipio": true,
      "interna": true
     },
-    "alertas": [
-     "Município na lista da SEDUC (São Rdo. Nonato) diferente do ENEM (São Raimundo Nonato)"
-    ],
+    "alertas": [],
+    "observacoes": [],
     "inscritos": 53,
     "presentes": 36,
     "suficiente": true,
@@ -194461,8 +194447,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI HILTON LEITE DE CARVALHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 349,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -194472,6 +194457,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 89,
     "presentes": 41,
     "suficiente": true,
@@ -194722,9 +194708,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 12,
-    "nome": "U E AMERICO JOSE DE SOUSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 145,
+    "nome": "CETI AMERICO JOSE DE SOUSA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -194734,6 +194719,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 28,
     "presentes": 23,
     "suficiente": true,
@@ -194984,9 +194970,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 4,
-    "nome": "U E MUNDIM FERRAZ",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 244,
+    "nome": "CETI MUNDIM FERRAZ",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -194996,6 +194981,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 83,
     "presentes": 39,
     "suficiente": true,
@@ -195247,8 +195233,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 12,
     "nome": "CETI MARIA DE SOUSA ANDRADE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 96,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -195258,6 +195243,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 41,
     "presentes": 31,
     "suficiente": true,
@@ -195509,8 +195495,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "CETI MARIANO JOSE ROBERTO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 137,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -195520,6 +195505,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 37,
     "presentes": 27,
     "suficiente": true,
@@ -195771,8 +195757,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 2,
     "nome": "CETI SANTA TERESINHA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 401,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -195782,6 +195767,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 92,
     "presentes": 46,
     "suficiente": true,
@@ -196032,9 +196018,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 2,
-    "nome": "U E SAO JOSE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 299,
+    "nome": "CETI SAO JOSE",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -196044,6 +196029,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 72,
     "presentes": 59,
     "suficiente": true,
@@ -196295,8 +196281,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI MARIO RAULINO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 183,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -196306,6 +196291,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 30,
     "presentes": 23,
     "suficiente": true,
@@ -196557,8 +196543,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 16,
     "nome": "CETI FRANCISCO ALVES DE SOUSA CHICO ABILIO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 120,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -196568,6 +196553,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 33,
     "presentes": 20,
     "suficiente": true,
@@ -196818,9 +196804,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 21,
-    "nome": "CETI PROF MARIA DA CONCEICAO SALOME",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 209,
+    "nome": "CETI PROFESSORA MARIA DA CONCEICAO SALOME",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -196830,6 +196815,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 60,
     "presentes": 46,
     "suficiente": true,
@@ -197081,8 +197067,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 14,
     "nome": "CETI JOAQUIM PARENTE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 248,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -197092,6 +197077,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 30,
     "presentes": 28,
     "suficiente": true,
@@ -197343,8 +197329,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 12,
     "nome": "CETI TERESINHA DE JESUS SOARES AMORIM",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 127,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -197354,6 +197339,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 39,
     "presentes": 24,
     "suficiente": true,
@@ -197604,9 +197590,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 12,
-    "nome": "CETI DEP FRANCISCO ANTONIO PAES LANDIM NETO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 417,
+    "nome": "CETI DEPUTADO FRANCISCO ANTONIO PAES LANDIM NETO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -197616,6 +197601,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 107,
     "presentes": 62,
     "suficiente": true,
@@ -197867,8 +197853,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 2,
     "nome": "CETI DIRCEU ARCOVERDE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 550,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -197878,6 +197863,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 173,
     "presentes": 114,
     "suficiente": true,
@@ -198128,9 +198114,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 18,
-    "nome": "U E JACOB BARBOSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 195,
+    "nome": "CETI JACOB BARBOSA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -198140,6 +198125,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 50,
     "presentes": 37,
     "suficiente": true,
@@ -198391,8 +198377,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "CETI JOAO LEAL",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 252,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -198402,6 +198387,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 47,
     "presentes": 39,
     "suficiente": true,
@@ -198652,9 +198638,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 1,
-    "nome": "U E DEP FRANCISCA TRINDADE II",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 54,
+    "nome": "CETI DEPUTADA FRANCISCA TRINDADE II",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -198662,6 +198647,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 18,
     "presentes": 11,
     "suficiente": true,
@@ -198913,8 +198899,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 15,
     "nome": "CETI ANTONIO MASCARENHAS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 181,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -198924,6 +198909,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 47,
     "presentes": 39,
     "suficiente": true,
@@ -199175,8 +199161,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI BENEDITO MARTINS NAPOLEAO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 180,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -199186,8 +199171,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Município na lista da SEDUC (Beneditinos) diferente do ENEM (Barro Duro)"
+     "Município na lista da SEDUC (Beneditinos) diferente do ENEM e do Censo (Barro Duro)"
     ],
+    "observacoes": [],
     "inscritos": 40,
     "presentes": 32,
     "suficiente": true,
@@ -199439,8 +199425,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 16,
     "nome": "CETI WALDEMAR DE MOURA SANTOS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 129,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -199450,6 +199435,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 27,
     "presentes": 10,
     "suficiente": true,
@@ -199701,8 +199687,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI ANTONIETA RIBEIRO MORAES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 319,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -199712,6 +199697,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 89,
     "presentes": 58,
     "suficiente": true,
@@ -199963,8 +199949,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 2,
     "nome": "CETI OTAVIO FALCAO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 356,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -199974,6 +199959,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 96,
     "presentes": 77,
     "suficiente": true,
@@ -200225,8 +200211,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 19,
     "nome": "CETI INTEGRADO ANGELIM",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 51,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -200236,6 +200221,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 15,
     "presentes": 11,
     "suficiente": true,
@@ -200487,8 +200473,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 7,
     "nome": "CETI SENADOR CHAGAS RODRIGUES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 144,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -200498,6 +200483,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 42,
     "presentes": 34,
     "suficiente": true,
@@ -200748,9 +200734,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 1,
-    "nome": "CETI RICARDO AUGUSTO VELOSO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 253,
+    "nome": "CETI RICARDO AUGUSTO VELOSO - ESCOLA DO MAR",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -200760,6 +200745,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 92,
     "presentes": 51,
     "suficiente": true,
@@ -201011,8 +200997,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 15,
     "nome": "CETI JOAQUIM ANTONIO LUSTOSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 271,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -201022,6 +201007,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 64,
     "presentes": 26,
     "suficiente": true,
@@ -201272,9 +201258,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 9,
-    "nome": "U E SERAFIM JOSE DE BRITO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 145,
+    "nome": "CETI SERAFIM JOSE DE BRITO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -201284,6 +201269,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 42,
     "presentes": 20,
     "suficiente": true,
@@ -201535,8 +201521,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 11,
     "nome": "CETI IRAPUA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 89,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -201546,6 +201531,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 16,
     "presentes": 16,
     "suficiente": true,
@@ -201796,9 +201782,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 17,
-    "nome": "U E ELIAS RAIMUNDO DE LIMA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 103,
+    "nome": "CETI ELIAS RAIMUNDO DE LIMA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -201806,6 +201791,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 29,
     "presentes": 18,
     "suficiente": true,
@@ -202057,8 +202043,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 15,
     "nome": "CETI OBERLIM DA CUNHA NOGUEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 159,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -202068,6 +202053,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 32,
     "presentes": 26,
     "suficiente": true,
@@ -202319,8 +202305,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 8,
     "nome": "CETI ORLANDO CARVALHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 155,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -202330,6 +202315,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 34,
     "presentes": 19,
     "suficiente": true,
@@ -202580,9 +202566,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 4,
-    "nome": "U E FIRMINA SOBREIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 363,
+    "nome": "CETI FIRMINA SOBREIRA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -202592,6 +202577,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 127,
     "presentes": 86,
     "suficiente": true,
@@ -202843,8 +202829,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 15,
     "nome": "CETI LUSTOSA SOBRINHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 76,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -202854,6 +202839,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 26,
     "presentes": 19,
     "suficiente": true,
@@ -203105,8 +203091,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 12,
     "nome": "CETI JOAQUIM MALAQUIAS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 119,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -203116,6 +203101,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 32,
     "presentes": 19,
     "suficiente": true,
@@ -203366,9 +203352,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 12,
-    "nome": "U E EXPEDITO CRONEMBERGER DOS REIS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 149,
+    "nome": "CETI EXPEDITO CRONEMBERGER DOS REIS",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -203378,6 +203363,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 40,
     "presentes": 25,
     "suficiente": true,
@@ -203628,9 +203614,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 2,
-    "nome": "U E JOAO DE ASSIS MARQUES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 226,
+    "nome": "CETI JOAO DE ASSIS MARQUES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -203640,6 +203625,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 33,
     "presentes": 23,
     "suficiente": true,
@@ -203891,8 +203877,7 @@ window.ENEM_DADOS = {
     "localizacao": "Rural",
     "gre": 3,
     "nome": "CETI ISABEL MOREIRA GOMES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 66,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -203900,6 +203885,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 26,
     "presentes": 20,
     "suficiente": true,
@@ -204150,9 +204136,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 18,
-    "nome": "U E CEZAR LEAL",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 183,
+    "nome": "CETI CEZAR LEAL",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -204162,6 +204147,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 47,
     "presentes": 29,
     "suficiente": true,
@@ -204412,9 +204398,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 18,
-    "nome": "U E DR EZEQUIAS COSTA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 176,
+    "nome": "CETI DR EZEQUIAS COSTA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -204422,6 +204407,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 60,
     "presentes": 48,
     "suficiente": true,
@@ -204673,8 +204659,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 6,
     "nome": "CETI MOISANIEL ALVES DE SOUSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 98,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -204684,6 +204669,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 26,
     "presentes": 18,
     "suficiente": true,
@@ -204934,9 +204920,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 14,
-    "nome": "U E HELIO FIGUEIREDO DA FONSECA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 145,
+    "nome": "CETI HELIO FIGUEIREDO DA FONSECA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -204946,6 +204931,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 39,
     "presentes": 32,
     "suficiente": true,
@@ -205197,8 +205183,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 2,
     "nome": "CETI JOAO FRANCISCO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 109,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -205208,6 +205193,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 33,
     "presentes": 25,
     "suficiente": true,
@@ -205458,9 +205444,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 18,
-    "nome": "CEEPRU MANOEL OTAVIO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 153,
+    "nome": "CETI MANOEL OTAVIO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -205468,6 +205453,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 47,
     "presentes": 37,
     "suficiente": true,
@@ -205719,8 +205705,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI COSTA E SILVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 172,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -205730,6 +205715,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 45,
     "presentes": 14,
     "suficiente": true,
@@ -205981,8 +205967,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 1,
     "nome": "CEJA LEONIDAS MELO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 127,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -205992,6 +205977,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 13,
     "presentes": 10,
     "suficiente": true,
@@ -206243,8 +206229,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 10,
     "nome": "CETI PADRE PEDRO DA SILVA OLIVEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 173,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -206252,6 +206237,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 54,
     "presentes": 40,
     "suficiente": true,
@@ -206503,8 +206489,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 3,
     "nome": "CETI TERTULIANO BRANDAO FILHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 303,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -206514,6 +206499,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 59,
     "presentes": 34,
     "suficiente": true,
@@ -206765,18 +206751,18 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 15,
     "nome": "CETI LEDA NAPOLEAO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 145,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
      "rede": true,
      "seduc_rede": true,
-     "seduc_municipio": false,
+     "seduc_municipio": true,
      "interna": true
     },
-    "alertas": [
-     "Município na lista da SEDUC (Morro Cabeça Tempo) diferente do ENEM (Morro Cabeça no Tempo)"
+    "alertas": [],
+    "observacoes": [
+     "Município escrito de outra forma na lista da SEDUC (\"Morro Cabeça Tempo\"), mesma cidade"
     ],
     "inscritos": 42,
     "presentes": 28,
@@ -207028,9 +207014,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 18,
-    "nome": "CETI GOV PEDRO FREITAS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 467,
+    "nome": "CETI GOVERNADOR PEDRO FREITAS",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -207040,6 +207025,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 116,
     "presentes": 75,
     "suficiente": true,
@@ -207291,8 +207277,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 15,
     "nome": "CETI HUGO NAPOLEAO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 422,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -207302,6 +207287,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 101,
     "presentes": 77,
     "suficiente": true,
@@ -207553,8 +207539,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 13,
     "nome": "CETI DR BARROSO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 165,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -207564,6 +207549,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 32,
     "presentes": 25,
     "suficiente": true,
@@ -207815,8 +207801,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 7,
     "nome": "CETI BENEDITO PORTELA LEAL",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 268,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -207826,6 +207811,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 78,
     "presentes": 51,
     "suficiente": true,
@@ -208077,8 +208063,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 15,
     "nome": "CETI BENEDITO OLIVEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 203,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -208088,6 +208073,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 60,
     "presentes": 35,
     "suficiente": true,
@@ -208339,8 +208325,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 4,
     "nome": "CETI SEVERIANO SOUSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 158,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -208350,6 +208335,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 32,
     "presentes": 23,
     "suficiente": true,
@@ -208601,8 +208587,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 6,
     "nome": "CETI JOSE BORBA DE CARVALHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 134,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -208612,6 +208597,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 38,
     "presentes": 27,
     "suficiente": true,
@@ -208862,9 +208848,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 18,
-    "nome": "ESCOLA FAMILIA AGRICOLA JOSE NERY DOS SANTOS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 51,
+    "nome": "CETI FAMILIA AGRICOLA JOSE NERY DOS SANTOS",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -208872,6 +208857,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 80,
     "presentes": 36,
     "suficiente": true,
@@ -209123,8 +209109,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 11,
     "nome": "CETI CICERO COELHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 206,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -209134,6 +209119,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 38,
     "presentes": 27,
     "suficiente": true,
@@ -209384,9 +209370,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 12,
-    "nome": "U E NONATO VALENTE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 180,
+    "nome": "CETI NONATO VALENTE",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -209396,6 +209381,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 42,
     "presentes": 32,
     "suficiente": true,
@@ -209646,9 +209632,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 15,
-    "nome": "U E CEL JUSTINO CAVALCANTE BARROS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 216,
+    "nome": "CETI CORONEL JUSTINO CAVALCANTE BARROS",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -209658,6 +209643,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 59,
     "presentes": 38,
     "suficiente": true,
@@ -209909,8 +209895,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 15,
     "nome": "CETI RAIMUNDO DA PAZ NOGUEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 131,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -209920,6 +209905,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 45,
     "presentes": 32,
     "suficiente": true,
@@ -210170,9 +210156,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 3,
-    "nome": "CETI PROF PEDRO SOARES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 35,
+    "nome": "CETI PROFESSOR PEDRO SOARES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -210182,6 +210167,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 14,
     "presentes": 10,
     "suficiente": true,
@@ -210432,9 +210418,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 4,
-    "nome": "U E RAIMUNDO WALL FERRAZ",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 89,
+    "nome": "CETI RAIMUNDO WALL FERRAZ",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -210444,6 +210429,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 28,
     "presentes": 13,
     "suficiente": true,
@@ -210695,8 +210681,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 4,
     "nome": "CETI DESEMBARGADOR ROBERT CARVALHO FREITAS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 65,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -210706,6 +210691,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 15,
     "presentes": 12,
     "suficiente": true,
@@ -210957,8 +210943,7 @@ window.ENEM_DADOS = {
     "localizacao": "Rural",
     "gre": 19,
     "nome": "CETI NOSSA SENHORA DO PERPETUO SOCORRO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 73,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -210968,6 +210953,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 20,
     "presentes": 13,
     "suficiente": true,
@@ -211218,9 +211204,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 19,
-    "nome": "U E DE ENSINO MEDIO SANTA FE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 52,
+    "nome": "CETI SANTA FE",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -211230,6 +211215,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 18,
     "presentes": 11,
     "suficiente": true,
@@ -211481,8 +211467,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 5,
     "nome": "CETI SEBASTIAO ALVES DOS REIS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 352,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -211492,6 +211477,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 50,
     "presentes": 29,
     "suficiente": true,
@@ -211743,8 +211729,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 15,
     "nome": "CETI ALIRIO GUERRA DE MACEDO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 248,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -211754,6 +211739,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 57,
     "presentes": 27,
     "suficiente": true,
@@ -212004,9 +211990,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 12,
-    "nome": "ESCOLA FAMILIA AGRICOLA DOM EDILBERTO DONA MORENA - EFADE VI",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 51,
+    "nome": "CETI FAMILIA AGRICOLA DOM EDILBERTO VI - DONA MORENA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -212014,6 +211999,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 16,
     "presentes": 10,
     "suficiente": true,
@@ -212265,8 +212251,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 11,
     "nome": "CETI PRESIDENTE VARGAS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 341,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -212276,6 +212261,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 104,
     "presentes": 52,
     "suficiente": true,
@@ -212527,8 +212513,7 @@ window.ENEM_DADOS = {
     "localizacao": "Rural",
     "gre": 15,
     "nome": "CETI ARISTIDES PEREIRA DE SOUSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 55,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -212538,6 +212523,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 15,
     "presentes": 14,
     "suficiente": true,
@@ -212789,8 +212775,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 8,
     "nome": "CETI ARMANDO BURLAMAQUI",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 130,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -212800,6 +212785,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 44,
     "presentes": 30,
     "suficiente": true,
@@ -213050,9 +213036,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 5,
-    "nome": "CEEPRU CONEGO CARDOSO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 113,
+    "nome": "CETI CONEGO CARDOSO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -213060,6 +213045,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 23,
     "presentes": 19,
     "suficiente": true,
@@ -213311,8 +213297,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 11,
     "nome": "CETI FRUTUOSO SILVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 82,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -213322,6 +213307,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 26,
     "presentes": 10,
     "suficiente": true,
@@ -213573,8 +213559,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 7,
     "nome": "CEJA VITORIA DA COSTA LIMA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 0,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -213584,6 +213569,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 22,
     "presentes": 13,
     "suficiente": true,
@@ -213835,18 +213821,18 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI SAO JOSE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 64,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
      "rede": true,
      "seduc_rede": true,
-     "seduc_municipio": false,
+     "seduc_municipio": true,
      "interna": true
     },
-    "alertas": [
-     "Município na lista da SEDUC (Aroeira Do Itaim) diferente do ENEM (Aroeiras do Itaim)"
+    "alertas": [],
+    "observacoes": [
+     "Município escrito de outra forma na lista da SEDUC (\"Aroeira Do Itaim\"), mesma cidade"
     ],
     "inscritos": 22,
     "presentes": 15,
@@ -214098,9 +214084,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 11,
-    "nome": "U E CELSO ANTUNES DE SOUSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 259,
+    "nome": "CETI CELSO ANTUNES DE SOUSA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -214110,6 +214095,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 65,
     "presentes": 46,
     "suficiente": true,
@@ -214360,9 +214346,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 12,
-    "nome": "U E PROFESSOR LUIZ UBIRACI DE CARVALHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 60,
+    "nome": "CETI PROFESSOR LUIZ UBIRACI DE CARVALHO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -214370,6 +214355,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 21,
     "presentes": 16,
     "suficiente": true,
@@ -214620,9 +214606,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 6,
-    "nome": "CETI PROF ANTONIO CASTRO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 237,
+    "nome": "CETI PROFESSOR ANTONIO CASTRO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -214632,6 +214617,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 49,
     "presentes": 31,
     "suficiente": true,
@@ -214882,9 +214868,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 2,
-    "nome": "U E MIGUEL NUNES DE SALES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 278,
+    "nome": "CETI MIGUEL NUNES DE SALES",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -214894,6 +214879,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 49,
     "presentes": 29,
     "suficiente": true,
@@ -215144,15 +215130,16 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 13,
-    "nome": null,
-    "fonte_nome": null,
+    "nome": "CETI PROFESSORA HILDERACI DA COSTA SILVA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
+     "municipio": true,
+     "rede": true,
      "interna": true
     },
-    "alertas": [
-     "Código não encontrado no Censo Escolar"
-    ],
+    "alertas": [],
+    "observacoes": [],
     "inscritos": 64,
     "presentes": 38,
     "suficiente": true,
@@ -215404,8 +215391,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 21,
     "nome": "CEJA FRANCISCO CESAR DE ARAUJO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 0,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -215415,6 +215401,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 22,
     "presentes": 12,
     "suficiente": true,
@@ -215665,9 +215652,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 4,
-    "nome": "U E MATIAS OLIMPIO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 83,
+    "nome": "CETI MATIAS OLIMPIO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -215677,6 +215663,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 30,
     "presentes": 19,
     "suficiente": true,
@@ -215927,9 +215914,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 15,
-    "nome": "U E PETRONIO PORTELA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 86,
+    "nome": "CETI PETRONIO PORTELA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -215939,6 +215925,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 22,
     "presentes": 13,
     "suficiente": true,
@@ -216189,9 +216176,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 18,
-    "nome": "U E LUIZ FERNANDES BORGES NASCIMENTO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 92,
+    "nome": "CETI LUIZ FERNANDES BORGES NASCIMENTO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -216199,6 +216185,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 21,
     "presentes": 14,
     "suficiente": true,
@@ -216450,14 +216437,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 2,
     "nome": "ESCOLA TIA ERINELDA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 45,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 10,
     "presentes": 9,
     "suficiente": false
@@ -216468,9 +216455,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 2,
-    "nome": "U E SIGEFREDO PACHECO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 59,
+    "nome": "CETI SIGEFREDO PACHECO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -216480,6 +216466,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 22,
     "presentes": 9,
     "suficiente": false
@@ -216490,9 +216477,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 1,
-    "nome": "U E EDISON CUNHA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 111,
+    "nome": "CETI EDISON CUNHA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -216502,6 +216488,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 12,
     "presentes": 7,
     "suficiente": false
@@ -216513,8 +216500,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI HUGO NAPOLEAO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 39,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -216524,6 +216510,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 11,
     "presentes": 7,
     "suficiente": false
@@ -216535,8 +216522,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 18,
     "nome": "CETI RAIMUNDO MARTINS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 96,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -216546,6 +216532,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 18,
     "presentes": 8,
     "suficiente": false
@@ -216556,9 +216543,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 18,
-    "nome": "U E FIRMO JOSE DA CUNHA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 59,
+    "nome": "CETI FIRMO JOSE DA CUNHA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -216568,6 +216554,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 17,
     "presentes": 7,
     "suficiente": false
@@ -216579,14 +216566,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "COLEGIO EXPERT",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 50,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 12,
     "presentes": 8,
     "suficiente": false
@@ -216598,8 +216585,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 20,
     "nome": "CEJA GAYOSO E ALMENDRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 0,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -216609,6 +216595,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 13,
     "presentes": 7,
     "suficiente": false
@@ -216620,14 +216607,14 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": null,
     "nome": "INST EDUC AFONSO MAFRENSE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 35,
+    "fonte_nome": "Censo Escolar 2025",
     "checagens": {
      "municipio": true,
      "rede": true,
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 10,
     "presentes": 8,
     "suficiente": false
@@ -216639,8 +216626,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 19,
     "nome": "CEJA PROFESSORA SHIRLEY COSTA E SILVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 0,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -216650,6 +216636,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 22,
     "presentes": 8,
     "suficiente": false
@@ -216660,9 +216647,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 20,
-    "nome": "CEJA PROF ANGELINA DE MOURA LEAL",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 0,
+    "nome": "CEJA PROFESSORA ANGELINA DE MOURA LEAL",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -216672,6 +216658,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 10,
     "presentes": 4,
     "suficiente": false
@@ -216682,9 +216669,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 20,
-    "nome": "U E GERVASIO COSTA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 83,
+    "nome": "CETI GERVASIO COSTA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -216694,6 +216680,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 16,
     "presentes": 9,
     "suficiente": false
@@ -216704,9 +216691,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 18,
-    "nome": "CEJA LUIS CARLOS BOA VISTA R MONTEIRO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 0,
+    "nome": "CEJA LUIS CARLOS BOA VISTA DO REGO MONTEIRO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -216716,6 +216702,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 13,
     "presentes": 4,
     "suficiente": false
@@ -216727,8 +216714,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 7,
     "nome": "CETI ANTONIO DE DEUS CARVALHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 58,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -216738,6 +216724,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 11,
     "presentes": 6,
     "suficiente": false
@@ -216748,9 +216735,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 8,
-    "nome": "U E DR JOSE COELHO REIS",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 0,
+    "nome": "CEJA DR JOSE COELHO REIS",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -216760,6 +216746,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 10,
     "presentes": 0,
     "suficiente": false
@@ -216771,8 +216758,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 9,
     "nome": "CETI COELHO RODRIGUES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 45,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -216782,6 +216768,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 11,
     "presentes": 6,
     "suficiente": false
@@ -216792,9 +216779,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 18,
-    "nome": "U E OZANDIR TEIXEIRA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 70,
+    "nome": "CETI OZANDIR TEIXEIRA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -216804,6 +216790,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 16,
     "presentes": 5,
     "suficiente": false
@@ -216814,9 +216801,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 18,
-    "nome": "U E PROF MANOEL NASCIMENTO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 97,
+    "nome": "CETI PROFESSOR MANOEL NASCIMENTO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -216826,8 +216812,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Município na lista da SEDUC (Barro Duro) diferente do ENEM (Beneditinos)"
+     "Município na lista da SEDUC (Barro Duro) diferente do ENEM e do Censo (Beneditinos)"
     ],
+    "observacoes": [],
     "inscritos": 14,
     "presentes": 5,
     "suficiente": false
@@ -216838,9 +216825,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 8,
-    "nome": "ESCOLA FAMILIA AGRICOLA DOM EDILBERTO II",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 49,
+    "nome": "CETI FAMILIA AGRICOLA DOM EDILBERTO II",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -216848,6 +216834,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 11,
     "presentes": 9,
     "suficiente": false
@@ -216859,8 +216846,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 11,
     "nome": "CETI RAIMUNDO NEIVA DE SOUSA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 78,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -216870,6 +216856,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 11,
     "presentes": 9,
     "suficiente": false
@@ -216880,9 +216867,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 8,
-    "nome": "ESCOLA FAMILIA AGRICOLA DOM EDILBERTO III",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 47,
+    "nome": "CETI FAMILIA AGRICOLA DOM EDILBERTO III",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -216890,6 +216876,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 10,
     "presentes": 9,
     "suficiente": false
@@ -216900,9 +216887,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 12,
-    "nome": "U E AGENOR DA SILVA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 83,
+    "nome": "CETI AGENOR DA SILVA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -216912,6 +216898,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 16,
     "presentes": 9,
     "suficiente": false
@@ -216922,9 +216909,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 8,
-    "nome": "ESCOLA FAMILIA AGRICOLA DOM EDILBERTO IV",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 94,
+    "nome": "CETI FAMILIA AGRICOLA DOM EDILBERTO IV",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -216932,6 +216918,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 19,
     "presentes": 9,
     "suficiente": false
@@ -216942,9 +216929,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 9,
-    "nome": "U E MARIANO BORGES LEAL",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 58,
+    "nome": "CETI MARIANO BORGES LEAL",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -216954,6 +216940,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 13,
     "presentes": 3,
     "suficiente": false
@@ -216965,8 +216952,7 @@ window.ENEM_DADOS = {
     "localizacao": "Urbana",
     "gre": 19,
     "nome": "CETI RESIDENCIAL ESPLANADA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 27,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -216976,6 +216962,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 17,
     "presentes": 7,
     "suficiente": false
@@ -216986,9 +216973,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 19,
-    "nome": "U E DOM HELDER CAMARA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 0,
+    "nome": "CEJA DOM HELDER CAMARA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -216998,6 +216984,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 16,
     "presentes": 5,
     "suficiente": false
@@ -217008,9 +216995,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 20,
-    "nome": "U E TAQUARI",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 0,
+    "nome": "CEJA TAQUARI",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": true,
     "checagens": {
      "municipio": true,
@@ -217020,6 +217006,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 28,
     "presentes": 7,
     "suficiente": false
@@ -217030,9 +217017,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 6,
-    "nome": "ESCOLA FAMILIA AGRICOLA DE SAO PEDRO DO PIAUI",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 103,
+    "nome": "CETI FAMILIA AGRICOLA DE SAO PEDRO DO PIAUI",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -217040,6 +217026,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 19,
     "presentes": 9,
     "suficiente": false
@@ -217050,9 +217037,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": null,
-    "nome": "CETI ESCOLA FAMILIA DE TURISMO - EFTUR",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 64,
+    "nome": "CETI FAMILIA DE TURISMO - EFTUR",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -217060,6 +217046,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 15,
     "presentes": 8,
     "suficiente": false
@@ -217070,9 +217057,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": null,
-    "nome": "U E PEDRA MOLE",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 0,
+    "nome": "CEJA PEDRA MOLE",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -217080,6 +217066,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 18,
     "presentes": 2,
     "suficiente": false
@@ -217090,9 +217077,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": 9,
-    "nome": "U E SEVERO MARIA EULALIO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 66,
+    "nome": "CEJA SEVERO MARIA EULALIO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -217100,6 +217086,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 17,
     "presentes": 8,
     "suficiente": false
@@ -217110,9 +217097,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 8,
-    "nome": "ESCOLA FAMILIA AGRICOLA DOM EDILBERTO V",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 67,
+    "nome": "CETI FAMILIA AGRICOLA DOM EDILBERTO V",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -217120,6 +217106,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 11,
     "presentes": 5,
     "suficiente": false
@@ -217131,17 +217118,15 @@ window.ENEM_DADOS = {
     "localizacao": "Rural",
     "gre": null,
     "nome": "CETI LUCAS MEIRELES",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 53,
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
-     "municipio": false,
+     "municipio": true,
      "rede": true,
      "interna": true
     },
-    "alertas": [
-     "Município diferente: ENEM Teresina x Censo Demerval Lobão"
-    ],
+    "alertas": [],
+    "observacoes": [],
     "inscritos": 10,
     "presentes": 5,
     "suficiente": false
@@ -217152,9 +217137,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Rural",
     "gre": 14,
-    "nome": "ESCOLA FAMILIA AGRICOLA VALE DO GURGUEIA",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 75,
+    "nome": "CETI FAMILIA AGRICOLA VALE DO GURGUEIA",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -217162,6 +217146,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 15,
     "presentes": 5,
     "suficiente": false
@@ -217172,9 +217157,8 @@ window.ENEM_DADOS = {
     "rede": "Estadual",
     "localizacao": "Urbana",
     "gre": null,
-    "nome": "U E PROF JOSE CAMILLO DA SILVEIRA FILHO",
-    "fonte_nome": "Censo Escolar 2024",
-    "matriculas_em": 0,
+    "nome": "CEJA PROFESSOR JOSE CAMILLO DA SILVEIRA FILHO",
+    "fonte_nome": "Censo Escolar 2025",
     "na_lista_seduc": false,
     "checagens": {
      "municipio": true,
@@ -217182,6 +217166,7 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [],
+    "observacoes": [],
     "inscritos": 17,
     "presentes": 4,
     "suficiente": false
@@ -217198,8 +217183,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 8,
     "presentes": 8,
     "suficiente": false
@@ -217216,8 +217202,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 9,
     "presentes": 9,
     "suficiente": false
@@ -217235,8 +217222,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 7,
     "presentes": 3,
     "suficiente": false
@@ -217254,8 +217242,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 2,
     "presentes": 2,
     "suficiente": false
@@ -217273,8 +217262,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 6,
     "presentes": 1,
     "suficiente": false
@@ -217291,8 +217281,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 4,
     "presentes": 4,
     "suficiente": false
@@ -217309,8 +217300,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 8,
     "presentes": 8,
     "suficiente": false
@@ -217327,8 +217319,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 4,
     "presentes": 2,
     "suficiente": false
@@ -217346,8 +217339,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 9,
     "presentes": 5,
     "suficiente": false
@@ -217365,8 +217359,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 8,
     "presentes": 3,
     "suficiente": false
@@ -217384,8 +217379,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 3,
     "presentes": 2,
     "suficiente": false
@@ -217403,8 +217399,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 5,
     "presentes": 3,
     "suficiente": false
@@ -217422,8 +217419,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 5,
     "presentes": 0,
     "suficiente": false
@@ -217441,8 +217439,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 4,
     "presentes": 0,
     "suficiente": false
@@ -217460,8 +217459,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 1,
     "presentes": 0,
     "suficiente": false
@@ -217479,8 +217479,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 6,
     "presentes": 4,
     "suficiente": false
@@ -217498,8 +217499,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 9,
     "presentes": 7,
     "suficiente": false
@@ -217517,8 +217519,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 1,
     "presentes": 1,
     "suficiente": false
@@ -217536,8 +217539,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 7,
     "presentes": 1,
     "suficiente": false
@@ -217555,8 +217559,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 5,
     "presentes": 1,
     "suficiente": false
@@ -217573,8 +217578,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 2,
     "presentes": 2,
     "suficiente": false
@@ -217591,8 +217597,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 1,
     "presentes": 1,
     "suficiente": false
@@ -217610,8 +217617,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 5,
     "presentes": 3,
     "suficiente": false
@@ -217629,8 +217637,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 3,
     "presentes": 1,
     "suficiente": false
@@ -217648,8 +217657,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 4,
     "presentes": 3,
     "suficiente": false
@@ -217667,8 +217677,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 6,
     "presentes": 1,
     "suficiente": false
@@ -217686,8 +217697,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 7,
     "presentes": 2,
     "suficiente": false
@@ -217705,8 +217717,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 9,
     "presentes": 6,
     "suficiente": false
@@ -217723,8 +217736,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 9,
     "presentes": 9,
     "suficiente": false
@@ -217742,8 +217756,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 8,
     "presentes": 2,
     "suficiente": false
@@ -217760,8 +217775,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 5,
     "presentes": 5,
     "suficiente": false
@@ -217779,8 +217795,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 5,
     "presentes": 3,
     "suficiente": false
@@ -217797,8 +217814,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 2,
     "presentes": 2,
     "suficiente": false
@@ -217816,8 +217834,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 1,
     "presentes": 1,
     "suficiente": false
@@ -217834,8 +217853,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 9,
     "presentes": 9,
     "suficiente": false
@@ -217853,8 +217873,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 5,
     "presentes": 0,
     "suficiente": false
@@ -217871,8 +217892,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 2,
     "presentes": 2,
     "suficiente": false
@@ -217890,8 +217912,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 9,
     "presentes": 3,
     "suficiente": false
@@ -217909,8 +217932,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 8,
     "presentes": 6,
     "suficiente": false
@@ -217927,8 +217951,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 9,
     "presentes": 9,
     "suficiente": false
@@ -217945,8 +217970,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 1,
     "presentes": 1,
     "suficiente": false
@@ -217964,8 +217990,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 3,
     "presentes": 2,
     "suficiente": false
@@ -217982,8 +218009,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 6,
     "presentes": 6,
     "suficiente": false
@@ -218000,8 +218028,9 @@ window.ENEM_DADOS = {
      "interna": true
     },
     "alertas": [
-     "Código não encontrado no Censo Escolar"
+     "Código fora do padrão do Censo Escolar (as escolas do estado começam com 22); não existe no cadastro de escolas"
     ],
+    "observacoes": [],
     "inscritos": 1,
     "presentes": 1,
     "suficiente": false
