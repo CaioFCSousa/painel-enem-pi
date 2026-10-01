@@ -734,7 +734,8 @@ function detalheEscola(){
   if ("seduc_rede" in ck) linha(ck.seduc_rede && ck.seduc_municipio ? "ok" : "al", ck.seduc_rede && ck.seduc_municipio ? `Está na lista de escolas estaduais da SEDUC (${x.gre}ª GRE), com o mesmo município` : "Divergência com a lista da SEDUC");
   else if (x.na_lista_seduc === false) linha("na", "Escola estadual que não consta da lista da SEDUC; GRE definida pelo município");
   if ("interna" in ck) linha(ck.interna ? "ok" : "al", ck.interna ? "Todos os participantes da escola têm o mesmo município e rede nos microdados" : "Participantes com município ou rede diferentes nos microdados");
-  for (const a of x.alertas) if (/paralisada|extinta/.test(a)) linha("al", esc(a));
+  for (const a of x.alertas) if (/paralisada|extinta|fora do padrão/.test(a)) linha("al", esc(a));
+  for (const o of x.observacoes || []) linha("na", esc(o));
   $("#escChecks").innerHTML = li.join("");
   if (!x.suficiente) { $("#tEscHab").innerHTML = ""; $("#tEscComp").innerHTML = ""; return; }
   $("#tEscHab").innerHTML = `<tr><th>Área</th><th>Hab.</th><th>Tema</th><th class="n">Escola</th><th class="n">Estado</th></tr>` +
@@ -1018,8 +1019,9 @@ async function gerarPdf(d, opts={}){
     if ("seduc_rede" in ck) linhasCk.push([ck.seduc_rede && ck.seduc_municipio ? "ok" : "atenção", "Escola estadual na lista da SEDUC, com o mesmo município"]);
     if ("interna" in ck) linhasCk.push([ck.interna ? "ok" : "atenção", "Participantes com o mesmo município e rede nos microdados"]);
     for (const a of x.alertas) linhasCk.push(["atenção", a]);
+    for (const o of x.observacoes || []) linhasCk.push(["obs.", o]);
     tabela(["Situação", "Conferência"], linhasCk, {columnStyles:{0:{cellWidth:20,fontStyle:"bold"}},
-      didParseCell: h => { if (h.section === "body" && h.column.index === 0) h.cell.styles.textColor = rgb(h.cell.raw === "ok" ? C.pos : C.neg); }});
+      didParseCell: h => { if (h.section === "body" && h.column.index === 0) h.cell.styles.textColor = rgb(h.cell.raw === "ok" ? C.pos : h.cell.raw === "obs." ? C.mut : C.neg); }});
     paragrafo(`Critério: ${E.criterio} Acerto = respostas certas ÷ respostas dadas nas questões de cada habilidade, comparando a letra marcada com o gabarito oficial.`, {tam:7.5, cor:C.mut});
   } else if (opts.gre && G) {
     const g = G.gres.find(x => x.gre === opts.gre);
