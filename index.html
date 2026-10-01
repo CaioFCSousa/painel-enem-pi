@@ -359,7 +359,7 @@ function base(){
     interaction:{mode:"index",intersect:false},
     plugins:{ legend:{display:false},
       tooltip:{backgroundColor:css("--surface"),titleColor:css("--text"),bodyColor:css("--text-2"),borderColor:css("--border"),borderWidth:1,padding:10,
-        callbacks:{label:c => ` ${c.dataset.label}: ${fmt(c.parsed.y ?? c.parsed.x)}${c.dataset._suf||""}`}}}
+        callbacks:{label:c => ` ${c.dataset.label}: ${fmt(c.chart.options.indexAxis === "y" ? c.parsed.x : c.parsed.y)}${c.dataset._suf||""}`}}}
   };
 }
 function novo(id, cfg){ charts[id]?.destroy(); charts[id] = new Chart(document.getElementById(id), cfg); }
