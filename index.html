@@ -165,7 +165,7 @@ tr.sel td{background:var(--surface-2)}
         <div class="legend"><span style="--c:var(--uf)">% presentes no 1º dia</span><span style="--c:var(--dia2)">% presentes no 2º dia</span></div>
         <div class="chart"><canvas id="cGrePart"></canvas></div>
         <div class="tbl-wrap" style="margin-top:10px"><table id="tGrePart" class="heat"></table></div>
-        <p class="note">Cores nos percentuais: comparação com o estado. Vermelho = presença menor que a do estado; azul = maior.</p>
+        <p class="note">A conta fecha assim: <b>inscritos = presentes no 1º dia + faltaram no 1º dia + eliminados no 1º dia</b>. Eliminado é quem compareceu, mas foi eliminado da prova; não conta como presente nem como falta. "Só no 1º dia" é quem foi no 1º dia e não esteve presente no 2º. Cores nos percentuais: comparação com o estado. Vermelho = presença menor que a do estado; azul = maior.</p>
       </div>
 
       <div class="card" style="margin-top:12px">
@@ -606,8 +606,8 @@ function participacaoGre(G, ref){
   const cel = (n, p_, r_) => `<td class="n">${int(n)}</td><td class="v" style="${heatBg(p_ != null && r_ != null ? p_ - r_ : null, 8)}">${fmt(p_)}%</td>`;
   const linha = (nome, sede, x, cls) => { const p = P(x); return `<tr class="${cls}"><td><b>${esc(nome)}</b>${sede ? ` <span style="color:var(--muted)">${esc(sede)}</span>` : ""}</td><td class="n">${int(p.inscritos)}</td>` +
     cel(p.dia1?.presentes, p.dia1?.pct_presentes, rp.dia1?.pct_presentes) + cel(p.dia2?.presentes, p.dia2?.pct_presentes, rp.dia2?.pct_presentes) +
-    cel(p.ambos?.presentes, p.ambos?.pct, rp.ambos?.pct) + `<td class="n">${int(p.dia1?.faltosos)}</td><td class="n">${int(p.so_dia1?.presentes)}</td></tr>`; };
-  $("#tGrePart").innerHTML = `<tr><th>GRE</th><th class="n">Inscritos</th><th class="n">Presentes 1º dia</th><th class="n">%</th><th class="n">Presentes 2º dia</th><th class="n">%</th><th class="n">Nos dois dias</th><th class="n">%</th><th class="n">Faltaram no 1º dia</th><th class="n">Só no 1º dia</th></tr>` +
+    cel(p.ambos?.presentes, p.ambos?.pct, rp.ambos?.pct) + `<td class="n">${int(p.dia1?.faltosos)}</td><td class="n">${int(p.dia1?.eliminados)}</td><td class="n">${int(p.so_dia1?.presentes)}</td></tr>`; };
+  $("#tGrePart").innerHTML = `<tr><th>GRE</th><th class="n">Inscritos</th><th class="n">Presentes<br>1º dia</th><th class="n">%</th><th class="n">Presentes<br>2º dia</th><th class="n">%</th><th class="n">Nos dois<br>dias</th><th class="n">%</th><th class="n">Faltaram<br>1º dia</th><th class="n">Eliminados<br>1º dia</th><th class="n">Só no<br>1º dia</th></tr>` +
     linha("Estado (referência)", "", ref, "ref") + G.gres.map(g => linha(g.nome, g.sede, g[visSel], "")).join("");
 }
 function detalheGre(g, ref){
@@ -961,14 +961,14 @@ async function gerarPdf(d, opts={}){
        }});
     paragrafo("Cores: vermelho = abaixo da média do estado; azul = acima. Quanto mais forte, maior a diferença.", {tam:7.5, cor:C.mut});
     subtitulo("Inscritos e presentes por dia de prova");
-    paragrafo("1º dia: Linguagens, Ciências Humanas e Redação. 2º dia: Ciências da Natureza e Matemática. Percentuais sobre os inscritos.", {tam:8});
+    paragrafo("1º dia: Linguagens, Ciências Humanas e Redação. 2º dia: Ciências da Natureza e Matemática. Percentuais sobre os inscritos. Inscritos = presentes no 1º dia + faltaram no 1º dia + eliminados no 1º dia.", {tam:8});
     const P = x => x.participacao || {}, rp = P(ref);
-    const linP = (nome, x, pos) => { const p = P(x); return [nome, int(p.inscritos), int(p.dia1?.presentes), fmt(p.dia1?.pct_presentes) + "%", int(p.dia2?.presentes), fmt(p.dia2?.pct_presentes) + "%", int(p.ambos?.presentes), fmt(p.ambos?.pct) + "%"]; };
+    const linP = (nome, x, pos) => { const p = P(x); return [nome, int(p.inscritos), int(p.dia1?.presentes), fmt(p.dia1?.pct_presentes) + "%", int(p.dia2?.presentes), fmt(p.dia2?.pct_presentes) + "%", int(p.ambos?.presentes), fmt(p.ambos?.pct) + "%", int(p.dia1?.faltosos), int(p.dia1?.eliminados)]; };
     const camposP = {3: "dia1", 5: "dia2", 7: "ambos"};
-    tabela(["GRE", "Inscritos", "1º dia", "%", "2º dia", "%", "Dois dias", "%"],
+    tabela(["GRE", "Inscritos", "1º dia", "%", "2º dia", "%", "Dois dias", "%", "Faltaram 1º dia", "Elimin. 1º dia"],
       [linP("Estado", ref), ...G.gres.map(g => linP(`${g.nome} — ${g.sede}`, g[vis]))],
       {styles:{font:"helvetica", fontSize:8, cellPadding:{top:1.4,bottom:1.4,left:1.6,right:1.6}, textColor:rgb(C.txt), lineColor:rgb(C.linha), lineWidth:{bottom:.2}},
-       columnStyles:Object.fromEntries([1,2,3,4,5,6,7].map(i => [i, {halign:"right"}])),
+       columnStyles:Object.fromEntries([1,2,3,4,5,6,7,8,9].map(i => [i, {halign:"right"}])),
        didParseCell: h => {
          if (h.section !== "body") return;
          if (h.row.index === 0) { h.cell.styles.fontStyle = "bold"; h.cell.styles.fillColor = rgb(C.fundo); return; }
