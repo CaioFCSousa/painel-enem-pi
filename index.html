@@ -11,7 +11,7 @@
   --bg:#f6f5f2; --surface:#fcfcfb; --surface-2:#f0efec; --border:#e2e0da;
   --text:#0b0b0b; --text-2:#52514e; --muted:#8a8984; --grid:#e8e6e1;
   --uf:#2a78d6; --dia2:#eb6834; --br:#a3a29c; --pos:#2a78d6; --neg:#e34948; --warn:#b86e00;
-  --neg-bg:#fbe9e8; --pos-bg:#e6f0fb;
+  --neg-bg:#fbe9e8; --pos-bg:#e6f0fb; --rede:#0f7a55; --rede-bg:#dff3ea;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
@@ -19,7 +19,7 @@
     --bg:#121211; --surface:#1a1a19; --surface-2:#262624; --border:#33332f;
     --text:#ffffff; --text-2:#c3c2b7; --muted:#8f8e86; --grid:#2c2c29;
     --uf:#3987e5; --dia2:#d95926; --br:#7a7973; --pos:#3987e5; --neg:#e66767; --warn:#e0a030;
-    --neg-bg:#3a1f1f; --pos-bg:#1a2a3d;
+    --neg-bg:#3a1f1f; --pos-bg:#1a2a3d; --rede:#4fd0a0; --rede-bg:#16332a;
   }
 }
 :root[data-theme="dark"]{
@@ -27,7 +27,7 @@
   --bg:#121211; --surface:#1a1a19; --surface-2:#262624; --border:#33332f;
   --text:#ffffff; --text-2:#c3c2b7; --muted:#8f8e86; --grid:#2c2c29;
   --uf:#3987e5; --dia2:#d95926; --br:#7a7973; --pos:#3987e5; --neg:#e66767; --warn:#e0a030;
-  --neg-bg:#3a1f1f; --pos-bg:#1a2a3d;
+  --neg-bg:#3a1f1f; --pos-bg:#1a2a3d; --rede:#4fd0a0; --rede-bg:#16332a;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
@@ -106,6 +106,18 @@ select.btn{padding:6px 10px;max-width:100%}
 .st.ok{color:var(--pos)} .st.al{color:var(--neg)}
 tr.sel td{background:var(--surface-2)}
 #escDetalhe,#gres,#escolas{scroll-margin-top:56px}
+.cmp{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12.5px;color:var(--text-2);margin:6px 0 12px}
+.cmp-l{font-weight:600;color:var(--muted)}
+.cmp-o{flex-basis:100%;color:var(--text-2)}
+.tag{display:inline-block;padding:2px 9px;border-radius:9px;line-height:1.35;font-size:12px;font-weight:600;border:1px solid transparent}
+.t-br{background:var(--surface-2);color:var(--text-2);border-color:var(--border)}
+.t-pi{background:var(--pos-bg);color:var(--pos)}
+.t-esc{color:var(--pos);border-color:var(--pos)}
+.t-rede{background:var(--rede-bg);color:var(--rede)}
+.t-x{color:var(--text);border-color:var(--border)}
+#guia td{vertical-align:top}
+#guia td:first-child{font-weight:600}
+tr.ref td{font-weight:650;background:var(--surface-2)}
 .hide{display:none}
 @media (max-width:600px){ .kpi .v{font-size:24px} .chart{height:260px} }
 </style>
@@ -133,16 +145,27 @@ tr.sel td{background:var(--surface-2)}
 
   <main id="conteudo" class="hide">
     <nav>
-      <a href="#resumo">Resumo</a><a href="#gres" id="navGre">GREs</a><a href="#escolas" id="navEsc">Escolas</a><a href="#notas">Notas</a><a href="#redacao">Redação</a>
+      <a href="#resumo">Resumo</a><a href="#guia">O que é comparado</a><a href="#gres" id="navGre">GREs</a><a href="#escolas" id="navEsc">Escolas</a><a href="#notas">Notas</a><a href="#redacao">Redação</a>
       <a href="#conteudos">Dificuldades por conteúdo</a><a href="#questoes">Questões críticas</a>
       <a href="#rede">Rede de ensino</a><a href="#municipios">Municípios</a><a href="#ranking">Ranking UFs</a>
     </nav>
 
     <section id="resumo">
+      <div class="cmp" data-cmp="pi-br"></div>
       <div class="grid kpis" id="kpis"></div>
       <h2 style="margin-top:24px">Principais dificuldades</h2>
       <p class="sub" style="margin-top:0">Gerado automaticamente a partir dos dados.</p>
       <div class="dest" id="destaques"></div>
+    </section>
+
+    <section id="guia">
+      <h2>O que é comparado com o quê</h2>
+      <p class="sub" style="margin-top:0">O painel usa grupos de pessoas diferentes em cada parte. Em toda tabela e gráfico há uma faixa "Analisado / Comparado com" usando as mesmas etiquetas abaixo.</p>
+      <div class="grid g2">
+        <div class="card tbl-wrap"><h3>Os grupos</h3><table id="tGuiaGrupos"></table></div>
+        <div class="card tbl-wrap"><h3>Cada parte do painel</h3><table id="tGuiaPartes"></table></div>
+      </div>
+      <p class="sub" id="guiaNota" style="font-size:13px;margin-top:10px"></p>
     </section>
 
     <section id="gres" class="hide">
@@ -153,8 +176,9 @@ tr.sel td{background:var(--surface-2)}
         <button type="button" data-v="todas" aria-pressed="false">Todas as escolas</button>
       </div>
       <div class="card">
-        <h3>Médias por GRE — comparadas à média do estado</h3>
-        <div class="legend"><span style="--c:var(--neg)">abaixo do estado</span><span style="--c:var(--pos)">acima do estado</span><span style="--c:var(--surface-2)">intensidade = tamanho da diferença</span></div>
+        <h3 id="greMapaT">Médias por GRE</h3>
+        <div class="cmp" data-cmp="gre"></div>
+        <div class="legend"><span style="--c:var(--neg)">abaixo da referência</span><span style="--c:var(--pos)">acima da referência</span><span style="--c:var(--surface-2)">intensidade = tamanho da diferença</span></div>
         <div class="tbl-wrap"><table id="tGreMapa" class="heat"></table></div>
         <p class="note" id="greNota"></p>
       </div>
@@ -162,10 +186,11 @@ tr.sel td{background:var(--surface-2)}
       <div class="card" style="margin-top:12px">
         <h3>Inscritos e presentes por dia de prova</h3>
         <p class="sub" style="margin:0 0 8px">1º dia: Linguagens, Ciências Humanas e Redação. 2º dia: Ciências da Natureza e Matemática. Percentuais sobre os inscritos de cada GRE.</p>
+        <div class="cmp" data-cmp="gre"></div>
         <div class="legend"><span style="--c:var(--uf)">% presentes no 1º dia</span><span style="--c:var(--dia2)">% presentes no 2º dia</span></div>
         <div class="chart"><canvas id="cGrePart"></canvas></div>
         <div class="tbl-wrap" style="margin-top:10px"><table id="tGrePart" class="heat"></table></div>
-        <p class="note">A conta fecha assim: <b>inscritos = presentes no 1º dia + faltaram no 1º dia + eliminados no 1º dia</b>. Eliminado é quem compareceu, mas foi eliminado da prova; não conta como presente nem como falta. "Só no 1º dia" é quem foi no 1º dia e não esteve presente no 2º. Cores nos percentuais: comparação com o estado. Vermelho = presença menor que a do estado; azul = maior.</p>
+        <p class="note">A conta fecha assim: <b>inscritos = presentes no 1º dia + faltaram no 1º dia + eliminados no 1º dia</b>. Eliminado é quem compareceu, mas foi eliminado da prova; não conta como presente nem como falta. "Só no 1º dia" é quem foi no 1º dia e não esteve presente no 2º. Cores nos percentuais: comparação com a linha de referência (primeira linha da tabela). Vermelho = presença menor que a da referência; azul = maior.</p>
       </div>
 
       <div class="card" style="margin-top:12px">
@@ -178,31 +203,33 @@ tr.sel td{background:var(--surface-2)}
         </div>
         <p class="sub" id="greMun" style="margin:10px 0 0"></p>
       </div>
-      <div class="grid kpis" id="greKpis" style="margin-top:12px"></div>
+      <div class="cmp" data-cmp="gre1" style="margin-top:12px"></div>
+      <div class="grid kpis" id="greKpis"></div>
       <h3 style="margin:18px 0 8px">Principais dificuldades da GRE</h3>
       <div class="dest" id="greDest"></div>
       <div class="grid g2" style="margin-top:12px">
         <div class="card">
           <h3>Acerto por competência / tema</h3>
           <div class="tabs" id="tabsGreArea"></div>
-          <div class="legend"><span style="--c:var(--uf)" class="lg-gre">GRE</span><span style="--c:var(--br)">Estado</span></div>
+          <div class="legend"><span style="--c:var(--uf)" class="lg-gre">GRE</span><span style="--c:var(--br)" class="lg-ref"></span></div>
           <div class="chart tall"><canvas id="cGreComp"></canvas></div>
         </div>
         <div class="card tbl-wrap" style="max-height:640px;overflow:auto">
           <h3>Habilidades — da mais difícil para a mais fácil</h3>
           <table id="tGreHab"></table>
-          <p class="note">Barra = acerto na GRE; traço = estado. Diferença em pontos percentuais.</p>
+          <p class="note">Barra = acerto na GRE; traço = <span class="lg-ref"></span>. Diferença em pontos percentuais.</p>
         </div>
       </div>
       <div class="grid g2" style="margin-top:12px">
         <div class="card">
           <h3>Redação — média por competência (0 a 200)</h3>
-          <div class="legend"><span style="--c:var(--uf)" class="lg-gre">GRE</span><span style="--c:var(--br)">Estado</span></div>
+          <div class="legend"><span style="--c:var(--uf)" class="lg-gre">GRE</span><span style="--c:var(--br)" class="lg-ref"></span></div>
           <div class="chart"><canvas id="cGreRed"></canvas></div>
         </div>
         <div class="card tbl-wrap" style="max-height:420px;overflow:auto">
           <h3>Municípios da GRE (município da escola)</h3>
           <table id="tGreMun"></table>
+          <p class="note">Em vermelho: área abaixo da média da referência (<span class="lg-ref"></span>).</p>
         </div>
       </div>
     </section>
@@ -210,6 +237,7 @@ tr.sel td{background:var(--surface-2)}
     <section id="escolas" class="hide">
       <h2>Escolas</h2>
       <p class="sub" style="margin-top:0" id="escSub"></p>
+      <div class="cmp" data-cmp="esc"></div>
       <div class="grid kpis" id="escResumo"></div>
       <div class="card" style="margin-top:12px">
         <div class="filtros">
@@ -242,14 +270,15 @@ tr.sel td{background:var(--surface-2)}
         <div class="card tbl-wrap" style="margin-top:12px">
           <h3>Acerto por competência / tema</h3>
           <table id="tEscComp"></table>
-          <p class="note">Diferença em pontos percentuais em relação a todos os participantes com escola no Piauí.</p>
+          <p class="note">Diferença em pontos percentuais em relação a todos os alunos com escola no estado (todas as redes). Traço na barra = esse mesmo grupo.</p>
         </div>
       </div>
     </section>
 
     <section id="notas">
       <h2>Notas por área</h2>
-      <p class="sub" style="margin-top:0">Média do estado comparada à média nacional.</p>
+      <p class="sub" style="margin-top:0">Média de quem fez a prova no estado comparada à média de todo o país.</p>
+      <div class="cmp" data-cmp="pi-br"></div>
       <div class="grid g2">
         <div class="card">
           <h3>Média por área</h3>
@@ -269,6 +298,7 @@ tr.sel td{background:var(--surface-2)}
     <section id="redacao">
       <h2>Redação</h2>
       <p class="sub" style="margin-top:0" id="redSub"></p>
+      <div class="cmp" data-cmp="pi-br"></div>
       <div class="grid g2">
         <div class="card">
           <h3>Média por competência (0 a 200)</h3>
@@ -290,6 +320,7 @@ tr.sel td{background:var(--surface-2)}
     <section id="conteudos">
       <h2>Dificuldades por conteúdo</h2>
       <p class="sub" style="margin-top:0">Percentual de acerto das questões agrupadas pela Matriz de Referência do ENEM. Quanto menor, maior a dificuldade.</p>
+      <div class="cmp" data-cmp="pi-br"></div>
       <div class="tabs" id="tabsArea"></div>
       <div class="grid g2">
         <div class="card">
@@ -308,6 +339,7 @@ tr.sel td{background:var(--surface-2)}
     <section id="questoes">
       <h2>Questões com menor acerto</h2>
       <p class="sub" style="margin-top:0">Posição na prova de referência (cor indicada). Em verde a alternativa correta, em vermelho a errada mais marcada — indica o "distrator" que mais enganou.</p>
+      <div class="cmp" data-cmp="pi-br"></div>
       <div class="tabs" id="tabsQuest"></div>
       <div class="card tbl-wrap"><table id="tQuest"></table></div>
     </section>
@@ -315,6 +347,7 @@ tr.sel td{background:var(--surface-2)}
     <section id="rede">
       <h2>Rede de ensino</h2>
       <p class="sub" style="margin-top:0" id="redeSub"></p>
+      <div class="cmp" data-cmp="rede"></div>
       <div class="grid g2">
         <div class="card">
           <h3>Média por área e tipo de escola</h3>
@@ -328,15 +361,18 @@ tr.sel td{background:var(--surface-2)}
     <section id="municipios">
       <h2>Municípios</h2>
       <p class="sub" style="margin-top:0">Somente municípios com pelo menos 20 participantes com todas as notas. Clique no cabeçalho para ordenar.</p>
+      <div class="cmp" data-cmp="mun"></div>
       <div class="card">
         <input type="search" id="buscaMun" placeholder="Buscar município…" aria-label="Buscar município">
         <div class="tbl-wrap" style="max-height:520px;overflow:auto;margin-top:10px"><table id="tMun"></table></div>
+        <p class="note" id="munNota"></p>
       </div>
     </section>
 
     <section id="ranking">
       <h2>Ranking dos estados</h2>
       <p class="sub" style="margin-top:0">Média geral (4 áreas + redação) de quem fez todas as provas.</p>
+      <div class="cmp" data-cmp="rank"></div>
       <div class="card"><div class="chart" style="height:640px"><canvas id="cRank"></canvas></div></div>
     </section>
 
@@ -373,6 +409,66 @@ const fmt = (v, c=1) => v == null ? "—" : Number(v).toLocaleString("pt-BR",{mi
 const int = v => v == null ? "—" : Number(v).toLocaleString("pt-BR");
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const diff = (v, suf="") => v == null ? "—" : `<span class="pill ${v<0?"neg":"pos"}">${v>0?"+":""}${fmt(v)}${suf}</span>`;
+
+/* ---------- públicos: quem é analisado e com quem é comparado ---------- */
+function refGre(vis = visSel){
+  const uf = D.meta.uf;
+  return vis === "estadual"
+    ? {nome:`Rede estadual do ${uf}`, curto:`Rede estadual ${uf}`, a:`à rede estadual do ${uf}`, de:`da rede estadual do ${uf}`, em:`na rede estadual do ${uf}`}
+    : {nome:`Todas as escolas do ${uf}`, curto:`Todas as escolas ${uf}`, a:`ao conjunto das escolas do ${uf}`, de:`do conjunto das escolas do ${uf}`, em:`no conjunto das escolas do ${uf}`};
+}
+/* os textos prontos das GREs dizem "estado"; aqui trocamos pelo nome exato do grupo de referência */
+const trocaEstado = (s, R) => String(s ?? "").replace(/\bao estado\b/g, R.a).replace(/\bdo estado\b/g, R.de).replace(/\bno estado\b/g, R.em)
+  .replace(/\bNo estado\b/g, R.em[0].toUpperCase() + R.em.slice(1)).replace(/\(estado:/g, `(${R.curto}:`);
+function publicos(){
+  const d = D, uf = d.meta.uf, nUF = uf === "PI" ? "Piauí" : uf, G = d.gre, E = d.escolas;
+  const porEscola = String(d.meta.filtro).includes("SG_UF_ESC");
+  return {
+    br:{cls:"t-br", nome:"Brasil", n:d.participacao.inscritos_br, quem:"Todos os inscritos do ENEM no país."},
+    pi:{cls:"t-pi", nome:nUF, n:d.participacao.inscritos, quem: porEscola ? `Inscritos que informaram escola em ${nUF}.` : `Todos os inscritos que fizeram a prova em ${nUF}: alunos do ensino médio, quem já concluiu e treineiros.`},
+    esc: E ? {cls:"t-esc", nome:`${nUF} · alunos com escola`, n:E.estado.inscritos, quem:"Inscritos com escola do estado registrada (em geral, quem conclui o ensino médio no ano). Todas as redes."} : null,
+    estadual: G ? {cls:"t-rede", nome:`Rede estadual do ${uf}`, n:G.estado.estadual.inscritos, quem:"Alunos de escolas estaduais ligadas a uma GRE."} : null,
+    todas: G ? {cls:"t-esc", nome:`Todas as escolas do ${uf} com GRE`, n:G.estado.todas.inscritos, quem:"Alunos de escolas de qualquer rede ligadas a uma GRE."} : null,
+  };
+}
+const tag = p => `<span class="tag ${p.cls}">${esc(p.nome)}${p.n != null ? ` · ${int(p.n)} inscritos` : ""}</span>`;
+const tagTxt = (txt, cls="t-x") => `<span class="tag ${cls}">${esc(txt)}</span>`;
+const faixa = (a, b, obs) => `<span class="cmp-l">Analisado:</span>${a}<span class="cmp-l">Comparado com:</span>${b}${obs ? `<span class="cmp-o">${obs}</span>` : ""}`;
+function rotulos(){
+  const P = publicos(), uf = D.meta.uf, R = D.gre ? refGre() : null, pv = P[visSel];
+  const porEscola = String(D.meta.filtro).includes("SG_UF_ESC");
+  const f = {
+    "pi-br": faixa(tag(P.pi), tag(P.br)),
+    "rank": faixa(tagTxt("Cada estado (todos os inscritos)"), tagTxt("Os outros estados")),
+    "rede": faixa(tag(P.pi) + tagTxt("separado por rede da escola"), tagTxt("As redes entre si"), "Não é comparação com o Brasil. A média pública x privada do Brasil aparece só na frase acima."),
+    "mun": faixa(tagTxt(porEscola ? "Cada município (da escola)" : "Cada município (onde a prova foi feita)", "t-pi"), tag(P.br), `As duas primeiras linhas da tabela mostram ${uf} e Brasil para referência.`),
+  };
+  if (pv) {
+    f["gre"] = faixa(tagTxt("Cada GRE", pv.cls), tag(pv), "Aqui não há comparação com o Brasil: a referência é a primeira linha da tabela. Troque o grupo nos botões acima.");
+    f["gre1"] = faixa(tagTxt("GRE selecionada", pv.cls), tag(pv));
+  }
+  if (P.esc) f["esc"] = faixa(tagTxt("Cada escola (pelo código INEP)"), tag(P.esc) + tagTxt("e a GRE da escola"), "Não é comparação com o Brasil nem com todos os inscritos do estado.");
+  document.querySelectorAll("[data-cmp]").forEach(e => { e.innerHTML = f[e.dataset.cmp] || ""; });
+  if (R) document.querySelectorAll(".lg-ref").forEach(e => e.textContent = R.nome);
+
+  /* guia */
+  const grupos = [P.br, P.pi, P.esc, P.estadual, P.todas].filter(Boolean);
+  $("#tGuiaGrupos").innerHTML = `<tr><th>Grupo</th><th>Quem são</th><th class="n">Inscritos</th></tr>` +
+    grupos.map(g => `<tr><td><span class="tag ${g.cls}">${esc(g.nome)}</span></td><td style="font-weight:400">${esc(g.quem)}</td><td class="n">${int(g.n)}</td></tr>`).join("");
+  const t0 = p => `<span class="tag ${p.cls}">${esc(p.nome)}</span>`;
+  const partes = [
+    ["Resumo, Notas, Redação, Dificuldades por conteúdo, Questões críticas", t0(P.pi), t0(P.br)],
+    ["Ranking UFs", tagTxt("Cada estado"), tagTxt("Os outros estados")],
+    ["Rede de ensino", t0(P.pi) + " por rede", tagTxt("As redes entre si")],
+    ["Municípios", tagTxt("Cada município", "t-pi"), t0(P.br)],
+  ];
+  if (P.estadual) partes.push(["GREs", tagTxt("Cada GRE", "t-rede"), t0(P.estadual) + ` ou ` + t0(P.todas) + ` (botão)`]);
+  if (P.esc) partes.push(["Escolas", tagTxt("Cada escola"), t0(P.esc) + " e a GRE da escola"]);
+  $("#tGuiaPartes").innerHTML = `<tr><th>Parte</th><th>Analisado</th><th>Comparado com</th></tr>` +
+    partes.map(([a, b, c]) => `<tr><td>${a}</td><td>${b}</td><td>${c}</td></tr>`).join("");
+  $("#guiaNota").innerHTML = (P.esc ? `Por que as GREs e as escolas não são comparadas com o Brasil: a média do Brasil e a de ${esc(P.pi.nome)} incluem todo mundo que fez a prova (inclusive quem já terminou a escola), enquanto GREs e escolas só têm os alunos com escola registrada. São públicos diferentes, e misturá-los daria uma comparação injusta. ` : "") +
+    `Em todo o painel, "diferença" é sempre <b>analisado menos comparado</b>: negativa (vermelho) = abaixo do grupo de comparação; positiva (azul) = acima.`;
+}
 
 /* ---------- tema ---------- */
 function aplicarTema(t){ if(t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme; try{ t?localStorage.setItem("tema",t):localStorage.removeItem("tema") }catch(e){} if(D) desenhar(); }
@@ -437,6 +533,7 @@ function tabs(el, itens, sel, cb){
 function desenhar(){
   const d = D, uf = d.meta.uf, UF = css("--uf"), BR = css("--br");
   const areas = AREAS_ORD.filter(a => d.areas[a]);
+  rotulos();
 
   /* KPIs */
   const rk = (d.ranking_ufs||[]).find(x => x.uf === uf);
@@ -468,8 +565,8 @@ function desenhar(){
   };
   hist();
 
-  $("#tAreas").innerHTML = `<tr><th>Área</th><th class="n">Média ${uf}</th><th class="n">Brasil</th><th class="n">Diferença</th><th class="n">Mediana</th><th class="n">Faixa central (25%–75%)</th><th class="n">Abaixo de 450</th><th class="n">600 ou mais</th><th class="n">Faltas</th></tr>` +
-    areas.map(a => { const x = d.areas[a], p = d.participacao.areas[a]||{}; return `<tr><td>${x.nome}</td><td class="n"><b>${fmt(x.media)}</b></td><td class="n">${fmt(x.media_br)}</td><td class="n">${diff(x.diferenca)}</td><td class="n">${fmt(x.mediana)}</td><td class="n">${fmt(x.p25)} – ${fmt(x.p75)}</td><td class="n">${fmt(x.pct_abaixo_450)}%</td><td class="n">${fmt(x.pct_acima_600)}%</td><td class="n">${fmt(p.pct_faltas)}% <span style="color:var(--muted)">(BR ${fmt(p.pct_faltas_br)}%)</span></td></tr>`; }).join("");
+  $("#tAreas").innerHTML = `<tr><th>Área</th><th class="n">Média ${uf}</th><th class="n">Média Brasil</th><th class="n">Dif. ${uf} − Brasil</th><th class="n">Mediana ${uf}</th><th class="n">Faixa central (25%–75%)</th><th class="n">Abaixo de 450 (${uf})</th><th class="n">600 ou mais (${uf})</th><th class="n">Faltas ${uf} (Brasil)</th></tr>` +
+    areas.map(a => { const x = d.areas[a], p = d.participacao.areas[a]||{}; return `<tr><td>${x.nome}</td><td class="n"><b>${fmt(x.media)}</b></td><td class="n">${fmt(x.media_br)}</td><td class="n">${diff(x.diferenca)}</td><td class="n">${fmt(x.mediana)}</td><td class="n">${fmt(x.p25)} – ${fmt(x.p75)}</td><td class="n">${fmt(x.pct_abaixo_450)}%</td><td class="n">${fmt(x.pct_acima_600)}%</td><td class="n">${fmt(p.pct_faltas)}% <span style="color:var(--muted)">(${fmt(p.pct_faltas_br)}%)</span></td></tr>`; }).join("");
 
   /* redação */
   const r = d.redacao;
@@ -481,9 +578,9 @@ function desenhar(){
     const of = base(); of.scales = {y:{beginAtZero:true, grid:{color:css("--grid")}, ticks:{callback:v=>v+"%"}}, x:{grid:{display:false}}};
     novo("cFaixas", {type:"bar", data:{labels:r.faixas.map(f=>f.faixa), datasets:[barDs(uf,r.faixas.map(f=>f.pct),UF,"%"), barDs("Brasil",r.faixas.map(f=>f.pct_br),BR,"%")]}, options:of});
     const pior = Math.min(...r.competencias.map(c => c.media ?? 999));
-    $("#tComp").innerHTML = `<tr><th>Competência</th><th class="n">${uf}</th><th class="n">Brasil</th><th class="n">% com 200</th><th class="n">% com até 80</th></tr>` +
+    $("#tComp").innerHTML = `<tr><th>Competência</th><th class="n">Média ${uf}</th><th class="n">Média Brasil</th><th class="n">% com 200 (${uf})</th><th class="n">% com até 80 (${uf})</th></tr>` +
       r.competencias.map(c => `<tr><td><b>C${c.competencia}</b> ${esc(c.nome)}${c.media===pior?' <span class="pill neg">mais fraca</span>':""}</td><td class="n"><b>${fmt(c.media)}</b></td><td class="n">${fmt(c.media_br)}</td><td class="n">${fmt(c.pct_nota_200)}%</td><td class="n">${fmt(c.pct_ate_80)}%</td></tr>`).join("");
-    $("#tStatus").innerHTML = `<tr><th>Situação</th><th class="n">Qtd.</th><th class="n">% ${uf}</th><th class="n">% Brasil</th></tr>` +
+    $("#tStatus").innerHTML = `<tr><th>Situação</th><th class="n">Qtd. ${uf}</th><th class="n">% ${uf}</th><th class="n">% Brasil</th></tr>` +
       r.status.map(s => `<tr><td>${esc(s.descricao)}</td><td class="n">${int(s.qtd)}</td><td class="n">${fmt(s.pct)}%</td><td class="n">${fmt(s.pct_br,2)}%</td></tr>`).join("");
   }
 
@@ -500,7 +597,7 @@ function desenhar(){
     const bh = (l, dt, c) => ({...barDs(l, dt, c, "%"), borderSkipped:"start", borderWidth:{top:1,bottom:1,left:0,right:0}, maxBarThickness:18});
     novo("cCompArea", {type:"bar", data:{labels:cs.map(c => `${c.disciplina} (C${c.competencia})`), datasets:[bh(uf, cs.map(c=>c.acerto), UF), bh("Brasil", cs.map(c=>c.acerto_br), BR)]}, options:o});
     const hs = d.habilidades[areaSel] || [];
-    $("#tHab").innerHTML = `<tr><th>Habilidade</th><th>Tema</th><th>Acerto</th><th class="n">${uf}</th><th class="n">Dif.</th></tr>` +
+    $("#tHab").innerHTML = `<tr><th>Habilidade</th><th>Tema</th><th>Acerto</th><th class="n">${uf}</th><th class="n">Dif. ${uf} − Brasil</th></tr>` +
       hs.map(h => `<tr title="${esc(h.descricao || h.competencia_nome)}"><td><b>${h.habilidade}</b></td><td>${esc(h.disciplina)}<div style="font-size:12px;color:var(--muted)">${esc(h.descricao || h.competencia_nome)}</div></td>
         <td><div class="bar"><i style="width:${h.acerto||0}%"></i><u style="left:${h.acerto_br||0}%"></u></div></td><td class="n">${fmt(h.acerto)}%</td><td class="n">${diff(h.diferenca," p.p.")}</td></tr>`).join("");
   };
@@ -512,7 +609,7 @@ function desenhar(){
   const quest = () => {
     if (!questSel) { $("#tQuest").innerHTML = "<tr><td>Sem dados de itens.</td></tr>"; return; }
     tabs($("#tabsQuest"), areasQ, questSel, k => { questSel = k; quest(); });
-    $("#tQuest").innerHTML = `<tr><th class="n">#</th><th>Questão</th><th>Tema</th><th class="n">Acerto ${uf}</th><th class="n">Brasil</th><th>Respostas no estado (%)</th></tr>` +
+    $("#tQuest").innerHTML = `<tr><th class="n">#</th><th>Questão</th><th>Tema</th><th class="n">Acerto ${uf}</th><th class="n">Acerto Brasil</th><th>Respostas em ${uf} (%)</th></tr>` +
       d.questoes_criticas[questSel].map((q,i) => `<tr><td class="n">${i+1}</td><td>Q${q.posicao ?? "?"} <span style="color:var(--muted)">(${esc(q.cor||"")}) · item ${q.co_item}</span></td>
         <td>${q.habilidade||""} · ${esc(q.disciplina)}<div style="font-size:12px;color:var(--muted)">${esc(q.competencia_nome)}</div></td>
         <td class="n"><b>${fmt(q.acerto)}%</b></td><td class="n">${fmt(q.acerto_br)}%</td>
@@ -530,7 +627,7 @@ function desenhar(){
     const cols = labs.map((_,i) => i < areas.length ? areas[i] : "RED");
     const o = base(); o.scales = {y:{beginAtZero:true, grid:{color:css("--grid")}}, x:{grid:{display:false}}}; o.plugins.legend = {display:true, position:"bottom", labels:{boxWidth:10, boxHeight:10, useBorderRadius:true, borderRadius:2}};
     novo("cRede", {type:"bar", data:{labels:labs, datasets:rd.grupos.map((g,i) => barDs(g.rede, cols.map(c => g[c]), (escuro?palD:pal)[i % 5]))}, options:o});
-    $("#tRede").innerHTML = `<tr><th>Rede</th><th class="n">Inscritos</th><th class="n">Média geral</th><th class="n">Redação</th></tr>` +
+    $("#tRede").innerHTML = `<tr><th>Rede (dentro de ${uf})</th><th class="n">Inscritos</th><th class="n">Média geral</th><th class="n">Redação</th></tr>` +
       rd.grupos.map(g => `<tr><td>${g.rede}</td><td class="n">${int(g.n)}</td><td class="n"><b>${fmt(g.media_geral)}</b></td><td class="n">${fmt(g.RED)}</td></tr>`).join("") +
       (d.localizacao||[]).map(l => `<tr><td>Escola ${l.localizacao.toLowerCase()}</td><td class="n">${int(l.n)}</td><td class="n"><b>${fmt(l.media_geral)}</b></td><td class="n">—</td></tr>`).join("");
   }
@@ -566,7 +663,9 @@ function desenharGre(){
   const G = D.gre, sec = $("#gres");
   if (!G || !G.gres?.length) { sec.classList.add("hide"); $("#navGre").classList.add("hide"); return; }
   sec.classList.remove("hide"); $("#navGre").classList.remove("hide");
-  const c = G.cobertura, ref = G.estado[visSel];
+  const c = G.cobertura, ref = G.estado[visSel], R = refGre();
+  rotulos();
+  $("#greMapaT").textContent = `Médias por GRE — comparadas à média ${R.de}`;
   $("#greSub").textContent = G.criterio;
   $("#greNota").innerHTML = `${int(c.com_gre)} de ${int(c.participantes_escola_uf)} participantes com escola no Piauí foram associados a uma GRE. ` +
     `Ficaram de fora ${int(c.sem_gre_teresina)} de escolas de Teresina sem GRE definida (${int(c.sem_gre_teresina_estaduais)} deles de escolas estaduais que não constam da lista da SEDUC)` +
@@ -581,7 +680,7 @@ function desenharGre(){
     <td class="n">${int(x.presentes)}</td>${cel(x.media_geral, ref.media_geral, 20)}${cols.map(k => cel(x[k], ref[k], k === "RED" ? 40 : 25)).join("")}
     <td class="v" style="${heatBg(x.pct_zero_red != null ? -(x.pct_zero_red - ref.pct_zero_red) : null, 6)}">${fmt(x.pct_zero_red)}%</td><td class="n">${x.posicao ? x.posicao + "º" : "—"}</td></tr>`;
   $("#tGreMapa").innerHTML = `<tr><th>GRE</th><th class="n">Presentes</th><th class="n">Média geral</th>${cols.map(k => `<th class="n">${k === "RED" ? "Redação" : k}</th>`).join("")}<th class="n">Red. zero</th><th class="n">Posição</th></tr>` +
-    linha("Estado (referência)", "", ref, "ref") +
+    linha(`${R.nome} (referência)`, "", ref, "ref") +
     G.gres.map(g => linha(g.nome, g.sede, g[visSel], "clic" + (g.gre === greSel ? " sel" : ""), `data-g="${g.gre}"`)).join("");
   $("#tGreMapa").querySelectorAll("tr[data-g]").forEach(tr => tr.onclick = () => { greSel = +tr.dataset.g; $("#selGre").value = greSel; desenharGre(); $("#selGre").scrollIntoView({behavior:"smooth", block:"center"}); });
 
@@ -608,22 +707,22 @@ function participacaoGre(G, ref){
     cel(p.dia1?.presentes, p.dia1?.pct_presentes, rp.dia1?.pct_presentes) + cel(p.dia2?.presentes, p.dia2?.pct_presentes, rp.dia2?.pct_presentes) +
     cel(p.ambos?.presentes, p.ambos?.pct, rp.ambos?.pct) + `<td class="n">${int(p.dia1?.faltosos)}</td><td class="n">${int(p.dia1?.eliminados)}</td><td class="n">${int(p.so_dia1?.presentes)}</td></tr>`; };
   $("#tGrePart").innerHTML = `<tr><th>GRE</th><th class="n">Inscritos</th><th class="n">Presentes<br>1º dia</th><th class="n">%</th><th class="n">Presentes<br>2º dia</th><th class="n">%</th><th class="n">Nos dois<br>dias</th><th class="n">%</th><th class="n">Faltaram<br>1º dia</th><th class="n">Eliminados<br>1º dia</th><th class="n">Só no<br>1º dia</th></tr>` +
-    linha("Estado (referência)", "", ref, "ref") + G.gres.map(g => linha(g.nome, g.sede, g[visSel], "")).join("");
+    linha(`${refGre().nome} (referência)`, "", ref, "ref") + G.gres.map(g => linha(g.nome, g.sede, g[visSel], "")).join("");
 }
 function detalheGre(g, ref){
-  const x = g[visSel], UF = css("--uf"), BR = css("--br");
+  const x = g[visSel], UF = css("--uf"), BR = css("--br"), R = refGre();
   document.querySelectorAll(".lg-gre").forEach(e => e.textContent = g.nome);
   $("#greMun").innerHTML = `<b>${g.nome} — ${esc(g.sede)}</b> · ${g.municipios.length} município(s): ${g.municipios.map(esc).join(", ")} · ${int(g.escolas_estaduais)} escolas estaduais na lista da SEDUC · visão: ${VIS_NOME[visSel]}`;
   const kp = [{l:"Participantes presentes", v:int(x.presentes), d:`${int(x.inscritos)} inscritos`},
-              {l:"Média geral", v:fmt(x.media_geral), dv:x.media_geral - ref.media_geral, d:`Estado ${fmt(ref.media_geral)}`}];
-  for (const a of [...AREAS_ORD, "RED"]) if (x[a] != null) kp.push({l:NOMES[a], v:fmt(x[a]), dv:x[a] - ref[a], d:`Estado ${fmt(ref[a])}`});
+              {l:"Média geral", v:fmt(x.media_geral), dv:x.media_geral - ref.media_geral, d:`${R.curto} ${fmt(ref.media_geral)}`}];
+  for (const a of [...AREAS_ORD, "RED"]) if (x[a] != null) kp.push({l:NOMES[a], v:fmt(x[a]), dv:x[a] - ref[a], d:`${R.curto} ${fmt(ref[a])}`});
   const pg = x.participacao || {}, pr = ref.participacao || {};
-  if (pg.dia1) kp.push({l:"Presença no 1º dia", v:`${fmt(pg.dia1.pct_presentes)}%`, dv:pg.dia1.pct_presentes - pr.dia1?.pct_presentes, d:`${int(pg.dia1.presentes)} de ${int(pg.inscritos)} · estado ${fmt(pr.dia1?.pct_presentes)}%`});
-  if (pg.dia2) kp.push({l:"Presença no 2º dia", v:`${fmt(pg.dia2.pct_presentes)}%`, dv:pg.dia2.pct_presentes - pr.dia2?.pct_presentes, d:`${int(pg.dia2.presentes)} de ${int(pg.inscritos)} · estado ${fmt(pr.dia2?.pct_presentes)}%`});
+  if (pg.dia1) kp.push({l:"Presença no 1º dia", v:`${fmt(pg.dia1.pct_presentes)}%`, dv:pg.dia1.pct_presentes - pr.dia1?.pct_presentes, d:`${int(pg.dia1.presentes)} de ${int(pg.inscritos)} · ${R.curto} ${fmt(pr.dia1?.pct_presentes)}%`});
+  if (pg.dia2) kp.push({l:"Presença no 2º dia", v:`${fmt(pg.dia2.pct_presentes)}%`, dv:pg.dia2.pct_presentes - pr.dia2?.pct_presentes, d:`${int(pg.dia2.presentes)} de ${int(pg.inscritos)} · ${R.curto} ${fmt(pr.dia2?.pct_presentes)}%`});
   kp.push({l:"Posição entre as GREs", v: x.posicao ? `${x.posicao}º` : "—", d:`de ${D.gre.gres.length} · ${VIS_NOME[visSel].toLowerCase()}`});
   $("#greKpis").innerHTML = kp.map(k => `<div class="card kpi"><div class="l">${k.l}</div><div class="v">${k.v}</div>
     <div class="d">${k.dv!=null && !isNaN(k.dv) ? `<span class="${k.dv<0?"neg":"pos"}">${k.dv>0?"▲ +":"▼ "}${fmt(k.dv)}</span> · ` : ""}<span style="color:var(--text-2)">${k.d}</span></div></div>`).join("");
-  $("#greDest").innerHTML = (x.destaques || []).map(t => `<div class="card ${t.tipo}"><b>${t.tipo==="alerta"?"⚠ ":"ℹ "}${esc(t.titulo)}</b><p>${esc(t.texto)}</p></div>`).join("") || '<p class="sub">Sem participantes suficientes.</p>';
+  $("#greDest").innerHTML = (x.destaques || []).map(t => `<div class="card ${t.tipo}"><b>${t.tipo==="alerta"?"⚠ ":"ℹ "}${esc(trocaEstado(t.titulo, R))}</b><p>${esc(trocaEstado(t.texto, R))}</p></div>`).join("") || '<p class="sub">Sem participantes suficientes.</p>';
 
   const areas = AREAS_ORD.filter(a => x.itens?.[a]);
   if (!areas.includes(greArea)) greArea = areas[0];
@@ -635,9 +734,9 @@ function detalheGre(g, ref){
     o.scales = {x:{beginAtZero:true, max:100, grid:{color:css("--grid")}, ticks:{callback:v=>v+"%"}}, y:{grid:{display:false}, ticks:{autoSkip:false}}};
     o.plugins.tooltip.callbacks.title = i => `C${cs[i[0].dataIndex].competencia} — ${cs[i[0].dataIndex].nome}`;
     const bh = (l, dt, c) => ({...barDs(l, dt, c, "%"), borderWidth:{top:1,bottom:1,left:0,right:0}, maxBarThickness:18});
-    novo("cGreComp", {type:"bar", data:{labels:cs.map(c => `${c.disciplina} (C${c.competencia})`), datasets:[bh(g.nome, cs.map(c=>c.acerto), UF), bh("Estado", cs.map(c=>rc[c.competencia]), BR)]}, options:o});
+    novo("cGreComp", {type:"bar", data:{labels:cs.map(c => `${c.disciplina} (C${c.competencia})`), datasets:[bh(g.nome, cs.map(c=>c.acerto), UF), bh(R.nome, cs.map(c=>rc[c.competencia]), BR)]}, options:o});
     const rh = Object.fromEntries((ref.itens?.[greArea]?.habilidades || []).map(h => [h.habilidade, h.acerto]));
-    $("#tGreHab").innerHTML = `<tr><th>Hab.</th><th>Tema</th><th>Acerto</th><th class="n">GRE</th><th class="n">Dif.</th></tr>` +
+    $("#tGreHab").innerHTML = `<tr><th>Hab.</th><th>Tema</th><th>Acerto</th><th class="n">GRE</th><th class="n">Dif. GRE − ${R.curto}</th></tr>` +
       x.itens[greArea].habilidades.map(h => { const e = rh[h.habilidade]; return `<tr><td><b>${h.habilidade}</b></td><td>${esc(h.disciplina)}<div style="font-size:12px;color:var(--muted)">${esc(h.competencia_nome)}</div></td>
         <td><div class="bar"><i style="width:${h.acerto||0}%"></i><u style="left:${e||0}%"></u></div></td><td class="n">${fmt(h.acerto)}%</td><td class="n">${diff(e != null ? h.acerto - e : null, " p.p.")}</td></tr>`; }).join("");
   };
@@ -646,7 +745,7 @@ function detalheGre(g, ref){
   if (x.comp_red) {
     const o = base(); o.scales = {y:{beginAtZero:true, max:200, grid:{color:css("--grid")}}, x:{grid:{display:false}}};
     o.plugins.tooltip.callbacks.title = i => `C${i[0].dataIndex+1} — ${D.redacao?.competencias?.[i[0].dataIndex]?.nome || ""}`;
-    novo("cGreRed", {type:"bar", data:{labels:x.comp_red.map((_,i) => "C"+(i+1)), datasets:[barDs(g.nome, x.comp_red, UF), barDs("Estado", ref.comp_red, BR)]}, options:o});
+    novo("cGreRed", {type:"bar", data:{labels:x.comp_red.map((_,i) => "C"+(i+1)), datasets:[barDs(g.nome, x.comp_red, UF), barDs(R.nome, ref.comp_red, BR)]}, options:o});
   }
   $("#tGreMun").innerHTML = `<tr><th>Município</th><th class="n">Presentes</th><th class="n">Média geral</th>${AREAS_ORD.map(a => `<th class="n">${a}</th>`).join("")}<th class="n">Redação</th><th class="n">Red. zero</th></tr>` +
     (x.municipios || []).map(m => `<tr><td>${esc(m.municipio)}</td><td class="n">${int(m.presentes)}</td><td class="n" style="${heatBg(m.presentes >= 10 ? m.media_geral - ref.media_geral : null, 20)}"><b>${fmt(m.media_geral)}</b></td>` +
@@ -699,14 +798,14 @@ function tabelaEscolas(){
       (x.suficiente ? `<td class="n" style="${heatBg(x.media_geral - ref.media_geral, 40)}"><b>${fmt(x.media_geral)}</b></td>` + ["CN","CH","LC","MT","RED"].map(a => `<td class="n ${x[a] != null && x[a] < ref[a] ? "neg" : ""}">${fmt(x[a])}</td>`).join("") + `<td class="n">${x.pos_gre ? `${x.pos_gre}º/${x.pos_gre_de}` : "—"}</td>`
                     : `<td class="n" colspan="7" style="color:var(--muted);text-align:center">menos de ${E.minimo_presentes} presentes</td>`) +
       `<td>${x.alertas.length ? `<span class="st al">⚠ ${x.alertas.length}</span>` : `<span class="st ok">✓</span>`}</td></tr>`).join("");
-  $("#escNota").textContent = `${int(total)} escola(s) no filtro${total > 400 ? "; mostrando as 400 primeiras — use a busca ou os filtros" : ""}. Cores na média geral: comparação com a média de todos os participantes com escola no Piauí (${fmt(ref.media_geral)}). Clique numa escola para ver o detalhe.`;
+  $("#escNota").textContent = `${int(total)} escola(s) no filtro${total > 400 ? "; mostrando as 400 primeiras — use a busca ou os filtros" : ""}. Cores na média geral e números em vermelho nas áreas: comparação com a média de todos os alunos com escola no estado, de todas as redes (média geral ${fmt(ref.media_geral)}). "Pos. GRE" = posição da escola entre as escolas da mesma GRE. Clique numa escola para ver o detalhe.`;
   $("#tEsc").querySelectorAll("th[data-k]").forEach(th => th.onclick = () => { const k_ = th.dataset.k; escOrd = {k:k_, asc: escOrd.k===k_ ? !escOrd.asc : ["nome","municipio","rede","gre","pos_gre"].includes(k_)}; tabelaEscolas(); });
   $("#tEsc").querySelectorAll("tr[data-c]").forEach(tr => tr.onclick = () => { escSel = tr.dataset.c; tabelaEscolas(); detalheEscola(); $("#escDetalhe").scrollIntoView({behavior:"smooth", block:"start"}); });
   if (escSel) detalheEscola();
 }
 function detalheEscola(){
   const E = D.escolas, x = E.lista.find(x => x.codigo === escSel); if (!x) return;
-  const ref = E.estado, rg = refGreEscola(x);
+  const ref = E.estado, rg = refGreEscola(x), refE = `${D.meta.uf} (alunos c/ escola)`;
   $("#escDetalhe").classList.remove("hide");
   $("#escNome").textContent = x.nome || `Escola INEP ${x.codigo}`;
   $("#escInfo").innerHTML = `Código INEP ${x.codigo} · ${esc(x.municipio)} · ${x.gre ? `${x.gre}ª GRE` : "sem GRE"} · rede ${esc(x.rede).toLowerCase()}${x.localizacao ? ` · ${esc(x.localizacao).toLowerCase()}` : ""}` +
@@ -717,11 +816,11 @@ function detalheEscola(){
     $("#escKpis").innerHTML = `<div class="card" style="grid-column:1/-1">Esta escola teve ${int(x.presentes)} participante(s) com as cinco notas, abaixo do mínimo de ${E.minimo_presentes}. Médias com tão poucas pessoas não são confiáveis e poderiam identificar alunos, por isso não são mostradas.</div>`;
   } else {
     const kp = [{l:"Participantes presentes", v:int(x.presentes), d:`${int(x.inscritos)} inscritos`},
-      {l:"Média geral", v:fmt(x.media_geral), dv:x.media_geral - ref.media_geral, d:`Estado ${fmt(ref.media_geral)}${rg ? ` · GRE ${fmt(rg.media_geral)}` : ""}`}];
-    for (const a of ["CN","CH","LC","MT","RED"]) if (x[a] != null) kp.push({l:NOMES[a], v:fmt(x[a]), dv:x[a]-ref[a], d:`Estado ${fmt(ref[a])}${rg?.[a] != null ? ` · GRE ${fmt(rg[a])}` : ""}`});
+      {l:"Média geral", v:fmt(x.media_geral), dv:x.media_geral - ref.media_geral, d:`${refE} ${fmt(ref.media_geral)}${rg ? ` · ${x.gre}ª GRE ${fmt(rg.media_geral)}` : ""}`}];
+    for (const a of ["CN","CH","LC","MT","RED"]) if (x[a] != null) kp.push({l:NOMES[a], v:fmt(x[a]), dv:x[a]-ref[a], d:`${refE} ${fmt(ref[a])}${rg?.[a] != null ? ` · ${x.gre}ª GRE ${fmt(rg[a])}` : ""}`});
     const pe = x.participacao || {}, pr = ref.participacao || {};
-    if (pe.dia1) kp.push({l:"Presença no 1º dia", v:`${fmt(pe.dia1.pct_presentes)}%`, dv:pe.dia1.pct_presentes - pr.dia1?.pct_presentes, d:`${int(pe.dia1.presentes)} de ${int(pe.inscritos)} · estado ${fmt(pr.dia1?.pct_presentes)}%`});
-    if (pe.dia2) kp.push({l:"Presença no 2º dia", v:`${fmt(pe.dia2.pct_presentes)}%`, dv:pe.dia2.pct_presentes - pr.dia2?.pct_presentes, d:`${int(pe.dia2.presentes)} de ${int(pe.inscritos)} · estado ${fmt(pr.dia2?.pct_presentes)}%`});
+    if (pe.dia1) kp.push({l:"Presença no 1º dia", v:`${fmt(pe.dia1.pct_presentes)}%`, dv:pe.dia1.pct_presentes - pr.dia1?.pct_presentes, d:`${int(pe.dia1.presentes)} de ${int(pe.inscritos)} · ${refE} ${fmt(pr.dia1?.pct_presentes)}%`});
+    if (pe.dia2) kp.push({l:"Presença no 2º dia", v:`${fmt(pe.dia2.pct_presentes)}%`, dv:pe.dia2.pct_presentes - pr.dia2?.pct_presentes, d:`${int(pe.dia2.presentes)} de ${int(pe.inscritos)} · ${refE} ${fmt(pr.dia2?.pct_presentes)}%`});
     kp.push({l:"Posição", v: x.pos_gre ? `${x.pos_gre}º` : `${x.pos_estado}º`, d: `${x.pos_gre ? `de ${x.pos_gre_de} na GRE · ` : ""}${x.pos_estado}º no estado · ${x.pos_municipio}º de ${x.pos_municipio_de} no município`});
     $("#escKpis").innerHTML = kp.map(k => `<div class="card kpi"><div class="l">${k.l}</div><div class="v">${k.v}</div>
       <div class="d">${k.dv!=null && !isNaN(k.dv) ? `<span class="${k.dv<0?"neg":"pos"}">${k.dv>0?"▲ +":"▼ "}${fmt(k.dv)}</span> · ` : ""}<span style="color:var(--text-2)">${k.d}</span></div></div>`).join("");
@@ -738,11 +837,11 @@ function detalheEscola(){
   for (const o of x.observacoes || []) linha("na", esc(o));
   $("#escChecks").innerHTML = li.join("");
   if (!x.suficiente) { $("#tEscHab").innerHTML = ""; $("#tEscComp").innerHTML = ""; return; }
-  $("#tEscHab").innerHTML = `<tr><th>Área</th><th>Hab.</th><th>Tema</th><th class="n">Escola</th><th class="n">Estado</th></tr>` +
+  $("#tEscHab").innerHTML = `<tr><th>Área</th><th>Hab.</th><th>Tema</th><th class="n">Escola</th><th class="n">${refE}</th></tr>` +
     (x.habilidades_piores || []).map(h => `<tr><td>${h.area}</td><td><b>${h.habilidade}</b></td><td>${esc(h.disciplina)}<div style="font-size:12px;color:var(--muted)">${esc(h.competencia_nome)}</div></td><td class="n"><b>${fmt(h.acerto)}%</b></td><td class="n">${fmt(h.acerto_estado)}%</td></tr>`).join("");
   const nomesComp = Object.fromEntries(AREAS_ORD.map(a => [a, Object.fromEntries((D.competencias_area?.[a] || []).map(c => [c.competencia, c]))]));
   const refC = a => Object.fromEntries((ref.competencias?.[a] || []).map(c => [c.competencia, c.acerto]));
-  $("#tEscComp").innerHTML = `<tr><th>Área</th><th>Competência / tema</th><th>Acerto</th><th class="n">Escola</th><th class="n">Estado</th><th class="n">Dif.</th></tr>` +
+  $("#tEscComp").innerHTML = `<tr><th>Área</th><th>Competência / tema</th><th>Acerto</th><th class="n">Escola</th><th class="n">${refE}</th><th class="n">Dif. escola − ${D.meta.uf}</th></tr>` +
     AREAS_ORD.flatMap(a => (x.competencias?.[a] || []).map(c => { const r_ = refC(a)[c.competencia], n_ = nomesComp[a][c.competencia];
       return `<tr><td>${a}</td><td>${esc(n_?.disciplina || "")}<div style="font-size:12px;color:var(--muted)">C${c.competencia} — ${esc(n_?.nome || "")}</div></td>
       <td><div class="bar"><i style="width:${c.acerto||0}%"></i><u style="left:${r_||0}%"></u></div></td><td class="n"><b>${fmt(c.acerto)}%</b></td><td class="n">${fmt(r_)}%</td><td class="n">${diff(r_ != null ? c.acerto - r_ : null, " p.p.")}</td></tr>`; })).join("");
@@ -756,7 +855,12 @@ function tabelaMun(){
   let ls = (D.municipios||[]).filter(m => m.municipio.toLowerCase().includes(busca));
   ls.sort((a,b) => { const x=a[munOrd.k], y=b[munOrd.k]; const c = typeof x==="string" ? x.localeCompare(y,"pt-BR") : (x??-1)-(y??-1); return munOrd.asc?c:-c; });
   const med = {}; for (const a of AREAS_ORD) med[a] = D.areas[a]?.media_br;
+  const rkUF = (D.ranking_ufs || []).find(x => x.uf === uf), rd_ = D.redacao;
+  const linhaRef = (nome, n, geral, ar, red, zero) => `<tr class="ref"><td>${nome}</td><td class="n">${int(n)}</td><td class="n">${fmt(geral)}</td>${AREAS_ORD.map(a => `<td class="n">${fmt(ar(a))}</td>`).join("")}<td class="n">${fmt(red)}</td><td class="n">${zero != null ? fmt(zero) + "%" : "—"}</td></tr>`;
+  $("#munNota").textContent = `Números em vermelho: área abaixo da média do Brasil. As linhas "${uf} (referência)" e "Brasil (referência)" ficam sempre no topo e não entram na ordenação. Município = ${String(D.meta.filtro).includes("SG_UF_ESC") ? "município da escola" : "município onde a prova foi feita"} (diferente da parte das GREs, que usa o município da escola).`;
   $("#tMun").innerHTML = `<tr>${cols.map(([k,l,n]) => `<th data-k="${k}" class="${n?"n":""}">${l}${munOrd.k===k?(munOrd.asc?" ▲":" ▼"):""}</th>`).join("")}</tr>` +
+    linhaRef("Brasil (referência)", D.participacao.inscritos_br, null, a => D.areas[a]?.media_br, rd_?.media_br, null) +
+    linhaRef(`${uf} (referência)`, D.participacao.inscritos, rkUF?.GERAL, a => D.areas[a]?.media, rd_?.media, rd_?.pct_zeros) +
     ls.map(m => `<tr><td>${esc(m.municipio)}</td><td class="n">${int(m.inscritos)}</td><td class="n"><b>${fmt(m.media_geral)}</b></td>` +
       AREAS_ORD.map(a => `<td class="n ${m[a]!=null && med[a]!=null && m[a]<med[a]?"neg":""}">${fmt(m[a])}</td>`).join("") +
       `<td class="n">${fmt(m.RED)}</td><td class="n">${fmt(m.pct_zero_red)}%</td></tr>`).join("");
@@ -852,6 +956,7 @@ async function gerarPdf(d, opts={}){
   const areas = AREAS_ORD.filter(a => d.areas[a]);
 
   const G = d.gre, vis = opts.vis || "estadual";
+  const RP = G ? refGre(vis) : null, refEP = `${uf} c/ escola`;
   const areasG = AREAS_ORD;
 
   /* bloco de uma GRE (usado no relatório completo e no PDF da GRE) */
@@ -859,8 +964,9 @@ async function gerarPdf(d, opts={}){
     const x = g[vis], ref = G.estado[vis];
     titulo(`${g.nome} — ${g.sede}`, detalhado ? 20 : 15);
     paragrafo(`${VIS_NOME[vis]} · ${g.municipios.length} município(s): ${g.municipios.join(", ")}.`, {tam:8.5});
+    paragrafo(`O que é comparado: a ${g.nome} com a média ${RP.de} (${int(ref.inscritos)} inscritos). Não é comparação com o Brasil.`, {tam:8.5, cor:C.txt, negrito:true});
     if (!x.presentes) { paragrafo("Sem participantes presentes nesta visão."); return; }
-    tabela(["Indicador", g.nome, "Estado", "Diferença"],
+    tabela(["Indicador", g.nome, RP.curto, `Dif. GRE - ${RP.curto}`],
       [["Participantes presentes", int(x.presentes), int(ref.presentes), "—"],
        ["Média geral", fmt(x.media_geral), fmt(ref.media_geral), pp(x.media_geral - ref.media_geral)],
        ...[...areasG, "RED"].filter(a => x[a] != null).map(a => [NOMES[a], fmt(x[a]), fmt(ref[a]), pp(x[a] - ref[a])]),
@@ -875,12 +981,12 @@ async function gerarPdf(d, opts={}){
     for (const t_ of x.destaques || []) {
       espaco(10);
       doc.setFillColor(...rgb(t_.tipo === "alerta" ? C.neg : C.mut)); doc.rect(M, y + .3, 1, 4.2, "F");
-      paragrafo(t_.titulo, {tam:9.5, cor:C.txt, negrito:true, recuo:3.5}); y -= 1.2;
-      paragrafo(t_.texto, {tam:8.5, recuo:3.5}); y += .5;
+      paragrafo(trocaEstado(t_.titulo, RP), {tam:9.5, cor:C.txt, negrito:true, recuo:3.5}); y -= 1.2;
+      paragrafo(trocaEstado(t_.texto, RP), {tam:8.5, recuo:3.5}); y += .5;
     }
     if (x.comp_red) {
       subtitulo("Redação — média por competência");
-      tabela(["Competência", g.nome, "Estado", "Dif."], x.comp_red.map((v, i) => [`C${i+1} — ${d.redacao?.competencias?.[i]?.nome || ""}`, fmt(v), fmt(ref.comp_red?.[i]), pp(v - (ref.comp_red?.[i] ?? v))]),
+      tabela(["Competência", g.nome, RP.curto, "Dif."], x.comp_red.map((v, i) => [`C${i+1} — ${d.redacao?.competencias?.[i]?.nome || ""}`, fmt(v), fmt(ref.comp_red?.[i]), pp(v - (ref.comp_red?.[i] ?? v))]),
         {colunasDif:[3], columnStyles:{1:{halign:"right",fontStyle:"bold"},2:{halign:"right"},3:{halign:"right"}}});
     }
     const comps = [];
@@ -890,7 +996,7 @@ async function gerarPdf(d, opts={}){
     }
     if (comps.length) {
       subtitulo("Acerto por competência / tema");
-      tabela(["Área", "Competência", "GRE", "Estado", "Dif. (p.p.)"], comps,
+      tabela(["Área", "Competência", "GRE", RP.curto, "Dif. (p.p.)"], comps,
         {colunasDif:[4], columnStyles:{0:{cellWidth:30},2:{halign:"right",fontStyle:"bold",cellWidth:16},3:{halign:"right",cellWidth:16},4:{halign:"right",cellWidth:20}}});
     }
     if (detalhado) {
@@ -900,18 +1006,18 @@ async function gerarPdf(d, opts={}){
         const cs = x.itens[a].competencias, rc = Object.fromEntries((ref.itens?.[a]?.competencias || []).map(c => [c.competencia, c.acerto]));
         novaPagina();
         titulo(`${d.meta.areas?.[a] || NOMES[a]} — ${g.nome}`);
-        legendaTxt([[g.nome, C.uf], ["Estado", C.br]]);
-        grafico({type:"bar", data:{labels:cs.map(c => `${c.disciplina} (C${c.competencia})`), datasets:[{...barra(g.nome, cs.map(c=>c.acerto), C.uf), maxBarThickness:34}, {...barra("Estado", cs.map(c=>rc[c.competencia]), C.br), maxBarThickness:34}]},
+        legendaTxt([[g.nome, C.uf], [RP.nome, C.br]]);
+        grafico({type:"bar", data:{labels:cs.map(c => `${c.disciplina} (C${c.competencia})`), datasets:[{...barra(g.nome, cs.map(c=>c.acerto), C.uf), maxBarThickness:34}, {...barra(RP.nome, cs.map(c=>rc[c.competencia]), C.br), maxBarThickness:34}]},
           options:{indexAxis:"y", scales:{x:{beginAtZero:true, max:100, ticks:{callback:v => v+"%"}}, y:{grid:{display:false}, ticks:{autoSkip:false}}}}}, LW, Math.max(45, cs.length * 10));
         subtitulo("Habilidades — da mais difícil para a mais fácil");
-        tabela(["Hab.", "Disciplina / tema", "Acerto GRE", "Estado", "Dif. (p.p.)"],
+        tabela(["Hab.", "Disciplina / tema", "Acerto GRE", RP.curto, "Dif. (p.p.)"],
           hs.map(h => [h.habilidade, `${h.disciplina} — ${h.competencia_nome}`, fmt(h.acerto) + "%", fmt(rh[h.habilidade]) + "%", pp(rh[h.habilidade] != null ? h.acerto - rh[h.habilidade] : null)]),
           {colunasDif:[4], columnStyles:{0:{cellWidth:13,fontStyle:"bold"},2:{halign:"right",fontStyle:"bold",cellWidth:22},3:{halign:"right",cellWidth:18},4:{halign:"right",cellWidth:22}}});
       }
       if (x.municipios?.length) {
         novaPagina();
         titulo(`Municípios — ${g.nome}`);
-        paragrafo("Pelo município da escola. Em vermelho, áreas abaixo da média do estado.", {tam:8.5});
+        paragrafo(`Pelo município da escola. Em vermelho, áreas abaixo da média ${RP.de}.`, {tam:8.5});
         tabela(["Município", "Presentes", "Média geral", ...areasG, "Redação", "Red. zero"],
           x.municipios.map(m => [m.municipio, int(m.presentes), fmt(m.media_geral), ...areasG.map(a => fmt(m[a])), fmt(m.RED), fmt(m.pct_zero_red) + "%"]),
           {styles:{font:"helvetica", fontSize:8, cellPadding:{top:1.3,bottom:1.3,left:1.6,right:1.6}, textColor:rgb(C.txt), lineColor:rgb(C.linha), lineWidth:{bottom:.2}},
@@ -923,7 +1029,7 @@ async function gerarPdf(d, opts={}){
       if (escs.length) {
         novaPagina();
         titulo(`Escolas — ${g.nome}`);
-        paragrafo(`Escolas com pelo menos ${d.escolas.minimo_presentes} participantes com as cinco notas, ordenadas pela média geral. Em vermelho, áreas abaixo da média do estado. Nomes: ${d.escolas.fonte_nomes}.`, {tam:8.5});
+        paragrafo(`Escolas com pelo menos ${d.escolas.minimo_presentes} participantes com as cinco notas, ordenadas pela média geral. Em vermelho, áreas abaixo da média de todos os alunos com escola no estado (todas as redes). Nomes: ${d.escolas.fonte_nomes}.`, {tam:8.5});
         tabela(["#", "Escola", "Município", "Pres.", "Geral", ...areasG, "Red.", "Dados"],
           escs.sort((a, b) => b.media_geral - a.media_geral).map((e, i) => [i + 1, `${e.nome || "—"} (${e.codigo})`, e.municipio, int(e.presentes), fmt(e.media_geral), ...areasG.map(a => fmt(e[a])), fmt(e.RED), e.alertas.length ? `${e.alertas.length} alerta(s)` : "ok"]),
           {styles:{font:"helvetica", fontSize:7.2, cellPadding:{top:1.1,bottom:1.1,left:1.3,right:1.3}, textColor:rgb(C.txt), lineColor:rgb(C.linha), lineWidth:{bottom:.2}},
@@ -942,10 +1048,11 @@ async function gerarPdf(d, opts={}){
   const visaoGeralGre = () => {
     const ref = G.estado[vis], cols = [...areasG, "RED"];
     titulo(`Gerências Regionais de Educação — ${VIS_NOME[vis]}`);
+    paragrafo(`O que é comparado: cada GRE com a média ${RP.de} (primeira linha das tabelas, ${int(G.estado[vis].inscritos)} inscritos). Não é comparação com o Brasil.`, {tam:9, cor:C.txt, negrito:true});
     paragrafo(G.criterio, {tam:8.5});
     const c = G.cobertura;
     paragrafo(`${int(c.com_gre)} de ${int(c.participantes_escola_uf)} participantes com escola no Piauí associados a uma GRE; ${int(c.sem_gre_teresina)} de escolas de Teresina sem GRE definida ficaram de fora. Fonte da divisão: ${G.fonte}.`, {tam:8, cor:C.mut});
-    const linhas = [["Estado", int(ref.presentes), fmt(ref.media_geral), ...cols.map(k => fmt(ref[k])), fmt(ref.pct_zero_red) + "%", "—"],
+    const linhas = [[`${RP.nome} (referência)`, int(ref.presentes), fmt(ref.media_geral), ...cols.map(k => fmt(ref[k])), fmt(ref.pct_zero_red) + "%", "—"],
       ...G.gres.map(g => { const x = g[vis]; return [`${g.nome} — ${g.sede}`, int(x.presentes), fmt(x.media_geral), ...cols.map(k => fmt(x[k])), fmt(x.pct_zero_red) + "%", x.posicao ? x.posicao + "º" : "—"]; })];
     const campos = ["media_geral", ...cols];
     tabela(["GRE", "Presentes", "Média geral", ...cols.map(k => k === "RED" ? "Redação" : k), "Red. zero", "Pos."], linhas,
@@ -959,14 +1066,14 @@ async function gerarPdf(d, opts={}){
          const dif = x[k] - ref[k], f = Math.min(Math.abs(dif) / (k === "RED" ? 40 : 22), 1) * .5;
          const base_ = rgb(dif < 0 ? C.neg : C.pos); h.cell.styles.fillColor = base_.map(v => Math.round(255 - (255 - v) * f));
        }});
-    paragrafo("Cores: vermelho = abaixo da média do estado; azul = acima. Quanto mais forte, maior a diferença.", {tam:7.5, cor:C.mut});
+    paragrafo(`Cores: vermelho = abaixo da média ${RP.de}; azul = acima. Quanto mais forte, maior a diferença.`, {tam:7.5, cor:C.mut});
     subtitulo("Inscritos e presentes por dia de prova");
     paragrafo("1º dia: Linguagens, Ciências Humanas e Redação. 2º dia: Ciências da Natureza e Matemática. Percentuais sobre os inscritos. Inscritos = presentes no 1º dia + faltaram no 1º dia + eliminados no 1º dia.", {tam:8});
     const P = x => x.participacao || {}, rp = P(ref);
     const linP = (nome, x, pos) => { const p = P(x); return [nome, int(p.inscritos), int(p.dia1?.presentes), fmt(p.dia1?.pct_presentes) + "%", int(p.dia2?.presentes), fmt(p.dia2?.pct_presentes) + "%", int(p.ambos?.presentes), fmt(p.ambos?.pct) + "%", int(p.dia1?.faltosos), int(p.dia1?.eliminados)]; };
     const camposP = {3: "dia1", 5: "dia2", 7: "ambos"};
     tabela(["GRE", "Inscritos", "1º dia", "%", "2º dia", "%", "Dois dias", "%", "Faltaram 1º dia", "Elimin. 1º dia"],
-      [linP("Estado", ref), ...G.gres.map(g => linP(`${g.nome} — ${g.sede}`, g[vis]))],
+      [linP(`${RP.nome} (referência)`, ref), ...G.gres.map(g => linP(`${g.nome} — ${g.sede}`, g[vis]))],
       {styles:{font:"helvetica", fontSize:8, cellPadding:{top:1.4,bottom:1.4,left:1.6,right:1.6}, textColor:rgb(C.txt), lineColor:rgb(C.linha), lineWidth:{bottom:.2}},
        columnStyles:Object.fromEntries([1,2,3,4,5,6,7,8,9].map(i => [i, {halign:"right"}])),
        didParseCell: h => {
@@ -987,7 +1094,8 @@ async function gerarPdf(d, opts={}){
     doc.text(t(`ENEM ${ano} — Piauí · Relatório por escola`), M, y + 2); y += 6;
     titulo(x.nome || `Escola INEP ${x.codigo}`, 17);
     paragrafo(`Código INEP ${x.codigo} · ${x.municipio} · ${x.gre ? x.gre + "ª GRE" : "sem GRE"} · rede ${x.rede.toLowerCase()}${x.matriculas_em != null ? ` · ${int(x.matriculas_em)} matrículas no ensino médio (Censo)` : ""}. Nome: ${x.fonte_nome || "não encontrado"}.`, {tam:8.5});
-    tabela(["Indicador", "Escola", "GRE", "Estado", "Dif. estado"],
+    paragrafo(`O que é comparado: a escola com a média de todos os alunos com escola no estado, de todas as redes (${int(ref.inscritos)} inscritos, coluna "${refEP}") e com a média da sua GRE. Não é comparação com o Brasil.`, {tam:8.5, cor:C.txt, negrito:true});
+    tabela(["Indicador", "Escola", x.gre ? `${x.gre}ª GRE` : "GRE", refEP, `Dif. escola - ${uf}`],
       [["Participantes presentes", int(x.presentes), rg ? int(rg.presentes) : "—", int(ref.presentes), "—"],
        ["Média geral", fmt(x.media_geral), fmt(rg?.media_geral), fmt(ref.media_geral), pp(x.media_geral - ref.media_geral)],
        ...["CN","CH","LC","MT","RED"].filter(a => x[a] != null).map(a => [NOMES[a], fmt(x[a]), fmt(rg?.[a]), fmt(ref[a]), pp(x[a] - ref[a])]),
@@ -999,17 +1107,17 @@ async function gerarPdf(d, opts={}){
       {colunasDif:[4], columnStyles:{1:{halign:"right",fontStyle:"bold"},2:{halign:"right"},3:{halign:"right"},4:{halign:"right"}}});
     if (x.comp_red) {
       subtitulo("Redação — média por competência");
-      tabela(["Competência", "Escola", "Estado", "Dif."], x.comp_red.map((v, i) => [`C${i+1} — ${d.redacao?.competencias?.[i]?.nome || ""}`, fmt(v), fmt(ref.comp_red?.[i]), pp(v - (ref.comp_red?.[i] ?? v))]),
+      tabela(["Competência", "Escola", refEP, "Dif."], x.comp_red.map((v, i) => [`C${i+1} — ${d.redacao?.competencias?.[i]?.nome || ""}`, fmt(v), fmt(ref.comp_red?.[i]), pp(v - (ref.comp_red?.[i] ?? v))]),
         {colunasDif:[3], columnStyles:{1:{halign:"right",fontStyle:"bold"},2:{halign:"right"},3:{halign:"right"}}});
     }
     subtitulo("Habilidades com menor acerto na escola");
-    tabela(["Área", "Hab.", "Disciplina / tema", "Escola", "Estado"], (x.habilidades_piores || []).map(h => [h.area, h.habilidade, `${h.disciplina} — ${h.competencia_nome}`, fmt(h.acerto) + "%", fmt(h.acerto_estado) + "%"]),
+    tabela(["Área", "Hab.", "Disciplina / tema", "Escola", refEP], (x.habilidades_piores || []).map(h => [h.area, h.habilidade, `${h.disciplina} — ${h.competencia_nome}`, fmt(h.acerto) + "%", fmt(h.acerto_estado) + "%"]),
       {columnStyles:{0:{cellWidth:12},1:{cellWidth:12,fontStyle:"bold"},3:{halign:"right",fontStyle:"bold",cellWidth:18},4:{halign:"right",cellWidth:18}}});
     const nomesComp = a => Object.fromEntries((d.competencias_area?.[a] || []).map(c => [c.competencia, c]));
     const comps = AREAS_ORD.flatMap(a => { const rc = Object.fromEntries((ref.competencias?.[a] || []).map(c => [c.competencia, c.acerto])), nc = nomesComp(a);
       return (x.competencias?.[a] || []).map(c => [a, `${nc[c.competencia]?.disciplina || ""} — ${nc[c.competencia]?.nome || ""}`, fmt(c.acerto) + "%", fmt(rc[c.competencia]) + "%", pp(rc[c.competencia] != null ? c.acerto - rc[c.competencia] : null)]); });
     subtitulo("Acerto por competência / tema");
-    tabela(["Área", "Competência", "Escola", "Estado", "Dif. (p.p.)"], comps,
+    tabela(["Área", "Competência", "Escola", refEP, "Dif. (p.p.)"], comps,
       {colunasDif:[4], columnStyles:{0:{cellWidth:12},2:{halign:"right",fontStyle:"bold",cellWidth:16},3:{halign:"right",cellWidth:16},4:{halign:"right",cellWidth:20}}});
     subtitulo("Conferência dos dados da escola");
     const ck = x.checagens || {};
@@ -1049,8 +1157,16 @@ async function gerarPdf(d, opts={}){
   for (const a of areas) { const x = d.areas[a]; linhasKpi.push([NOMES[a], fmt(x.media), fmt(x.media_br), pp(x.diferenca)]); }
   if (d.redacao) linhasKpi.push(["Redação", fmt(d.redacao.media), fmt(d.redacao.media_br), pp(d.redacao.media - d.redacao.media_br)]);
   if (rk) linhasKpi.push(["Posição entre as UFs (média geral)", `${rk.posicao}º de ${d.ranking_ufs.length}`, "—", "—"]);
+  subtitulo("O que é comparado neste relatório");
+  { const P = publicos();
+    const linhasG = [["Resumo, notas, redação, conteúdos e questões", `${P.pi.nome} (${int(P.pi.n)} inscritos)`, `Brasil (${int(P.br.n)} inscritos)`],
+      ["Ranking dos estados", "Cada estado", "Os outros estados"], ["Rede de ensino", `${P.pi.nome}, separado por rede`, "As redes entre si"],
+      ["Municípios", "Cada município", "Brasil"]];
+    if (P[vis]) linhasG.push(["GREs", "Cada GRE", `${P[vis].nome} (${int(P[vis].n)} inscritos)`]);
+    tabela(["Parte do relatório", "Analisado", "Comparado com"], linhasG, {columnStyles:{0:{fontStyle:"bold"}}});
+    paragrafo(`${P.pi.quem} As GREs não são comparadas com o Brasil porque só incluem alunos com escola registrada, um público diferente. "Diferença" é sempre analisado menos comparado.`, {tam:8, cor:C.mut}); }
   subtitulo("Resumo");
-  tabela(["Indicador", uf, "Brasil", "Diferença"], linhasKpi, {colunasDif:[3], columnStyles:{1:{halign:"right",fontStyle:"bold"},2:{halign:"right"},3:{halign:"right"}}});
+  tabela(["Indicador", uf, "Brasil", `Dif. ${uf} - Brasil`], linhasKpi, {colunasDif:[3], columnStyles:{1:{halign:"right",fontStyle:"bold"},2:{halign:"right"},3:{halign:"right"}}});
 
   titulo("Principais dificuldades");
   for (const x of d.destaques || []) {
@@ -1063,12 +1179,12 @@ async function gerarPdf(d, opts={}){
   /* ---------- notas ---------- */
   novaPagina();
   titulo("Notas por área");
-  paragrafo(`Média dos participantes presentes em ${nomeUF} comparada à média nacional.`);
+  paragrafo(`Comparação: ${nomeUF} (todos que fizeram a prova no estado) x Brasil (todos os inscritos do país). Médias dos presentes.`);
   const labs = areas.map(a => NOMES[a]), mUF = areas.map(a => d.areas[a].media), mBR = areas.map(a => d.areas[a].media_br);
   if (d.redacao) { labs.push("Redação"); mUF.push(d.redacao.media); mBR.push(d.redacao.media_br); }
   legenda();
   grafico({type:"bar", data:{labels:labs, datasets:[barra(uf,mUF,C.uf), barra("Brasil",mBR,C.br)]}, options:{scales:{y:{beginAtZero:true}, x:{grid:{display:false}}}}}, LW, 70);
-  tabela(["Área", `Média ${uf}`, "Brasil", "Dif.", "Mediana", "25%–75%", "< 450", ">= 600", "Faltas"],
+  tabela(["Área", `Média ${uf}`, "Brasil", `Dif.`, `Mediana ${uf}`, "25%–75%", "< 450", ">= 600", `Faltas ${uf}`],
     areas.map(a => { const x = d.areas[a], p = d.participacao.areas[a] || {}; return [x.nome, fmt(x.media), fmt(x.media_br), pp(x.diferenca), fmt(x.mediana), `${fmt(x.p25)} – ${fmt(x.p75)}`, fmt(x.pct_abaixo_450)+"%", fmt(x.pct_acima_600)+"%", `${fmt(p.pct_faltas)}% (BR ${fmt(p.pct_faltas_br)}%)`]; }),
     {colunasDif:[3], columnStyles:{0:{cellWidth:36},1:{halign:"right",fontStyle:"bold"},2:{halign:"right"},3:{halign:"right"},4:{halign:"right"},5:{halign:"right"},6:{halign:"right"},7:{halign:"right"},8:{halign:"right"}}});
 
@@ -1097,7 +1213,7 @@ async function gerarPdf(d, opts={}){
   for (const a of areasHab) {
     novaPagina();
     titulo(`Dificuldades por conteúdo — ${d.meta.areas?.[a] || NOMES[a]}`);
-    paragrafo("Percentual de acerto das questões agrupadas pela Matriz de Referência do ENEM. Quanto menor, maior a dificuldade.");
+    paragrafo(`Percentual de acerto das questões agrupadas pela Matriz de Referência do ENEM. Quanto menor, maior a dificuldade. Comparação: ${nomeUF} x Brasil.`);
     const cs = d.competencias_area[a];
     subtitulo("Acerto por competência / tema"); legenda();
     grafico({type:"bar", data:{labels:cs.map(c => `${c.disciplina} (C${c.competencia})`), datasets:[{...barra(uf,cs.map(c=>c.acerto),C.uf), borderSkipped:"start", maxBarThickness:34}, {...barra("Brasil",cs.map(c=>c.acerto_br),C.br), borderSkipped:"start", maxBarThickness:34}]},
@@ -1126,7 +1242,7 @@ async function gerarPdf(d, opts={}){
   if (rd && rd.grupos) {
     novaPagina();
     titulo("Rede de ensino");
-    paragrafo(`Média geral: pública ${fmt(rd.publica)} x privada ${fmt(rd.privada)} em ${nomeUF} (no Brasil: ${fmt(rd.publica_br)} x ${fmt(rd.privada_br)}).`);
+    paragrafo(`Comparação entre as redes dentro de ${nomeUF} (a tabela não traz o Brasil). Média geral: pública ${fmt(rd.publica)} x privada ${fmt(rd.privada)} em ${nomeUF}; no Brasil: ${fmt(rd.publica_br)} x ${fmt(rd.privada_br)}.`);
     const pal = [C.uf, "#eb6834", "#1baf7a", "#eda100", C.br];
     const cols = labs.map((_,i) => i < areas.length ? areas[i] : "RED");
     espaco(6); doc.setFontSize(8.5);
@@ -1144,7 +1260,7 @@ async function gerarPdf(d, opts={}){
   if ((d.municipios || []).length) {
     novaPagina();
     titulo("Municípios");
-    paragrafo(`Municípios com pelo menos 20 participantes com todas as notas, ordenados pela média geral. Em vermelho, áreas abaixo da média nacional.`);
+    paragrafo(`Municípios com pelo menos 20 participantes com todas as notas, ordenados pela média geral. Comparação: cada município x Brasil. Em vermelho, áreas abaixo da média do Brasil.`);
     const medBR = Object.fromEntries(areas.map(a => [a, d.areas[a].media_br]));
     tabela(["#", "Município", "Inscritos", "Média geral", ...areas, "Redação", "Red. zero"],
       d.municipios.map((m,i) => [i+1, m.municipio, int(m.inscritos), fmt(m.media_geral), ...areas.map(a => fmt(m[a])), fmt(m.RED), fmt(m.pct_zero_red)+"%"]),
@@ -1163,7 +1279,7 @@ async function gerarPdf(d, opts={}){
   if (rkl.length) {
     novaPagina();
     titulo("Ranking dos estados");
-    paragrafo("Média geral (4 áreas + redação) de quem fez todas as provas.");
+    paragrafo("Comparação entre os estados. Média geral (4 áreas + redação) de quem fez todas as provas em cada estado.");
     const vals = rkl.map(x => x.GERAL);
     grafico({type:"bar", data:{labels:rkl.map(x => `${x.posicao}º ${x.uf}`), datasets:[{...barra("Média geral", vals, rkl.map(x => x.uf === uf ? C.uf : C.br)), borderSkipped:"start", maxBarThickness:30}]},
       options:{indexAxis:"y", scales:{x:{min:Math.floor((Math.min(...vals)-20)/10)*10}, y:{grid:{display:false}, ticks:{autoSkip:false}}}}}, LW, Math.min(230, Math.max(60, rkl.length * 8.2)));
